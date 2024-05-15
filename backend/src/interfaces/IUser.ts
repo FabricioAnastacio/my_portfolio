@@ -7,5 +7,5 @@ export interface IUser {
 }
 
 export interface IUserModel {
-  findById(id: number): Promise<IUser>, 
+  findById(id: number): Promise<IUser | null>, 
 }
