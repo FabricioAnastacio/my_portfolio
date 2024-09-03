@@ -5,7 +5,8 @@ class ModelUser implements IUserModel {
   private model = UserModel;
 
   async findById(id: number): Promise<IUser | null> {
-    const user = await this.model.findOne({where: { id }});
+    const allDtaUser = await this.model.findOne({where: { id }});
+    const user = allDtaUser?.dataValues as IUser | null
 
     return user;
   }

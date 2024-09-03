@@ -12,9 +12,9 @@ class App {
     this.db = sequelize;
 
     this.config();
-
+    
     this.route();
-
+    
     this.app.get('/', (req, res) => res.json({ ok: true }));
   }
 
