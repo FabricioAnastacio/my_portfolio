@@ -1,12 +1,24 @@
-import logo from '../logo.svg';
+import { useContext } from 'react';
+import rasengam from './pngwing1.png';
+import AppContext from '../context/AppContext';
 
-function initialApp() {
+function InitialApp() {
+  const { inputName, setNAME } = useContext(AppContext);
+
+  const handleChange = ({ target }) => {
+    setNAME(target.value);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>{ inputName }</h1>
+        <img src={ rasengam } className="App-logo" alt="rasengam" />
+        <input type="text" value={ inputName } onChange={ handleChange } />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          <code>src/App.js</code>
+          and save to reload.
         </p>
         <a
           className="App-link"
@@ -18,7 +30,7 @@ function initialApp() {
         </a>
       </header>
     </div>
-  )
+  );
 }
 
-export default initialApp;
+export default InitialApp;

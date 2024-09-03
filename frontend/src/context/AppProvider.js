@@ -1,24 +1,24 @@
+import PropTypes from 'prop-types';
 import { useMemo, useState } from 'react';
 import AppContext from './AppContext';
-import PropTypes from 'prop-types';
 
 function AppProvider({ children }) {
-  const [ inputName, setName ] = useState('');
-  
+  const [inputName, setNAME] = useState('Hello Word');
+
   const values = useMemo(() => ({
     inputName,
-    setName
+    setNAME,
   }), [inputName]);
 
   return (
-    <AppContext.Provider value={values}>
+    <AppContext.Provider value={ values }>
       { children }
     </AppContext.Provider>
-  )
+  );
 }
 
 AppProvider.propTypes = {
-  children: PropTypes.shape([]).isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default AppProvider;
