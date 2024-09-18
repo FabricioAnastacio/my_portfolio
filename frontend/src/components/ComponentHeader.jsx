@@ -22,8 +22,8 @@ function Header() {
         <a href="/">Contact</a>
         <a href="/">Projects</a>
         <a href="/">Resume</a>
+        <button onClick={ handleClick }>.</button>
       </nav>
-      <button onClick={ handleClick }>.</button>
       {/* <p>
         Edit
         <code>src/App.js</code>
