@@ -1,13 +1,30 @@
 import '../styles/Carousel.css';
+import {
+  js,
+  py,
+  ts,
+  html5,
+  dotnet,
+  css3,
+  docker,
+  nodedotjs,
+  reactSvg,
+  mysqlSvg,
+} from '../svg/index';
 
 function Carousel() {
   return (
     <ul>
-      <li>12</li>
-      <li>13</li>
-      <li>14</li>
-      <li>15</li>
-      <li>16</li>
+      <li><img src={ js } alt="JavaScript" /></li>
+      <li><img src={ py } alt="Python" /></li>
+      <li><img src={ ts } alt="Typescript" /></li>
+      <li><img src={ html5 } alt="Html5" /></li>
+      <li><img src={ dotnet } alt="Dotnet" /></li>
+      <li><img src={ css3 } alt="Css3" /></li>
+      <li><img src={ docker } alt="Docker" /></li>
+      <li><img src={ nodedotjs } alt="Node.js" /></li>
+      <li><img src={ reactSvg } alt="React" /></li>
+      <li><img src={ mysqlSvg } alt="MySql" /></li>
     </ul>
   );
 }

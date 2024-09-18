@@ -1,9 +1,9 @@
-import '../styles/App.css';
+import '../styles/LoadingPage.css';
 import { useNavigate } from 'react-router-dom';
 import rasengam from './pngwing1.png';
 import CountDown from '../hooks/countDownII';
 
-function ComponentLoadInital() {
+function ComponentLoading() {
   const navigate = useNavigate();
   const num = 10;
   const [second] = CountDown(num);
@@ -11,13 +11,13 @@ function ComponentLoadInital() {
   if (second === 0) navigate('/home');
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={ rasengam } alt="rasengam" className="App-logo" />
+    <div className="Loading">
+      <header className="Loading-header">
+        <img src={ rasengam } alt="rasengam" className="Loading-logo" />
         <p>{`loading... ${second}`}</p>
       </header>
     </div>
   );
 }
 
-export default ComponentLoadInital;
+export default ComponentLoading;

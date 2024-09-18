@@ -1,9 +1,9 @@
-import ComponentLoadInital from '../components/ComponentLoadInital';
+import ComponentLoading from '../components/ComponentLoading';
 
 function InitialPage() {
   return (
     <div>
-      <ComponentLoadInital />
+      <ComponentLoading />
     </div>
   );
 }

@@ -1,15 +1,16 @@
 ul {
   margin-top: 5%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 40px;
   li {
     position: absolute;
     opacity: 0;
     list-style: none;
     width: 40px;
-    background-color: red;
     animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -29,18 +30,33 @@ ul {
   :nth-child(5) {
     animation-delay: 8s;
   }
+  :nth-child(6) {
+    animation-delay: 10s;
+  }
+  :nth-child(7) {
+    animation-delay: 12s;
+  }
+  :nth-child(8) {
+    animation-delay: 14s;
+  }
+  :nth-child(9) {
+    animation-delay: 16s;
+  }
+  :nth-child(10) {
+    animation-delay: 18s;
+  }
 }
 
 @keyframes move {
   100% {
-    transform: translateX(-220px);
+    transform: translateX(-360px);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   0% {
-    transform: translateX(100px);
+    transform: translateX(350px);
     opacity: 0;
   }
 }

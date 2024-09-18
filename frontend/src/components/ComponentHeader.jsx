@@ -4,15 +4,15 @@ import AppContext from '../context/AppContext';
 import '../styles/Header.css';
 
 function Header() {
-  const { setTame, modeTame } = useContext(AppContext);
+  const { setThame, modeThame } = useContext(AppContext);
 
   const handleClick = () => {
-    if (modeTame === 1) setTame(0);
-    else setTame(1);
+    if (modeThame === 1) setThame(0);
+    else setThame(1);
   };
 
   return (
-    <header className={ `Header-${modeTame}` }>
+    <header className={ `Header-${modeThame}` }>
       <section>
         <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
       </section>
