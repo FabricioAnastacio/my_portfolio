@@ -3,12 +3,15 @@ import { useMemo, useState } from 'react';
 import AppContext from './AppContext';
 
 function AppProvider({ children }) {
-  const [inputName, setNAME] = useState('Hello Word');
+  const [inputName, setNAME] = useState('Fabrício Rodrigues');
+  const [modeTame, setTame] = useState(1);
 
   const values = useMemo(() => ({
     inputName,
     setNAME,
-  }), [inputName]);
+    modeTame,
+    setTame,
+  }), [inputName, modeTame]);
 
   return (
     <AppContext.Provider value={ values }>

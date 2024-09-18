@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+header {
+  height: 15vh;
+  padding: 0 10%;
+}
+
+.Header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+a {
+  margin: 0 15%;
+}
+
+.Header-0 nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.Header-1 nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.Logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    margin: 0 0 0 10px;
+  }
+}
+
+.Logo-rasengam {
+  margin: 0;
+  height: 10vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 0.1s linear;
+}
+
+.Header-1 button {
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  border-radius: 50%;
+  darck {
+    background-color: black;
+  }
+}
+
+.Header-0 button {
+  background-color: white;
+  border-color: white;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  border-radius: 50%;
+}

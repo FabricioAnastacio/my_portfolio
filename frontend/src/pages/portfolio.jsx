@@ -1,9 +1,11 @@
-import ComponentLoadInital from '../components/ComponentLoadInital';
+import Header from '../components/ComponentHeader';
 
-export function Portfolio() {
+function Portfolio() {
   return (
     <div>
-      <ComponentLoadInital />
+      <Header />
     </div>
   );
 }
+
+export default Portfolio;
