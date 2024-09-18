@@ -4,7 +4,7 @@ import AppContext from '../context/AppContext';
 import '../styles/Header.css';
 
 function Header() {
-  const { inputName, setTame, modeTame } = useContext(AppContext);
+  const { setTame, modeTame } = useContext(AppContext);
 
   const handleClick = () => {
     if (modeTame === 1) setTame(0);
@@ -13,9 +13,8 @@ function Header() {
 
   return (
     <header className={ `Header-${modeTame}` }>
-      <section className="Logo-name">
+      <section>
         <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
-        <h1>{ inputName }</h1>
       </section>
       <nav>
         <a href="/">About</a>
