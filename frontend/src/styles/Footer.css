@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgb(109, 109, 109);
+  height: 100vmin;
+}
+
+.Footer-links {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+

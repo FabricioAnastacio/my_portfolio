@@ -1,12 +1,11 @@
 .Content-body {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 .Content-body section {
-  margin-top: 80vmin;
+  margin: 20vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
 }
@@ -22,37 +21,53 @@
 }
 
 .Content-body hr {
-  margin-top: 5vmin;
   background-color: black;
   height: 1px;
   width: 60%;
 }
 
-.Content-body h4 {
-  margin-top: 10vmin;
-}
-
-.Page-thow {
-  margin-top: 30vmin;
+#Page-thow {
+  margin-top: 20vmin;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  hr {
+    position: absolute;
+    width: 99.9%;
+    height: 8px;
+    background-color: rgb(0, 214, 0);
+    /* animation-name: moveLine;
+    animation-duration: 5s;
+    animation-timing-function: linear; */
+  }
 }
 
-.Page-thow ul {
+#Page-thow ul {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-evenly;
+  z-index: 0;
   li {
-    border: 1px solid black;
+    border: 8px black;
+    border-style: double;
+    background-color: white;
+    border-radius: 20px;
     list-style: none;
+    height: 400px;
     width: 15%;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
     img {
       width: 15vmin;
     }
   }
 }
+
+/* @keyframes moveLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */

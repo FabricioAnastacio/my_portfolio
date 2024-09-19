@@ -28,8 +28,9 @@ function Body() {
         <Carousel />
       </section>
       <hr />
-      <h4>Alguns dos meus projetos</h4>
-      <div className="Page-thow">
+      {/* <h4>Alguns dos meus projetos</h4> */}
+      <div id="Page-thow">
+        <hr />
         <ul>
           <li>
             <img src={ frontendIcon } alt="test" />

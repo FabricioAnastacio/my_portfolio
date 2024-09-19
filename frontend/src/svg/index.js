@@ -9,6 +9,10 @@ import nodedotjs from './nodedotjs.svg';
 import reactSvg from './react.svg';
 import mysqlSvg from './mysql-color.svg';
 import csharp from './csharp.svg';
+import linkedin from './socialMidia/linkedin.svg';
+import github from './socialMidia/github.svg';
+import instagram from './socialMidia/instagram.svg';
+import email from './socialMidia/e-mail.png';
 
 export {
   js,
@@ -22,4 +26,8 @@ export {
   reactSvg,
   mysqlSvg,
   csharp,
+  linkedin,
+  github,
+  instagram,
+  email,
 };

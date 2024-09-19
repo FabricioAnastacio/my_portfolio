@@ -16,26 +16,22 @@ function Header() {
       <section>
         <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
       </section>
-      <nav>
+      <nav className="Nav-superior">
         <a href="/">About</a>
-        <a href="/">Contact</a>
+        <a href="#Contact-footer">Contact</a>
         <a href="/">Projects</a>
-        <a href="/">Resume</a>
+        <a href="#Page-thow">Resume</a>
         <button onClick={ handleClick }>.</button>
       </nav>
-      {/* <p>
-        Edit
-        <code>src/App.js</code>
-        and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a> */}
+      <div className={ `Nav-lateral-${modeThame}` }>
+        <nav>
+          <button onClick={ handleClick }>.</button>
+          <a href="/">About</a>
+          <a href="#Contact-footer">Contact</a>
+          <a href="/">Projects</a>
+          <a href="#Page-thow">Resume</a>
+        </nav>
+      </div>
     </header>
   );
 }
