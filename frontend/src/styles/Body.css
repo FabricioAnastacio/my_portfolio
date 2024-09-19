@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5%;
 }
 
 .Content-body section {
+  margin-top: 80vmin;
   padding: 0 20%;
   text-align: center;
 }
@@ -17,6 +17,42 @@
   margin-bottom: 10px;
 }
 
-.Content-body p {
+.Content-body section p {
   margin-top: 10px;
+}
+
+.Content-body hr {
+  margin-top: 5vmin;
+  background-color: black;
+  height: 1px;
+  width: 60%;
+}
+
+.Content-body h4 {
+  margin-top: 10vmin;
+}
+
+.Page-thow {
+  margin-top: 30vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Page-thow ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  li {
+    border: 1px solid black;
+    list-style: none;
+    width: 15%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    img {
+      width: 15vmin;
+    }
+  }
 }

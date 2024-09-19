@@ -8,6 +8,7 @@ import docker from './docker.svg';
 import nodedotjs from './nodedotjs.svg';
 import reactSvg from './react.svg';
 import mysqlSvg from './mysql-color.svg';
+import csharp from './csharp.svg';
 
 export {
   js,
@@ -20,4 +21,5 @@ export {
   nodedotjs,
   reactSvg,
   mysqlSvg,
+  csharp,
 };

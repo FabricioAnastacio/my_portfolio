@@ -1,4 +1,8 @@
-.Portfolio-home {
+.Portfolio-home-1, .Portfolio-home-0 {
+  height: 100%;
+}
+
+.Portfolio-home-1 {
   background-color: white;
   color: black;
 }

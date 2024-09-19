@@ -10,11 +10,12 @@ import {
   nodedotjs,
   reactSvg,
   mysqlSvg,
+  csharp,
 } from '../svg/index';
 
 function Carousel() {
   return (
-    <ul>
+    <ul className="Carusel">
       <li><img src={ js } alt="JavaScript" /></li>
       <li><img src={ py } alt="Python" /></li>
       <li><img src={ ts } alt="Typescript" /></li>
@@ -25,6 +26,7 @@ function Carousel() {
       <li><img src={ nodedotjs } alt="Node.js" /></li>
       <li><img src={ reactSvg } alt="React" /></li>
       <li><img src={ mysqlSvg } alt="MySql" /></li>
+      <li><img src={ csharp } alt="CSharp" /></li>
     </ul>
   );
 }

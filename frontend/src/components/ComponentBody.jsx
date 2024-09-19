@@ -1,19 +1,50 @@
-import fotoF from './fabricio_fot.png';
+/* eslint-disable max-len */
+import { useEffect, useState } from 'react';
 import '../styles/Body.css';
 import Carousel from './Carousel';
+import backendIcon from '../icons/icons8-backend.png';
+import frontendIcon from '../icons/icons8-front-end.png';
+import dbIcon from '../icons/icons8-banco-de-dados.png';
+import fotoF from './fabricio_fot.png';
 
-/* eslint-disable max-len */
 function Body() {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    fetch('data/portfolio.json')
+      .then((response) => response.json())
+      .then((dta) => {
+        setData(dta);
+      });
+  }, []);
+
   return (
     <body className="Content-body">
       <section>
         <img className="Picture" src={ fotoF } alt="Foto de Fabricio" />
-        <h1>Fabricio A. Rodrigues</h1>
-        <p>
-          O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
-        </p>
+        <h1>{ data.name }</h1>
+        <h3>{ data.position }</h3>
+        <p>{ data.description }</p>
         <Carousel />
       </section>
+      <hr />
+      <h4>Alguns dos meus projetos</h4>
+      <div className="Page-thow">
+        <ul>
+          <li>
+            <img src={ frontendIcon } alt="test" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+          </li>
+          <li>
+            <img src={ backendIcon } alt="test" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+          </li>
+          <li>
+            <img src={ dbIcon } alt="test" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+          </li>
+        </ul>
+      </div>
     </body>
   );
 }

@@ -1,4 +1,4 @@
-ul {
+.Carusel {
   margin-top: 5%;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@ ul {
     list-style: none;
     width: 40px;
     animation-name: move;
-    animation-duration: 20s;
+    animation-duration: 22.5s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -45,18 +45,21 @@ ul {
   :nth-child(10) {
     animation-delay: 18s;
   }
+  :nth-child(11) {
+    animation-delay: 20s;
+  }
 }
 
 @keyframes move {
   100% {
-    transform: translateX(-360px);
+    transform: translateX(-370px);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   0% {
-    transform: translateX(350px);
+    transform: translateX(360px);
     opacity: 0;
   }
 }
