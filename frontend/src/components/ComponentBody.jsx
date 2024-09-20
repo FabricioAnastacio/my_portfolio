@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import '../styles/Body.css';
 import Carousel from './Carousel';
-import backendIcon from '../icons/icons8-backend.png';
-import frontendIcon from '../icons/icons8-front-end.png';
-import csIcon from '../icons/icons8-algorithm.png';
-import fotoF from './fabricio_fot.png';
+import backendIcon from '../imgs/icons/icons8-backend.png';
+import frontendIcon from '../imgs/icons/icons8-front-end.png';
+import csIcon from '../imgs/icons/icons8-algorithm.png';
+import fotoF from '../imgs/fabricio_fot.png';
+import Projects from './Projects';
 
 function Body() {
   const [{
@@ -33,7 +34,11 @@ function Body() {
   return (
     <body className="Content-body">
       <section>
-        <img className="Picture" src={ fotoF } alt="Foto de Fabricio" />
+        <img
+          className="Picture"
+          src={ fotoF }
+          alt="Foto de Fabricio"
+        />
         <h1>{ myname }</h1>
         <h3>{ position }</h3>
         <p>{ description.resume }</p>
@@ -60,6 +65,7 @@ function Body() {
           </li>
         </ul>
       </div>
+      <Projects />
     </body>
   );
 }

@@ -1,0 +1,44 @@
+.List-projects {
+  margin: 20vmin 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.List-projects hr {
+  height: 10%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.List-projects ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.List-projects img {
+  width: 50vmin;
+  padding: 10px;
+}
+
+.List-projects li {
+  flex-grow: 1;
+  flex-basis: 10%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50vmin;
+  height: 80vmin;
+  margin: 20px 10px 0 10px;
+  border: 1px solid gray;
+}
+
+.List-projects p {
+  padding: 0 40px;
+}
+

@@ -1,6 +1,6 @@
 import '../styles/LoadingPage.css';
 import { useNavigate } from 'react-router-dom';
-import rasengam from './pngwing1.png';
+import rasengam from '../imgs/pngwing1.png';
 import CountDown from '../hooks/countDownII';
 
 function ComponentLoading() {
@@ -9,7 +9,6 @@ function ComponentLoading() {
   const [second] = CountDown(num);
 
   if (second === 0) navigate('/home');
-
   return (
     <div className="Loading">
       <header className="Loading-header">

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import rasengam from './pngwing1.png';
 import AppContext from '../context/AppContext';
+import rasengam from '../imgs/pngwing1.png';
 import '../styles/Header.css';
 
 function Header() {
@@ -19,7 +19,7 @@ function Header() {
       <nav className="Nav-superior">
         <a href="/">About</a>
         <a href="#Contact-footer">Contact</a>
-        <a href="/">Projects</a>
+        <a href="#Projects">Projects</a>
         <a href="#Page-thow">Resume</a>
         <button onClick={ handleClick }>.</button>
       </nav>
@@ -28,7 +28,7 @@ function Header() {
           <button onClick={ handleClick }>.</button>
           <a href="/">About</a>
           <a href="#Contact-footer">Contact</a>
-          <a href="/">Projects</a>
+          <a href="#Projects">Projects</a>
           <a href="#Page-thow">Resume</a>
         </nav>
       </div>
