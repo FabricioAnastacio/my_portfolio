@@ -43,9 +43,7 @@ header {
   height: 25px;
   margin: 0;
   border-radius: 50%;
-  darck {
-    background-color: black;
-  }
+  cursor: pointer;
 }
 
 .Header-0 button {
@@ -56,15 +54,18 @@ header {
   height: 25px;
   margin: 0;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.Nav-lateral nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  width: 55%;
+.Nav-lateral-0, .Nav-lateral-1 {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 55%;
+  }
 }
 
 
@@ -75,7 +76,7 @@ header {
   margin-left: 84%;
   height: 30%;
   width: 10%;
-  border: 2px double rgb(94, 94, 94);
+  border: 8px double rgb(255, 255, 255);
   border-radius: 20px;
   animation: appear 1ms ease-in-out;
   animation-timeline: view();
@@ -85,19 +86,20 @@ header {
 }
 
 .Nav-lateral-1 {
-  background-color: black;
+  background-color: whitesmoke;
   a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   button {
-    background-color: gray;
-    color: gray;
+    background-color: black;
+    color: black;
   }
 }
 
 .Nav-lateral-0 {
   background-color: rgb(109, 109, 109);
+  border-color: black;
   a {
     text-decoration: none;
     color: black;

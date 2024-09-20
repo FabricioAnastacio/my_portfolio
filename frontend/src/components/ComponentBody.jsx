@@ -1,14 +1,26 @@
-/* eslint-disable max-len */
 import { useEffect, useState } from 'react';
 import '../styles/Body.css';
 import Carousel from './Carousel';
 import backendIcon from '../icons/icons8-backend.png';
 import frontendIcon from '../icons/icons8-front-end.png';
-import dbIcon from '../icons/icons8-banco-de-dados.png';
+import csIcon from '../icons/icons8-algorithm.png';
 import fotoF from './fabricio_fot.png';
 
 function Body() {
-  const [data, setData] = useState({});
+  const [{
+    myname,
+    position,
+    description,
+  }, setData] = useState({
+    myname: '',
+    position: '',
+    description: {
+      resume: '',
+      frontend: '',
+      backend: '',
+      cs: '',
+    },
+  });
 
   useEffect(() => {
     fetch('data/portfolio.json')
@@ -22,27 +34,29 @@ function Body() {
     <body className="Content-body">
       <section>
         <img className="Picture" src={ fotoF } alt="Foto de Fabricio" />
-        <h1>{ data.name }</h1>
-        <h3>{ data.position }</h3>
-        <p>{ data.description }</p>
+        <h1>{ myname }</h1>
+        <h3>{ position }</h3>
+        <p>{ description.resume }</p>
         <Carousel />
       </section>
       <hr />
-      {/* <h4>Alguns dos meus projetos</h4> */}
       <div id="Page-thow">
         <hr />
         <ul>
           <li>
+            <h2>Frontend</h2>
             <img src={ frontendIcon } alt="test" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+            <p>{ description.frontend }</p>
           </li>
           <li>
+            <h2>Backend</h2>
             <img src={ backendIcon } alt="test" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+            <p>{ description.backend }</p>
           </li>
           <li>
-            <img src={ dbIcon } alt="test" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum fermentum bibendum.</p>
+            <h2>Ciência da Computação</h2>
+            <img src={ csIcon } alt="test" />
+            <p>{ description.cs }</p>
           </li>
         </ul>
       </div>
