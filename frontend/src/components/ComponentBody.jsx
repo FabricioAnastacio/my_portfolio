@@ -10,11 +10,13 @@ import Projects from './Projects';
 function Body() {
   const [{
     myname,
-    position,
+    stacks,
+    languages,
     description,
   }, setData] = useState({
     myname: '',
-    position: '',
+    stacks: [''],
+    languages: [''],
     description: {
       resume: '',
       frontend: '',
@@ -31,6 +33,22 @@ function Body() {
       });
   }, []);
 
+  const refactorItems = (item) => {
+    let response = '';
+    const [isStack, firstItem] = item;
+    response = firstItem;
+    if (isStack === 'stacks') {
+      item.forEach((e, index) => {
+        if (index > 1) response += ` / ${e}`;
+      });
+      return response;
+    }
+    item.forEach((e, index) => {
+      if (index > 1) response += ` - ${e}`;
+    });
+    return response;
+  };
+
   return (
     <body className="Content-body">
       <section>
@@ -40,7 +58,12 @@ function Body() {
           alt="Foto de Fabricio"
         />
         <h1>{ myname }</h1>
-        <h3>{ position }</h3>
+        <h3>
+          Desenvolvedor
+          <br />
+          { refactorItems(stacks) }
+        </h3>
+        <p>{ refactorItems(languages) }</p>
         <p>{ description.resume }</p>
         <Carousel />
       </section>

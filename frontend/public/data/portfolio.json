@@ -1,6 +1,7 @@
 {
   "myname": "Fabrício Anastácio Rodrigues",
-  "position": "Desenvolvedor FullStack",
+  "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
+  "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
   "description": {
     "resume": "Durante minha jornada busquei excelência em programação Full Stack, dedicando mais de 1.500 horas de estudo focado e enriquecedor. Agora, estou preparado para me destacar no mercado de trabalho e continuar aprimorando minhas habilidades.",
     "frontend": "Durante este período, aprofundou-se e aplicou de forma prática conteúdos como: React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API e React Hooks.",
