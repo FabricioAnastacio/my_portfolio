@@ -4,21 +4,10 @@
 
 header {
   height: 15vh;
-  padding: 0 10%;
-}
-
-.Header-1 {
+  padding: 10px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.Header-0 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: white;
 }
 
 .Nav-superior {
@@ -37,7 +26,7 @@ header {
   animation: App-logo-spin infinite 0.1s linear;
 }
 
-.Header-1 button {
+header button {
   background-color: black;
   width: 25px;
   height: 25px;
@@ -46,28 +35,11 @@ header {
   cursor: pointer;
 }
 
-.Header-0 button {
+.Button-0 {
   background-color: white;
   border-color: white;
   color: white;
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  border-radius: 50%;
-  cursor: pointer;
 }
-
-.Nav-lateral-0, .Nav-lateral-1 {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 55%;
-  }
-}
-
 
 .Nav-lateral-0, .Nav-lateral-1 {
   position: fixed;
@@ -82,6 +54,17 @@ header {
   animation-timeline: view();
   a {
     text-decoration: none;
+  }
+}
+
+.Nav-lateral-0, .Nav-lateral-1 {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 55%;
   }
 }
 
@@ -106,6 +89,8 @@ header {
   }
   button {
     background-color: white;
+    border-color: white;
+    color: white;
   }
 }
 

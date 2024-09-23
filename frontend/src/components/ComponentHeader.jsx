@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className={ `Header-${modeThame}` }>
+    <header>
       <section>
         <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
       </section>
@@ -21,7 +21,7 @@ function Header() {
         <a href="#Contact-footer">Contact</a>
         <a href="#Projects">Projects</a>
         <a href="#Page-thow">Resume</a>
-        <button onClick={ handleClick }>.</button>
+        <button className={ `Button-${modeThame}` } onClick={ handleClick }>.</button>
       </nav>
       <div className={ `Nav-lateral-${modeThame}` }>
         <nav>
