@@ -51,7 +51,7 @@ function Body() {
 
   return (
     <body className="Content-body">
-      <section>
+      <section className="Content-first-page">
         <img
           className="Picture"
           src={ fotoF }
@@ -64,10 +64,12 @@ function Body() {
           { refactorItems(stacks) }
         </h3>
         <p>{ refactorItems(languages) }</p>
-        <p>{ description.resume }</p>
         <Carousel />
       </section>
-      <hr />
+      <hr id="Description" />
+      <section className="Content-description">
+        <p>{ description.resume }</p>
+      </section>
       <div id="Page-thow">
         <hr />
         <ul>

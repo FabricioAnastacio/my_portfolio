@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: "SUSE", sans-serif;
 }
 
-.Content-body section {
-  margin: 20vmin 0 10vmin 0;
+.Content-first-page {
+  margin: 18vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
 }
@@ -16,18 +17,39 @@
   margin-bottom: 10px;
 }
 
-.Content-body section p {
-  margin-top: 10px;
+.Content-body h1 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.Content-first-page p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.Content-description {
+  text-align: center;
+  margin-top: 10vmin;
+  padding: 0 20%;
+}
+
+.Content-description p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .Content-body hr {
+  margin-top: 10vmin;
   background-color: black;
   height: 1px;
   width: 60%;
 }
 
 #Page-thow {
-  margin-top: 20vmin;
+  margin-top: 10vmin;
   display: flex;
   align-items: center;
   justify-content: center;
