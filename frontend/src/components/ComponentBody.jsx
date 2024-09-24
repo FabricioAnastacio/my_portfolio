@@ -19,6 +19,7 @@ function Body() {
     languages: [''],
     description: {
       resume: '',
+      project: '',
       frontend: '',
       backend: '',
       cs: '',
@@ -90,6 +91,10 @@ function Body() {
           </li>
         </ul>
       </div>
+      <hr id="Projects" />
+      <section className="Content-description">
+        <p>{ description.project }</p>
+      </section>
       <Projects />
     </body>
   );

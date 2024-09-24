@@ -6,7 +6,7 @@
 }
 
 .Content-first-page {
-  margin: 18vmin 0 10vmin 0;
+  margin: 15vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
 }
@@ -59,9 +59,6 @@
     width: 99.9%;
     height: 8px;
     background-color: rgb(0, 214, 0);
-    /* animation-name: moveLine;
-    animation-duration: 5s;
-    animation-timing-function: linear; */
   }
 }
 
@@ -85,11 +82,3 @@
   }
 }
 
-/* @keyframes moveLine {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */

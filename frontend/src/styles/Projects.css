@@ -1,5 +1,5 @@
 .List-projects {
-  margin: 20vmin 70px;
+  margin: 10vmin 70px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,25 +20,31 @@
 }
 
 .List-projects img {
-  width: 50vmin;
+  width: 40vmin;
   padding: 10px;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.8;
+}
+
+.List-projects img:hover {
+  opacity: 1;
+  transform: scale(1.04);
 }
 
 .List-projects li {
-  flex-grow: 1;
+  flex-grow: 0;
   flex-basis: 10%;
   list-style: none;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 50vmin;
-  height: 80vmin;
   margin: 20px 10px 0 10px;
   border: 1px solid gray;
+  border-radius: 20px;
 }
 
 .List-projects p {
-  padding: 0 40px;
+  padding: 0 15px 15px;
 }
 

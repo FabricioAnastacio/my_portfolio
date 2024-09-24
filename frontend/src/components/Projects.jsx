@@ -6,7 +6,6 @@ import '../styles/Projects.css';
 function Projects() {
   return (
     <div className="List-projects">
-      <hr id="Projects" />
       <ul>
         <li>
           <img src={ imgExemple } alt="imgExemple" />
