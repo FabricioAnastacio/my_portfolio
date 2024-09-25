@@ -4,11 +4,12 @@ footer {
   justify-content: space-evenly;
   flex-direction: column;
   background-color: rgb(109, 109, 109);
-  height: 100vmin;
+  padding: 5vmin 0;
 }
 
 .Footer-links {
   width: 10%;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
 }

@@ -1,4 +1,4 @@
-.Content-body {
+.Content-main {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -6,7 +6,7 @@
 }
 
 .Content-first-page {
-  margin: 15vmin 0 10vmin 0;
+  margin: 10vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
 }
@@ -17,7 +17,7 @@
   margin-bottom: 10px;
 }
 
-.Content-body h1 {
+.Content-main h1 {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 28px;
@@ -41,7 +41,7 @@
   font-weight: 600;
 }
 
-.Content-body hr {
+.Content-main hr {
   margin-top: 10vmin;
   background-color: black;
   height: 1px;

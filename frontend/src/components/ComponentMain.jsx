@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../styles/Body.css';
+import '../styles/Main.css';
 import Carousel from './Carousel';
 import backendIcon from '../imgs/icons/icons8-backend.png';
 import frontendIcon from '../imgs/icons/icons8-front-end.png';
@@ -7,7 +7,7 @@ import csIcon from '../imgs/icons/icons8-algorithm.png';
 import fotoF from '../imgs/fabricio_fot.png';
 import Projects from './Projects';
 
-function Body() {
+function Main() {
   const [{
     myname,
     stacks,
@@ -51,7 +51,7 @@ function Body() {
   };
 
   return (
-    <body className="Content-body">
+    <main className="Content-main">
       <section className="Content-first-page">
         <img
           className="Picture"
@@ -96,8 +96,8 @@ function Body() {
         <p>{ description.project }</p>
       </section>
       <Projects />
-    </body>
+    </main>
   );
 }
 
-export default Body;
+export default Main;
