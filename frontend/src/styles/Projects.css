@@ -20,7 +20,7 @@
 }
 
 .List-projects img {
-  width: 40vmin;
+  width: 60vmin;
   padding: 10px;
   border-radius: 20px 20px 0 0;
   opacity: 0.8;
@@ -39,9 +39,10 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 20px 10px 0 10px;
+  margin: 20px;
   border: 1px solid gray;
   border-radius: 20px;
+  height: 60vmin;
 }
 
 .List-projects p {

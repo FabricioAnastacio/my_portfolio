@@ -10,7 +10,13 @@ function Projects(props) {
         {
           dataList.map((item, i) => (
             <li key={ i }>
-              <img src={ item.img } alt="test" />
+              <a
+                href={ item.link }
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={ item.img } alt="test" />
+              </a>
               <p>{ item.description }</p>
             </li>
           ))
