@@ -59,7 +59,6 @@ function Main() {
         <p>{ data.description.resume }</p>
       </section>
       <div id="Page-thow">
-        <hr />
         <ul>
           <li>
             <h2>Frontend</h2>

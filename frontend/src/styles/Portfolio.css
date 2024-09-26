@@ -2,15 +2,22 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  transition: 0.5s;
 }
 
 .Portfolio-home-1 {
   background-color: white;
   color: black;
+  a {
+    color: black;
+  }
 }
 
 .Portfolio-home-0 {
   background-color: black;
   color: white;
+  a {
+    color: white;
+  }
 }
 

@@ -14,8 +14,9 @@ function Projects(props) {
                 href={ item.link }
                 target="_blank"
                 rel="noreferrer"
+                style={ { backgroundImage: `url(${item.img})` } }
               >
-                <img src={ item.img } alt="test" />
+                .
               </a>
               <p>{ item.description }</p>
             </li>

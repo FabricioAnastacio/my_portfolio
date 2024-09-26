@@ -17,21 +17,31 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0 5%;
 }
 
-.List-projects img {
+.List-projects a {
+  text-decoration: none;
+  color: rgba(0,0,0,0);
   width: 60vmin;
-  padding: 10px;
+  height: 30vmin;
   border-radius: 20px 20px 0 0;
-  opacity: 0.8;
+  background-size: 100%;
+  transition: background-size 0.01s;
+  -webkit-transition: background-size 1s;
+  background-position: center center;
 }
 
-.List-projects img:hover {
-  opacity: 1;
-  transform: scale(1.04);
+.List-projects a:hover {
+  background-size: 150%;
+}
+
+.List-projects a:active {
+  opacity: 0.7;
 }
 
 .List-projects li {
+  opacity: 0.8;
   flex-grow: 0;
   flex-basis: 10%;
   list-style: none;
@@ -43,6 +53,13 @@
   border: 1px solid gray;
   border-radius: 20px;
   height: 60vmin;
+  transition: 0.2s;
+}
+
+.List-projects li:hover {
+  opacity: 1;
+  transform: scale(1.01);
+  font-weight: 600;
 }
 
 .List-projects p {

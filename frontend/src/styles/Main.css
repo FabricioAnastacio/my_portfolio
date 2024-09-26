@@ -68,9 +68,8 @@
   justify-content: space-evenly;
   z-index: 0;
   li {
-    border: 8px black;
+    border: 8px;
     border-style: double;
-    background-color: white;
     border-radius: 20px;
     list-style: none;
     height: 450px;
