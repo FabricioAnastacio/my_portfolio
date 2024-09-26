@@ -2,6 +2,20 @@
   "myname": "Fabrício A. Rodrigues",
   "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
+  "listProjects": [
+    {
+      "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars. Com varios filtros e de facil entendimento."
+    },
+    {
+      "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️."
+    },
+    {
+      "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel."
+    },
+    {
+      "description": "Neste projeto fiquei responsável por desenvolver funções que buscam informações sobre os animais em um zoológico, e também buscar dados sobre as pessoas que colaboram com a manutenção e cuidado do mesmo. Alem de construir testes unitarios para testar cada função. 🧑‍🌾"
+    }
+  ],
   "description": {
     "resume": "Durante minha jornada busquei excelência em programação Full Stack, dedicando mais de 1.500 horas de estudo focado e enriquecedor. Agora, estou preparado para me destacar no mercado de trabalho e continuar aprimorando minhas habilidades.",
     "project": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their",
