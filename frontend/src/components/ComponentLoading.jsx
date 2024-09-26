@@ -5,7 +5,7 @@ import CountDown from '../hooks/countDownII';
 
 function ComponentLoading() {
   const navigate = useNavigate();
-  const num = 10;
+  const num = 3;
   const [second] = CountDown(num);
 
   if (second === 0) navigate('/home');

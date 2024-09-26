@@ -9,7 +9,7 @@ function Projects(props) {
       <ul>
         {
           dataList.map((item, i) => (
-            <li key={ i }>
+            <li key={ i } className="Project">
               <a
                 href={ item.link }
                 target="_blank"
@@ -19,6 +19,15 @@ function Projects(props) {
                 .
               </a>
               <p>{ item.description }</p>
+              <ul>
+                {
+                  item.technologies.map((tec, index) => (
+                    <li key={ index }>
+                      { tec }
+                    </li>
+                  ))
+                }
+              </ul>
             </li>
           ))
         }

@@ -19,6 +19,9 @@ function Footer() {
           <img src={ instagram } alt="Instagram Link" />
         </a>
       </div>
+      <ul>
+        <li>Fonte SUSE</li>
+      </ul>
       <h2>Obrigado por acessar minha humilde pagina</h2>
     </footer>
   );
