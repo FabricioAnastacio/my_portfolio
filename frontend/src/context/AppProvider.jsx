@@ -5,13 +5,16 @@ import AppContext from './AppContext';
 function AppProvider({ children }) {
   const [inputName, setNAME] = useState('Fabrício Rodrigues');
   const [modeThame, setThame] = useState(1);
+  const [data, setData] = useState({});
 
   const values = useMemo(() => ({
     inputName,
     setNAME,
     modeThame,
     setThame,
-  }), [inputName, modeThame]);
+    data,
+    setData,
+  }), [inputName, modeThame, data]);
 
   return (
     <AppContext.Provider value={ values }>
