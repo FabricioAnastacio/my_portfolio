@@ -12,7 +12,7 @@ import ComponentLoading from './ComponentLoading';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
-  const { data } = useContext(AppContext);
+  const { data, modeThame } = useContext(AppContext);
 
   useEffect(() => {
     refresh();
@@ -54,30 +54,30 @@ function Main() {
         <p>{ refactorItems(data.languages) }</p>
         <Carousel />
       </section>
-      <hr id="Description" />
+      <hr id="Description" className={ `Hr-thame-${modeThame}` } />
       <section className="Content-description">
         <p>{ data.description.resume }</p>
       </section>
       <div id="Page-thow">
         <ul>
-          <li>
+          <li className={ `Item-theme-${modeThame}` }>
             <h2>Frontend</h2>
             <img src={ frontendIcon } alt="test" />
             <p>{ data.description.frontend }</p>
           </li>
-          <li>
+          <li className={ `Item-theme-${modeThame}` }>
             <h2>Backend</h2>
             <img src={ backendIcon } alt="test" />
             <p>{ data.description.backend }</p>
           </li>
-          <li>
+          <li className={ `Item-theme-${modeThame}` }>
             <h2>Ciência da Computação</h2>
             <img src={ csIcon } alt="test" />
             <p>{ data.description.cs }</p>
           </li>
         </ul>
       </div>
-      <hr id="Projects" />
+      <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
       <section className="Content-description">
         <p>{ data.description.project }</p>
       </section>

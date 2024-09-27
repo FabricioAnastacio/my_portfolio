@@ -21,7 +21,7 @@
 
 .Picture:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0px 16px 6px rgba(0, 0, 0, 0.664));
+  box-shadow:  0px 15px 13px rgba(0, 0, 0, 0.459);
 }
 
 .Content-main h1 {
@@ -50,9 +50,11 @@
 
 .Content-main hr {
   margin-top: 10vmin;
-  background-color: black;
   height: 1px;
   width: 60%;
+  background-color: black;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.541);
+  border-radius: 40%;
 }
 
 #Page-thow {
@@ -76,15 +78,50 @@
   z-index: 0;
   li {
     border: 8px;
-    border-style: double;
     border-radius: 20px;
     list-style: none;
     height: 450px;
     width: 15%;
     padding: 10px;
+    transition: .2s linear;
     img {
       width: 15vmin;
     }
   }
 }
 
+#Page-thow ul li:hover {
+  transform: scale(1.1);
+}
+
+.Item-theme-1 {
+  box-shadow: 
+    inset 0px 0px 20px rgba(0, 0, 0, 0.596),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.007),
+    0px 0px 10px rgba(0, 0, 0, 0.596)
+  ;
+}
+  
+.Item-theme-1:hover {
+  box-shadow:
+    inset 0px 0px 15px rgba(0, 0, 0, 0.596),
+    inset 0px 0px 5px rgba(0, 0, 0, 0.596),
+    0px 0px 5px rgba(0, 0, 0, 0.596)
+  ;
+}
+
+.Item-theme-0 {
+  box-shadow:
+    inset 0px 0px 50px rgba(255, 255, 255, 0.863),
+    inset 0px 0px 5px rgb(187, 203, 238),
+    0px 0px 20px rgba(255, 255, 255, 0.541)
+  ;
+}
+
+.Item-theme-0:hover {
+  box-shadow:
+    inset 0px 0px 55px rgb(255, 255, 255),
+    inset 0px 0px 10px rgb(187, 203, 238),
+    0px 0px 50px rgba(255, 255, 255, 0.541)
+  ;
+}

@@ -1,15 +1,18 @@
 import PropTypes from 'prop-types';
 import '../styles/Projects.css';
+import { useContext } from 'react';
+import AppContext from '../context/AppContext';
 
 function Projects(props) {
   const { dataList } = props;
+  const { modeThame } = useContext(AppContext);
 
   return (
     <div className="List-projects">
       <ul>
         {
           dataList.map((item, i) => (
-            <li key={ i } className="Project">
+            <li key={ i } className={ `Project-${modeThame}` }>
               <a
                 href={ item.link }
                 target="_blank"
