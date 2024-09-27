@@ -8,7 +8,6 @@ import fotoF from '../imgs/fabricio_fot.png';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
-import ComponentLoading from './ComponentLoading';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
@@ -34,8 +33,16 @@ function Main() {
     return response;
   };
 
-  if (loading) return (<ComponentLoading />);
-  if (erro) return (<h1>Algo de errado não esta certo!</h1>);
+  if (loading) return (<h1 className="Content-loading">Loading...</h1>);
+  if (erro) {
+    return (
+      <h1 className="Content-loading">
+        Algo de errado não esta certo!
+        <br />
+        Recarregue a pagina!
+      </h1>
+    );
+  }
 
   return (
     <main className="Content-main">

@@ -1,3 +1,12 @@
+.Content-loading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 59vmin;
+  font-family: "SUSE", sans-serif;
+}
+
 .Content-main {
   display: flex;
   align-items: center;

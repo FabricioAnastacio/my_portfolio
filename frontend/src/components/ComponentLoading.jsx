@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import rasengam from '../imgs/pngwing1.png';
 import CountDown from '../hooks/countDownII';
 
+const num = 3;
+
 function ComponentLoading() {
   const navigate = useNavigate();
-  const num = 3;
   const [second] = CountDown(num);
 
   if (second === 0) navigate('/home');
