@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import AppContext from '../context/AppContext';
 import imags from '../imgs/importImgs';
+import exempleImage from '../imgs/exemple_img.png';
 
 export default function FetchJson() {
   const { setData } = useContext(AppContext);
@@ -15,7 +16,7 @@ export default function FetchJson() {
       resultAPI.listProjects.forEach((item, i) => {
         resultAPI.listProjects[i] = {
           ...item,
-          img: imags[i],
+          img: imags[i] ?? exempleImage,
         };
       });
       setData(resultAPI);
