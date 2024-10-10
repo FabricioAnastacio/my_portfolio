@@ -94,14 +94,19 @@ function Main() {
           </li>
         </ul>
         <p className="Content-description">
-          Text
+          { data.description.resumeThow }
         </p>
       </div>
       <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
-      <section className="Content-description">
-        <p>{ data.description.project }</p>
+      <section>
+        <p className="Content-description">
+          { data.description.project }
+        </p>
+        <Projects dataList={ data.listProjects } />
+        <p className="Content-description">
+          { data.description.projectThow }
+        </p>
       </section>
-      <Projects dataList={ data.listProjects } />
     </main>
   );
 }
