@@ -1,0 +1,15 @@
+.Contact {
+  margin-bottom: 10vmin;
+  background-color: aquamarine;
+  padding: 30px;
+}
+
+form {
+  display: grid;
+  place-items: start;
+}
+
+label {
+  display: grid;
+  margin-bottom: 20px;
+}

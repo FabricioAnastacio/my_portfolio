@@ -12,12 +12,11 @@ function Header() {
   };
 
   return (
-    <header>
+    <header id="Header">
       <section>
         <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
       </section>
       <nav className="Nav-superior">
-        <a href="/">About</a>
         <a href="#Contact-footer">Contact</a>
         <a href="#Projects">Projects</a>
         <a href="#Description">Resume</a>
@@ -26,7 +25,7 @@ function Header() {
       <div className={ `Nav-lateral-${modeThame}` }>
         <nav>
           <button onClick={ handleClick }>.</button>
-          <a href="/">About</a>
+          <a href="#Header">Top</a>
           <a href="#Contact-footer">Contact</a>
           <a href="#Projects">Projects</a>
           <a href="#Description">Resume</a>

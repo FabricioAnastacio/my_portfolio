@@ -8,9 +8,6 @@
 }
 
 .Content-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-family: "SUSE", sans-serif;
 }
 
@@ -45,8 +42,7 @@
   margin: 20px 0;
 }
 
-
-.Link-Trybe {
+/* .Link-Trybe {
   display: inline-flex;
   text-decoration: none;
   background-color: rgb(4, 214, 4);
@@ -58,9 +54,9 @@
 
 .Link-Trybe:hover {
   transform: scale(1.1);
-}
+} */
 
-.Content-main hr {
+.Hr-thame-0, .Hr-thame-1 {
   margin-top: 10vmin;
   height: 1px;
   width: 60%;
@@ -75,12 +71,6 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  hr {
-    position: absolute;
-    width: 99.9%;
-    height: 8px;
-    background-color: rgb(0, 214, 0);
-  }
 }
 
 .Content-description {

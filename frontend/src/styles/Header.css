@@ -11,7 +11,7 @@ header {
 }
 
 .Nav-superior {
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: space-between;
   a {

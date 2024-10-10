@@ -8,6 +8,7 @@ import fotoF from '../imgs/fabricio_fot.png';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
+import Contact from './Contact';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
@@ -61,8 +62,8 @@ function Main() {
         <p>{ refactorItems(data.languages) }</p>
         <Carousel />
       </section>
-      <hr id="Description" className={ `Hr-thame-${modeThame}` } />
       <div id="Page-thow">
+        <hr id="Description" className={ `Hr-thame-${modeThame}` } />
         <p className="Content-description">
           {/* Enquanto estudei na
           {' '}
@@ -96,8 +97,8 @@ function Main() {
         <p className="Content-description">
           { data.description.resumeThow }
         </p>
+        <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
       </div>
-      <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
       <section>
         <p className="Content-description">
           { data.description.project }
@@ -107,6 +108,7 @@ function Main() {
           { data.description.projectThow }
         </p>
       </section>
+      <Contact />
     </main>
   );
 }
