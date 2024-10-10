@@ -45,16 +45,19 @@
   margin: 20px 0;
 }
 
-.Content-description {
-  text-align: center;
-  margin-top: 10vmin;
-  padding: 0 20%;
+
+.Link-Trybe {
+  display: inline-flex;
+  text-decoration: none;
+  background-color: rgb(4, 214, 4);
+  border-radius: 10px;
+  padding: 0 5px;
+  height: 11px;
+  align-items: end;
 }
 
-.Content-description p {
-  text-align: center;
-  font-size: 19px;
-  font-weight: 600;
+.Link-Trybe:hover {
+  transform: scale(1.1);
 }
 
 .Content-main hr {
@@ -67,10 +70,10 @@
 }
 
 #Page-thow {
-  margin-top: 10vmin;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   hr {
     position: absolute;
@@ -78,6 +81,14 @@
     height: 8px;
     background-color: rgb(0, 214, 0);
   }
+}
+
+.Content-description {
+  text-align: center;
+  padding: 0 20%;
+  margin: 10vmin 0;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 #Page-thow ul {

@@ -62,10 +62,20 @@ function Main() {
         <Carousel />
       </section>
       <hr id="Description" className={ `Hr-thame-${modeThame}` } />
-      <section className="Content-description">
-        <p>{ data.description.resume }</p>
-      </section>
       <div id="Page-thow">
+        <p className="Content-description">
+          {/* Enquanto estudei na
+          {' '}
+          <a
+            href="https://www.betrybe.com/"
+            className="Link-Trybe"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Trybe
+          </a> */}
+          { data.description.resume }
+        </p>
         <ul>
           <li className={ `Item-theme-${modeThame}` }>
             <h2>Frontend</h2>
@@ -83,6 +93,9 @@ function Main() {
             <p>{ data.description.cs }</p>
           </li>
         </ul>
+        <p className="Content-description">
+          Text
+        </p>
       </div>
       <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
       <section className="Content-description">

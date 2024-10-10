@@ -14,7 +14,7 @@ function ComponentLoading() {
     <div className="Loading">
       <header className="Loading-header">
         <img src={ rasengam } alt="rasengam" className="Loading-logo" />
-        <p>{`loading... ${second}`}</p>
+        <p>{`Loading... ${second}`}</p>
       </header>
     </div>
   );
