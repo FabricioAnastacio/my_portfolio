@@ -1,15 +1,46 @@
 .Contact {
-  margin-bottom: 10vmin;
-  background-color: aquamarine;
-  padding: 30px;
+  padding: 8vmin 30px;
+  display: grid;
+  place-items: center;
 }
 
 form {
   display: grid;
   place-items: start;
+  background-color: rgba(243, 243, 243, 0.733);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.308);
 }
 
 label {
   display: grid;
   margin-bottom: 20px;
+}
+
+input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+textarea {
+  padding: 15px 10px;
+  width: 40vmin;
+  height: 15vmin;
+}
+
+.Contact button {
+  padding: 10px 30px;
+  background-color: rgb(60, 60, 255);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: .1s linear;
+}
+
+.Contact button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 255, 0.466);
+  cursor: pointer;
 }

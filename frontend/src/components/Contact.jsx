@@ -13,7 +13,7 @@ function Contact() {
           <input type="text" />
         </label>
         <label>
-          Descrição:
+          Menssagem:
           <textarea type="text" />
         </label>
         <button type="submit">Enviar</button>
