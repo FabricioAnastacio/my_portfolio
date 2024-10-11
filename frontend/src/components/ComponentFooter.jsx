@@ -8,12 +8,18 @@ import {
 function Footer() {
   return (
     <footer id="Contact-footer">
-      <div className="References">
-        <ul>
-          <li>Fonte: SUSE</li>
-        </ul>
-      </div>
+      <nav className="Nav-footer">
+        <a href="#Header">Voltar ao topo</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Description">Resume</a>
+      </nav>
+      <hr />
       <div className="Footer-links">
+        <div className="Autor">
+          <p>Fabrício&reg; 2024</p>
+          <p>|</p>
+          <p>Obrigado por acessar minha humilde pagina</p>
+        </div>
         <section>
           <a href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
             <img src={ github } alt="Github Link" />
@@ -25,10 +31,6 @@ function Footer() {
             <img src={ instagram } alt="Instagram Link" />
           </a>
         </section>
-        <h2>Obrigado por acessar minha humilde pagina</h2>
-      </div>
-      <div className="Autor">
-        <p>Fabrício&reg; 2024</p>
       </div>
     </footer>
   );

@@ -1,19 +1,34 @@
 footer {
   display: flex;
-  align-items: end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: rgb(109, 109, 109);
-  padding: 0px 0 2px 0;
-  /* border-radius: 2rem 2rem 0 0; */
+}
+
+.Nav-footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+footer hr {
+  width: 60%;
+  border: 1px solid black;
 }
 
 .Footer-links {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px;
-  
+  width: 60%;
   a {
     margin: 0 10px;
   }
@@ -23,18 +38,13 @@ footer {
   }
 }
 
-.References {
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
-  height: 100px;
-}
-
-.References ul {
-  padding: 0 0 0 10px;
-  list-style: none;
-}
-
 .Autor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 10px;
+  cursor: default;
+  p {
+    margin-left: 10px;
+  }
 }

@@ -22,15 +22,6 @@ function Header() {
         <a href="#Description">Resume</a>
         <button className={ `Button-${modeThame}` } onClick={ handleClick }>.</button>
       </nav>
-      <div className={ `Nav-lateral-${modeThame}` }>
-        <nav>
-          <button onClick={ handleClick }>.</button>
-          <a href="#Header">Top</a>
-          <a href="#Contact-footer">Contact</a>
-          <a href="#Projects">Projects</a>
-          <a href="#Description">Resume</a>
-        </nav>
-      </div>
     </header>
   );
 }
