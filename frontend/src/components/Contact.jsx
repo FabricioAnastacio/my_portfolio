@@ -19,6 +19,12 @@ function Contact() {
     }
   };
 
+  const resetForm = () => {
+    setEmail('');
+    setMessage('');
+    setName('');
+  };
+
   return (
     <section className="Contact">
       <form action="https://formsubmit.co/fabricio12nastacio@gmail.com" method="POST">
@@ -62,11 +68,20 @@ function Contact() {
           name="_honey"
           style={ { display: 'none' } }
         />
-        <button
-          type="submit"
-        >
-          Enviar
-        </button>
+        <div className="Buttons">
+          <button
+            className="Button-send"
+            type="submit"
+          >
+            Enviar
+          </button>
+          <button
+            className="Button-clear"
+            onClick={ resetForm }
+          >
+            Limpar
+          </button>
+        </div>
       </form>
     </section>
   );

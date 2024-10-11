@@ -29,7 +29,13 @@ textarea {
   height: 15vmin;
 }
 
-.Contact button {
+.Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Button-send {
   padding: 10px 30px;
   background-color: rgb(60, 60, 255);
   color: white;
@@ -39,8 +45,24 @@ textarea {
   transition: .1s linear;
 }
 
-.Contact button:hover {
+.Button-send:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px 1px rgba(60, 60, 255, 0.466);
+  cursor: pointer;
+}
+
+.Button-clear {
+  padding: 10px 30px;
+  background-color: rgb(255, 60, 60);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: .1s linear;
+}
+
+.Button-clear:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 1px rgba(255, 60, 60, 0.466);
   cursor: pointer;
 }
