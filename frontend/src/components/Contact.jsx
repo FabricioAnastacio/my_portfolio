@@ -8,7 +8,7 @@ function Contact() {
 
   const handleChenge = ({ target }) => {
     switch (target.name) {
-    case 'e-mail':
+    case 'email':
       setEmail(target.value);
       break;
     case 'name':
@@ -21,13 +21,13 @@ function Contact() {
 
   return (
     <section className="Contact">
-      <form action="https://formsubmit.co/fabricio12nastacio@gmail.com​" method="POST">
+      <form action="https://formsubmit.co/fabricio12nastacio@gmail.com" method="POST">
         <label>
           Seu e-mail:
           <input
-            name="e-mail"
+            name="email"
             value={ email }
-            type="e-mail"
+            type="email"
             required
             onChange={ handleChenge }
           />
@@ -62,7 +62,11 @@ function Contact() {
           name="_honey"
           style={ { display: 'none' } }
         />
-        <button type="submit">Enviar</button>
+        <button
+          type="submit"
+        >
+          Enviar
+        </button>
       </form>
     </section>
   );
