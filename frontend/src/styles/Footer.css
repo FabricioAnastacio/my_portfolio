@@ -1,16 +1,40 @@
 footer {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
   background-color: rgb(109, 109, 109);
-  padding: 5vmin 0;
+  padding: 0px 0 2px 0;
+  /* border-radius: 2rem 2rem 0 0; */
 }
 
 .Footer-links {
-  width: 10%;
-  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
+  padding: 20px;
+  
+  a {
+    margin: 0 10px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
 }
 
+.References {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.References ul {
+  padding: 0 0 0 10px;
+  list-style: none;
+}
+
+.Autor {
+  margin: 0 10px;
+}
