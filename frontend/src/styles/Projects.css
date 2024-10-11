@@ -1,0 +1,97 @@
+.List-projects {
+  margin: 0 70px 0 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.List-projects hr {
+  height: 10%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.List-projects ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 5%;
+}
+
+.List-projects a {
+  text-decoration: none;
+  color: rgba(0,0,0,0);
+  width: 60vmin;
+  height: 30vmin;
+  border-radius: 20px 20px 0 0;
+  background-size: 100%;
+  transition: background-size 0.01s;
+  -webkit-transition: background-size 1s;
+  background-position: center center;
+}
+
+.List-projects a:hover {
+  background-size: 120%;
+}
+
+.List-projects a:active {
+  opacity: 0.7;
+}
+
+.Project-0, .Project-1 {
+  opacity: 0.8;
+  flex-grow: 0;
+  flex-basis: 10%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  height: 60vmin;
+  transition: 0.2s;
+}
+
+.Project-1 {
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.555);
+}
+
+.Project-1:hover {
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.555);
+  opacity: 1;
+  transform: scale(1.02);
+  font-weight: 600;
+}
+
+.Project-0 {
+  box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.541);
+}
+
+.Project-0:hover {
+  box-shadow:
+    0px 0px 30px 3px rgba(255, 255, 255, 0.836),
+    0px 0px 1px 2px rgba(255, 255, 255, 0.836);
+  opacity: 1;
+  transform: scale(1.02);
+  font-weight: 600;
+}
+
+.List-projects p {
+  padding: 0 15px 15px;
+}
+
+.Project-0 ul, .Project-1 ul {
+  margin: 0;
+  margin-left: 90px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  li {
+    flex-grow: 0;
+    flex-basis: 20%;
+    margin: 2px;
+  }
+}
