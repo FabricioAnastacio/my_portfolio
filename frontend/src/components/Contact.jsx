@@ -24,20 +24,23 @@ class Contact extends React.Component {
 
   sendForm = async (event) => {
     event.preventDefault();
-    // const { message, name } = this.state;
+    const { message, name } = this.state;
     this.setState({ isDisable: true });
     try {
-      // await fetch('https://formsubmit.co/ajax/fabricio12nastacio@gmail.com', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //     Accept: 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     name,
-      //     message,
-      //   }),
-      // });
+      if (name === '') throw new Error();
+
+      await fetch('https://formsubmit.co/ajax/fabricio12nastacio@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          message,
+        }),
+      });
+
       this.setState({ isSuccess: true });
     } catch (e) {
       this.setState({ isError: true });
@@ -61,6 +64,7 @@ class Contact extends React.Component {
       <section className="Contact-Success">
         <h1>Menssagen enviada!</h1>
         <button
+          className="Btm-Success"
           onClick={ () => this.setState({ isSuccess: false }) }
         >
           Nova menssagem
@@ -72,8 +76,14 @@ class Contact extends React.Component {
   sendFormError = () => {
     return (
       <section className="Contact-Error">
-        <h1>Aconteceu um erro, tente novamente!</h1>
+        <h1>
+          Aconteceu um erro.
+          <br />
+          Preencha os campos e
+          tente novamente!
+        </h1>
         <button
+          className="Btm-Success"
           onClick={ () => this.setState({ isError: false }) }
         >
           Reenviar

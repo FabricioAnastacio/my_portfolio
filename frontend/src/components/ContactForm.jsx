@@ -60,6 +60,7 @@ class ContactForm extends React.Component {
         <div className="Buttons">
           <button
             className="Button-send"
+            type="submit"
             onClick={ sendForm }
             disabled={ isDisable }
           >
