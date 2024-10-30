@@ -1,90 +1,107 @@
-import { useState } from 'react';
+import React from 'react';
 import '../styles/Contact.css';
+import ContactForm from './ContactForm';
 
-function Contact() {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
+class Contact extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      email: '',
+      name: '',
+      message: '',
+      isDisable: false,
+      isSuccess: false,
+      isError: false,
+    };
+  }
 
-  const handleChenge = ({ target }) => {
-    switch (target.name) {
-    case 'email':
-      setEmail(target.value);
-      break;
-    case 'name':
-      setName(target.value);
-      break;
-    default:
-      setMessage(target.value);
+  handleChenge = ({ target }) => {
+    const { name, value } = target;
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  sendForm = async (event) => {
+    event.preventDefault();
+    // const { message, name } = this.state;
+    this.setState({ isDisable: true });
+    try {
+      // await fetch('https://formsubmit.co/ajax/fabricio12nastacio@gmail.com', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     Accept: 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     name,
+      //     message,
+      //   }),
+      // });
+      this.setState({ isSuccess: true });
+    } catch (e) {
+      this.setState({ isError: true });
+    } finally {
+      this.setState({ isDisable: false });
+      this.resetForm(event);
     }
   };
 
-  const resetForm = () => {
-    setEmail('');
-    setMessage('');
-    setName('');
+  resetForm = (event) => {
+    event.preventDefault();
+    this.setState({
+      email: '',
+      name: '',
+      message: '',
+    });
   };
 
-  return (
-    <section className="Contact">
-      <form action="https://formsubmit.co/fabricio12nastacio@gmail.com" method="POST">
-        <label>
-          Seu e-mail:
-          <input
-            name="email"
-            value={ email }
-            type="email"
-            required
-            onChange={ handleChenge }
-          />
-        </label>
-        <label>
-          Seu nome:
-          <input
-            name="name"
-            value={ name }
-            type="text"
-            required
-            onChange={ handleChenge }
-          />
-        </label>
-        <label>
-          Menssagem:
-          <textarea
-            name="message"
-            value={ message }
-            type="text"
-            required
-            onChange={ handleChenge }
-          />
-        </label>
-        <input
-          type="hidden"
-          name="_subject"
-          value="Novo contato!"
+  sendFormSuccess = () => {
+    return (
+      <section className="Contact-Success">
+        <h1>Menssagen enviada!</h1>
+        <button
+          onClick={ () => this.setState({ isSuccess: false }) }
+        >
+          Nova menssagem
+        </button>
+      </section>
+    );
+  };
+
+  sendFormError = () => {
+    return (
+      <section className="Contact-Error">
+        <h1>Aconteceu um erro, tente novamente!</h1>
+        <button
+          onClick={ () => this.setState({ isError: false }) }
+        >
+          Reenviar
+        </button>
+      </section>
+    );
+  };
+
+  render() {
+    const { name, message, email, isSuccess, isDisable, isError } = this.state;
+
+    if (isError) return this.sendFormError();
+    if (isSuccess) return this.sendFormSuccess();
+
+    return (
+      <section className="Contact">
+        <ContactForm
+          isDisable={ isDisable }
+          name={ name }
+          email={ email }
+          message={ message }
+          handleChenge={ this.handleChenge }
+          sendForm={ this.sendForm }
+          resetForm={ this.resetForm }
         />
-        <input
-          type="text"
-          name="_honey"
-          style={ { display: 'none' } }
-        />
-        <div className="Buttons">
-          <button
-            className="Button-send"
-            type="submit"
-          >
-            Enviar
-          </button>
-          <button
-            className="Button-clear"
-            onClick={ resetForm }
-          >
-            Limpar
-          </button>
-        </div>
-      </form>
-    </section>
-  );
+      </section>
+    );
+  }
 }
 
 export default Contact;
