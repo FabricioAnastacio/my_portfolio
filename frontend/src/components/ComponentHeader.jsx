@@ -16,7 +16,11 @@ function Header() {
         <a href="#Contact-footer">Contact</a>
         <a href="#Projects">Projects</a>
         <a href="#Description">Resume</a>
-        <button className={ `Button-${modeThame}` } onClick={ handleClick }>.</button>
+        <button
+          className={ `Button-${modeThame}` }
+          onClick={ handleClick }
+          aria-label="Thame"
+        />
       </nav>
     </header>
   );
