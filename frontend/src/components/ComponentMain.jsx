@@ -1,14 +1,13 @@
 import { useContext, useEffect } from 'react';
 import '../styles/Main.css';
-import Carousel from './Carousel';
 // import backendIcon from '../imgs/icons/icons8-backend.png';
 // import frontendIcon from '../imgs/icons/icons8-front-end.png';
-import fotoF from '../imgs/fabricio_fot.png';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
 import Contact from './Contact';
 import PageDescription from './PageDescription';
+import PageInitial from './PageInitial';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
@@ -47,21 +46,11 @@ function Main() {
 
   return (
     <main className="Content-main">
-      <section className="Content-first-page">
-        <img
-          className="Picture"
-          src={ fotoF }
-          alt="Foto de Fabricio"
-        />
-        <h1>{ data.myname }</h1>
-        <h3>
-          Desenvolvedor
-          <br />
-          { refactorItems(data.stacks) }
-        </h3>
-        <p>{ refactorItems(data.languages) }</p>
-        <Carousel />
-      </section>
+      <PageInitial
+        name={ data.myname }
+        stacks={ refactorItems(data.stacks) }
+        languages={ refactorItems(data.languages) }
+      />
       <PageDescription
         modeThame={ modeThame }
         description={ data.description }
