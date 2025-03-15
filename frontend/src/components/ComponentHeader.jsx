@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import AppContext from '../context/AppContext';
-import rasengam from '../imgs/pngwing1.png';
 import '../styles/Header.css';
 
 function Header() {
@@ -13,9 +12,6 @@ function Header() {
 
   return (
     <header id="Header">
-      <section>
-        <img src={ rasengam } className="Logo-rasengam" alt="rasengam" />
-      </section>
       <nav className="Nav-superior">
         <a href="#Contact-footer">Contact</a>
         <a href="#Projects">Projects</a>

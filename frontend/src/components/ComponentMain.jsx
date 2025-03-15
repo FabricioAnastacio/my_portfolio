@@ -1,14 +1,14 @@
 import { useContext, useEffect } from 'react';
 import '../styles/Main.css';
 import Carousel from './Carousel';
-import backendIcon from '../imgs/icons/icons8-backend.png';
-import frontendIcon from '../imgs/icons/icons8-front-end.png';
-import csIcon from '../imgs/icons/icons8-algorithm.png';
+// import backendIcon from '../imgs/icons/icons8-backend.png';
+// import frontendIcon from '../imgs/icons/icons8-front-end.png';
 import fotoF from '../imgs/fabricio_fot.png';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
 import Contact from './Contact';
+import PageDescription from './PageDescription';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
@@ -62,43 +62,10 @@ function Main() {
         <p>{ refactorItems(data.languages) }</p>
         <Carousel />
       </section>
-      <div id="Page-thow">
-        <hr id="Description" className={ `Hr-thame-${modeThame}` } />
-        <p className="Content-description">
-          {/* Enquanto estudei na
-          {' '}
-          <a
-            href="https://www.betrybe.com/"
-            className="Link-Trybe"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Trybe
-          </a> */}
-          { data.description.resume }
-        </p>
-        <ul>
-          <li className={ `Item-theme-${modeThame}` }>
-            <h2>Frontend</h2>
-            <img src={ frontendIcon } alt="test" />
-            <p>{ data.description.frontend }</p>
-          </li>
-          <li className={ `Item-theme-${modeThame}` }>
-            <h2>Backend</h2>
-            <img src={ backendIcon } alt="test" />
-            <p>{ data.description.backend }</p>
-          </li>
-          <li className={ `Item-theme-${modeThame}` }>
-            <h2>Ciência da Computação</h2>
-            <img src={ csIcon } alt="test" />
-            <p>{ data.description.cs }</p>
-          </li>
-        </ul>
-        <p className="Content-description">
-          { data.description.resumeThow }
-        </p>
-        <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
-      </div>
+      <PageDescription
+        modeThame={ modeThame }
+        description={ data.description }
+      />
       <section>
         <p className="Content-description">
           { data.description.project }

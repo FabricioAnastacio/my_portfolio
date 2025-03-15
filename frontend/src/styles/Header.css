@@ -6,7 +6,7 @@ header {
   height: 15vh;
   padding: 5px 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 
@@ -17,14 +17,6 @@ header {
   a {
     text-decoration: none;
   }
-}
-
-.Logo-rasengam {
-  margin: 0;
-  height: 10vmin;
-  pointer-events: none;
-  animation: App-logo-spin infinite 0.1s linear;
-  filter: drop-shadow(0px 0px 30px rgb(1, 39, 255));
 }
 
 header button {

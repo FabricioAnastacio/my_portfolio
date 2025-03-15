@@ -15,22 +15,21 @@
   margin: 10vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .Picture {
+  position: relative;
   height: 30vmin;
   border-radius: 50%;
   margin-bottom: 10px;
-  filter: drop-shadow(0px 6px 3px rgb(0, 0, 0));
   transition: .2s linear;
+  z-index: 1;
 }
 
-.Picture:hover {
-  transform: scale(1.1);
-  box-shadow:  0px 15px 13px rgba(0, 0, 0, 0.459);
-}
 
-.Content-main h1 {
+.Content-first-page h1 {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 28px;
@@ -41,20 +40,6 @@
   font-size: 18px;
   margin: 20px 0;
 }
-
-/* .Link-Trybe {
-  display: inline-flex;
-  text-decoration: none;
-  background-color: rgb(4, 214, 4);
-  border-radius: 10px;
-  padding: 0 5px;
-  height: 11px;
-  align-items: end;
-}
-
-.Link-Trybe:hover {
-  transform: scale(1.1);
-} */
 
 .Hr-thame-0, .Hr-thame-1 {
   margin-top: 10vmin;
@@ -70,41 +55,64 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 }
 
 .Content-description {
-  text-align: center;
-  padding: 0 20%;
+  text-align: start;
+  padding: 10% 20%;
   margin: 10vmin 0;
   font-size: 19px;
   font-weight: 600;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+  line-height: 1.6em;
+}
+
+.ScrollSecundary {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 30vh;
 }
 
 #Page-thow ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 90vh;
   z-index: 0;
   li {
-    border: 8px;
-    border-radius: 20px;
     list-style: none;
-    height: 450px;
-    width: 15%;
-    padding: 10px;
+    padding: 5px;
+    height: auto;
+    margin-bottom: 20vmin;
     transition: .2s linear;
-    img {
-      width: 15vmin;
+    font-size: 48px;
+    p {
+      font-size: 22px;
+      letter-spacing: 0px;
+      word-spacing: 5px;
+      line-height: 1.6em;
+    }
+    div {
+      text-align: center;
+      height: 100%;
     }
   }
 }
 
-#Page-thow ul li:hover {
-  transform: scale(1.1);
+.ImgScroll {
+  width: 500px;
+  top: 50px;
+  position: sticky;
 }
 
-.Item-theme-1 {
+/* #Page-thow ul li:hover {
+  transform: scale(1.1);
+} */
+
+/* .Item-theme-1 {
   box-shadow: 
     inset 0px 0px 20px rgba(0, 0, 0, 0.596),
     inset 0px 0px 10px rgba(0, 0, 0, 0.007),
@@ -118,9 +126,9 @@
     inset 0px 0px 5px rgba(0, 0, 0, 0.596),
     0px 0px 5px rgba(0, 0, 0, 0.596)
   ;
-}
+} */
 
-.Item-theme-0 {
+/* .Item-theme-0 {
   box-shadow:
     inset 0px 0px 50px rgba(255, 255, 255, 0.863),
     inset 0px 0px 5px rgb(187, 203, 238),
@@ -134,4 +142,4 @@
     inset 0px 0px 10px rgb(187, 203, 238),
     0px 0px 50px rgba(255, 255, 255, 0.541)
   ;
-}
+} */
