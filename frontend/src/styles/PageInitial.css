@@ -33,7 +33,7 @@
 }
 
 .Hr-thame-0, .Hr-thame-1 {
-  margin-top: 10vmin;
+  margin: 10vmin 0;
   height: 1px;
   width: 60%;
   background-color: black;

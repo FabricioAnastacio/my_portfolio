@@ -11,19 +11,25 @@ export default function PageDescription({ description, modeThame }) {
         { resume }
       </p>
       <div className="ScrollSecundary">
-        <div>
-          <img src="https://superti360.com.br/wp-content/uploads/2025/02/0-destaque-linguagens-de-programacao-2019.jpg" alt="test" className="ImgScroll" />
+        <div className="Rail">
+          <div className="ImgScroll">
+            <h1>Desenvolvedor FullStack</h1>
+            <div className="Image-Scroll" />
+          </div>
         </div>
         <ul>
           <li>
+            <hr />
             <h2>Frontend</h2>
             <p>{ frontend }</p>
           </li>
           <li>
+            <hr />
             <h2>Backend</h2>
             <p>{ backend }</p>
           </li>
           <li>
+            <hr />
             <h2>Ciência da Computação</h2>
             <p>{ cs }</p>
           </li>
