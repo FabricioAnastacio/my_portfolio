@@ -16,7 +16,7 @@
 
 .Content-description {
   text-align: start;
-  padding: 15% 25%;
+  padding: 12% 25%;
   margin: 0;
   font-size: 19px;
   font-weight: 600;
@@ -44,8 +44,7 @@
 }
 
 .ImgScroll {
-  margin-top: 0px;
-  top: 9vw;
+  top: 5vw;
   position: sticky;
   .Image-Scroll {
     width: 600px;

@@ -9,7 +9,11 @@ function Projects(props) {
 
   return (
     <div className="List-projects">
-      <ul>
+      <div className="Projects-title">
+        <h1>Projetos em destaque</h1>
+        <hr className="Emphasis-title" />
+      </div>
+      <ul className="Projects">
         {
           dataList.map((item, i) => (
             <li key={ i } className={ `Project-${modeThame}` }>
@@ -21,16 +25,18 @@ function Projects(props) {
               >
                 .
               </a>
-              <p>{ item.description }</p>
-              <ul>
-                {
-                  item.technologies.map((tec, index) => (
-                    <li key={ index }>
-                      { tec }
-                    </li>
-                  ))
-                }
-              </ul>
+              <div className="Project-description">
+                <h3>{ item.description }</h3>
+                <ul className="Project-technologies">
+                  {
+                    item.technologies.map((tec, index) => (
+                      <li key={ index }>
+                        { tec }
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
             </li>
           ))
         }
