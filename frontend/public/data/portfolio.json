@@ -6,22 +6,26 @@
     {
       "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
       "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars. Com varios filtros e de facil entendimento.",
-      "technologies": [ "JavaScript", "React", "CSS3", "Jest" ]
+      "technologies": [ "JavaScript", "React", "CSS3", "Jest" ],
+      "tags": "#frontend"
     },
     {
       "link": "https://github.com/FabricioAnastacio/projeto-TrybeFutebolClube",
       "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️.",
-      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ]
+      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ],
+      "tags": "#backend"
     },
     {
       "link": "https://github.com/FabricioAnastacio/projeto-trybe-hotel-csharp",
       "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel.",
-      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ]
+      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ],
+      "tags": "#backend"
     },
     {
       "link": "https://github.com/FabricioAnastacio/trybe-project-zoo-functions",
       "description": "Neste projeto fiquei responsável por desenvolver funções que buscam informações sobre os animais em um zoológico, e também buscar dados sobre as pessoas que colaboram com a manutenção e cuidado do mesmo. Alem de construir testes unitarios para testar cada função. 🧑‍🌾",
-      "technologies": [ "JavaScript", "Jest" ]
+      "technologies": [ "JavaScript", "Jest" ],
+      "tags": "#testes"
     }
   ],
   "description": {

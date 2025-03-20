@@ -17,14 +17,19 @@ function Projects(props) {
         {
           dataList.map((item, i) => (
             <li key={ i } className={ `Project-${modeThame}` }>
-              <a
-                href={ item.link }
-                target="_blank"
-                rel="noreferrer"
+              <div
+                className="Project-Bunner"
                 style={ { backgroundImage: `url(${item.img})` } }
               >
-                .
-              </a>
+                <a
+                  href={ item.link }
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Saiba mais
+                  <p>Github</p>
+                </a>
+              </div>
               <div className="Project-description">
                 <h3>{ item.description }</h3>
                 <ul className="Project-technologies">
@@ -37,6 +42,7 @@ function Projects(props) {
                   }
                 </ul>
               </div>
+              <h3 className="Project-Tags">{ item.tags }</h3>
             </li>
           ))
         }
