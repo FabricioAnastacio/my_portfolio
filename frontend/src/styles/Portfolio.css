@@ -1,0 +1,22 @@
+.Portfolio-home-1, .Portfolio-home-0 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: all .5s linear;
+}
+
+.Portfolio-home-1 {
+  background-color: white;
+  color: black;
+  a {
+    color: black;
+  }
+}
+
+.Portfolio-home-0 {
+  background-color: #121216;
+  color: white;
+  a {
+    color: white;
+  }
+}
