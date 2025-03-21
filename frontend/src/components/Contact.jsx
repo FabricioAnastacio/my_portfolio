@@ -10,7 +10,7 @@ class Contact extends React.Component {
       name: '',
       message: '',
       isDisable: false,
-      isSuccess: false,
+      isSuccess: true,
       isError: false,
     };
   }
@@ -61,33 +61,37 @@ class Contact extends React.Component {
 
   sendFormSuccess = () => {
     return (
-      <section className="Contact-Success">
-        <h1>Menssagen enviada!</h1>
-        <button
-          className="Btm-Success"
-          onClick={ () => this.setState({ isSuccess: false }) }
-        >
-          Nova menssagem
-        </button>
+      <section className="Contact">
+        <section className="Contact-Success">
+          <h1>Menssagen enviada!</h1>
+          <button
+            className="Btm-Success"
+            onClick={ () => this.setState({ isSuccess: false }) }
+          >
+            Nova menssagem
+          </button>
+        </section>
       </section>
     );
   };
 
   sendFormError = () => {
     return (
-      <section className="Contact-Error">
-        <h1>
-          Aconteceu um erro.
-          <br />
-          Preencha os campos e
-          tente novamente!
-        </h1>
-        <button
-          className="Btm-Success"
-          onClick={ () => this.setState({ isError: false }) }
-        >
-          Reenviar
-        </button>
+      <section className="Contact">
+        <section className="Contact-Error">
+          <h1>
+            Aconteceu um erro.
+            <br />
+            Preencha os campos e
+            tente novamente!
+          </h1>
+          <button
+            className="Btm-Success"
+            onClick={ () => this.setState({ isError: false }) }
+          >
+            Retornar
+          </button>
+        </section>
       </section>
     );
   };

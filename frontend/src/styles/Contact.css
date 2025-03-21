@@ -1,14 +1,23 @@
 .Contact {
-  padding: 8vmin 30px;
   display: grid;
   place-items: center;
+  align-items: center;
+  background-color: rgba(145, 184, 127, 0.733);
+  padding: 40px 50px;
 }
 
 .Contact-Success, .Contact-Error {
-  padding: 35vmin 30px;
   display: grid;
-  place-items: center;
+  align-items: center;
   text-align: center;
+  padding: 180px 40px;
+  margin-bottom: 40px;
+  width: 400px;
+  border: 1px solid green;
+  h1 {
+    font-size: 30px;
+    margin: 90px 0;
+  }
 }
 
 .Contact-Error {
@@ -18,32 +27,48 @@
 form {
   display: grid;
   place-items: start;
-  background-color: rgba(243, 243, 243, 0.733);
   padding: 50px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.308);
+  width: 400px;
+  margin-bottom: 40px;
+  border: 1px solid green;
+  h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
 }
 
 label {
   display: grid;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 
 input {
-  padding: 5px 10px;
+  padding: 10px 20px 10px 10px;
   width: 100%;
+  border: 0;
+  border-radius: 1vh;
+  font-size: 20px;
+}
+
+input {
+  border: 0;
 }
 
 textarea {
   padding: 15px 10px;
-  width: 40vmin;
-  height: 15vmin;
+  width: 400px;
+  font-size: 20px;
+  height: 20vmin;
+  border-radius: 1vh;
+  border: 0;
 }
 
 .Buttons {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 
 .Button-send, .Btm-Success {

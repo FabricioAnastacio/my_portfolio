@@ -14,6 +14,7 @@ class ContactForm extends React.Component {
     } = this.props;
     return (
       <form>
+        <h1>Vamos conversar? Mande um e-mail</h1>
         <label>
           Seu e-mail:
           <input
