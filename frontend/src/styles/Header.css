@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  padding: 5px 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.Icon-header {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  h2 {
+    font-size: 25px;
+  }
+  cursor: pointer;
+}
+
+.Icon-profile {
+  margin-right: 10px;
+  animation: App-logo-spin infinite linear;
+}
+
+.Nav-superior {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Links-Header {
+  margin-top: 15px;
+  display: flex;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 10px;
+  height: 5px;
+  align-items: end;
+  transition: background 0.2s;
+}
+
+.Button-CV-Header {
+  button {
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px .5px gold;
+    color: gold;
+  }
+  button:active {
+    transform: scale(1);
+    box-shadow: 0px 0px 15px .5px rgba(255, 217, 0, 0);
+    color: gold;
+  }
+}
+
+.Nav-superior a:hover {
+  transform: scale(1.05);
+  font-weight: 800;
+  border-radius: 5vh;
+  background-color: gold;
+}
+
+.Nav-superior a:active {
+  transform: scale(0.99);
+}
+
+header button {
+  background-image: url('../imgs/icons/icons8-lua.png');
+  background-position: center;
+  background-size: 60px;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+header button:hover {
+  transform: scale(1.1);
+}
+
+.Button-0 {
+  background-image: url('../imgs/icons/icons8-sol.png');
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

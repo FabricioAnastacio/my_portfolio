@@ -1,0 +1,145 @@
+.Contact-footer-0, .Contact-footer-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0 0 0;
+}
+
+.Contact-footer-0 {
+  background-color: rgba(228, 228, 228, 0.397); 
+  color: black;
+  input {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  textarea {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  textarea:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  a {
+    color: black;
+  }
+  .Autor {
+    background-color: black;
+    color: white;
+  }
+}
+
+.Nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  h1 {
+    display: flex;
+    align-items: end;
+    font-size: 48px;
+    background-color: gold;
+    height: 10px;
+    border-radius: 0 0 2vi 2vi;
+  }
+  a {
+    color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px 30px 0 0;
+    font-size: 20px;
+    font-weight: 800;
+    height: 6px;
+  }
+}
+
+.Nav-footer a:hover {
+  color: black;
+  transform: scale(1.05);
+  font-weight: 800;
+  border-radius: 5vh;
+  background-color: gold;
+}
+
+footer hr {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin: 100px 0;
+}
+
+.Footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding-bottom: 10vmin;
+}
+
+.Contact-links {
+  display: grid;
+  place-items: start;
+  width: 200px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.Button-CV {
+  margin-top: 30px;
+  button {
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px .5px gold;
+    color: gold;
+  }
+  button:active {
+    transform: scale(1);
+    box-shadow: 0px 0px 15px .5px rgba(255, 217, 0, 0);
+    color: gold;
+  }
+}
+
+.Button-Email {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 0;
+  cursor: copy;
+  border: 0;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.685);
+  img {
+    width: 30px;
+  }
+}
+
+.Autor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: default;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(206, 206, 206);
+  p {
+    margin-left: 10px;
+  }
+}

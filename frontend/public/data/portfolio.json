@@ -1,0 +1,40 @@
+{
+  "myname": "Fabrício A. Rodrigues",
+  "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
+  "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
+  "listProjects": [
+    {
+      "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
+      "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars. Com varios filtros e de facil entendimento.",
+      "technologies": [ "JavaScript", "React", "CSS3", "Jest" ],
+      "tags": "#frontend"
+    },
+    {
+      "link": "https://github.com/FabricioAnastacio/projeto-TrybeFutebolClube",
+      "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️.",
+      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ],
+      "tags": "#backend"
+    },
+    {
+      "link": "https://github.com/FabricioAnastacio/projeto-trybe-hotel-csharp",
+      "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel.",
+      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ],
+      "tags": "#backend"
+    },
+    {
+      "link": "https://github.com/FabricioAnastacio/trybe-project-zoo-functions",
+      "description": "Neste projeto fiquei responsável por desenvolver funções que buscam informações sobre os animais em um zoológico, e também buscar dados sobre as pessoas que colaboram com a manutenção e cuidado do mesmo. Alem de construir testes unitarios para testar cada função. 🧑‍🌾",
+      "technologies": [ "JavaScript", "Jest" ],
+      "tags": "#testes"
+    }
+  ],
+  "description": {
+    "resume": "Desenvolvedor fullstack com sólida experiência em diversas linguagens e tecnologias, incluindo C#, Python, JavaScript e TypeScript. Minha atuação abrange tanto o front-end quanto o back-end, utilizando ferramentas e frameworks modernos como React, React Native, Redux e React Router para desenvolvimento de interfaces dinâmicas e de alta performance. No back-end, tenho experiência com Node.js, Express.js e a plataforma .NET, incluindo ASP.NET, o que me permite criar aplicações robustas e escaláveis.",
+    "resumeThow": "Gerenciamento de banco de dados com MySQL, SQLite e SQL Server, utilizando Sequelize para facilitar a interação com bases de dados relacionais. Também possuo experiência com autenticação segura usando JWT e conteinerização de aplicações com Docker, o que me proporciona flexibilidade e eficiência na entrega de projetos.",
+    "project": "Mais de 35 projetos concluidos. Dentre as linguagens conhecidas se destaca em TypeScript e C#, linguagens fortemente tipadas e robustas muito utilizadas.",
+    "projectThow": "Estou sempre em busca de aprimorar minhas habilidades e aplicar as melhores práticas de desenvolvimento para entregar soluções que agreguem valor ao cliente.",
+    "frontend": "Durante este período, aprofundou-se e aplicou de forma prática conteúdos como: React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API e React Hooks.",
+    "backend": "Durante este período, em uma carga horária de 380 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Docker, MySQL, Node.js & Express, Testes Unitários e de Integração com Mocha, Chai e Sinon, TypeScript, Arquitetura em Camadas, REST, JWT, ORM com Sequelize, Deployment, POO e princípios SOLID",
+    "cs": "Durante este período, em uma carga horária de 120 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Complexidade de Algoritmos, Algoritmos de Ordenação e Busca, Recursividade & Estratégias para Resolução de Problemas, Estruturas de Dados, OOP e Python"
+  }
+}

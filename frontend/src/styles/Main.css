@@ -1,0 +1,161 @@
+.Content-loading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 59vmin;
+  font-family: "SUSE", sans-serif;
+}
+
+#Page-thow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Content-description {
+  text-align: start;
+  padding: 12% 25%;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+  line-height: 1.6em;
+}
+
+.ScrollSecundary-1 {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 250px;
+  background-color: rgb(228, 228, 228);
+}
+
+.Rail {
+  bottom: 150px;
+  position: relative;
+  height: 1500px;
+}
+
+.ImgScroll {
+  top: 5vw;
+  position: sticky;
+  .Image-Scroll {
+    width: 600px;
+    height: 350px;
+    box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
+    animation: scrollPage .5s step-end;
+    animation-timeline: view();
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    background-color: gold;
+    width: 30px;
+    border-radius: 5px;
+  }
+}
+
+.ScrollSecundary-0 {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 250px;
+  background-color: #121216;
+  .Image-Scroll {
+    box-shadow: 0px 0px 30px 4px rgb(34, 34, 34);
+  }
+}
+
+#Page-thow ul {
+  width: 70vh;
+  z-index: 0;
+  li {
+    list-style: none;
+    padding: 5px;
+    height: auto;
+    margin-bottom: 20vmin;
+    transition: .2s linear;
+    font-size: 48px;
+    p {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0px;
+      word-spacing: 5px;
+      line-height: 1.6em;
+    }
+    div {
+      text-align: center;
+      height: 100%;
+    }
+    hr {
+      border: 0;
+      background-color: rgba(128, 128, 128, 0.493);
+      height: 1px;
+    }
+  }
+}
+
+@keyframes scrollPage {
+  100%{
+    background-image: url("../imgs/code_tybe_hotel.png");
+  }
+  60% {
+    background-image: url("../imgs/code_tybe_hotel.png");
+  }
+  40% {
+    background-image: url("../imgs/mapWorkbench-Exemple.png");
+  }
+  35% {
+    background-image: url("../imgs/frontend.png");
+  }
+  0% {
+    background-image: url("../imgs/frontend.png");
+  } 
+}
+
+/* #Page-thow ul li:hover {
+  transform: scale(1.1);
+} */
+
+/* .Item-theme-1 {
+  box-shadow: 
+    inset 0px 0px 20px rgba(0, 0, 0, 0.596),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.007),
+    0px 0px 10px rgba(0, 0, 0, 0.596)
+  ;
+}
+  
+.Item-theme-1:hover {
+  box-shadow:
+    inset 0px 0px 15px rgba(0, 0, 0, 0.596),
+    inset 0px 0px 5px rgba(0, 0, 0, 0.596),
+    0px 0px 5px rgba(0, 0, 0, 0.596)
+  ;
+} */
+
+/* .Item-theme-0 {
+  box-shadow:
+    inset 0px 0px 50px rgba(255, 255, 255, 0.863),
+    inset 0px 0px 5px rgb(187, 203, 238),
+    0px 0px 20px rgba(255, 255, 255, 0.541)
+  ;
+}
+
+.Item-theme-0:hover {
+  box-shadow:
+    inset 0px 0px 55px rgb(255, 255, 255),
+    inset 0px 0px 10px rgb(187, 203, 238),
+    0px 0px 50px rgba(255, 255, 255, 0.541)
+  ;
+} */
