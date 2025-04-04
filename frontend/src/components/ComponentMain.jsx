@@ -5,7 +5,6 @@ import '../styles/Main.css';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
-import Contact from './Contact';
 import PageDescription from './PageDescription';
 import PageInitial from './PageInitial';
 
@@ -64,7 +63,6 @@ function Main() {
           { data.description.projectThow }
         </p>
       </section>
-      <Contact />
     </main>
   );
 }

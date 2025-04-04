@@ -14,11 +14,16 @@ class ContactForm extends React.Component {
     } = this.props;
     return (
       <form>
-        <h1>Vamos conversar? Mande um e-mail</h1>
+        <h1>
+          Vamos conversar?
+          <br />
+          Mande um e-mail:
+        </h1>
         <label>
           Seu e-mail:
           <input
             name="email"
+            placeholder="seu@email.com"
             value={ email }
             type="email"
             required
@@ -30,6 +35,7 @@ class ContactForm extends React.Component {
           Seu nome:
           <input
             name="name"
+            placeholder="Nome Pessoal"
             value={ name }
             type="text"
             required
@@ -40,6 +46,7 @@ class ContactForm extends React.Component {
         <label>
           Menssagem:
           <textarea
+            placeholder="Adicione sua menssagem"
             name="message"
             value={ message }
             type="text"

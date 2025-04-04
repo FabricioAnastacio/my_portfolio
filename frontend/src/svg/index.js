@@ -12,7 +12,7 @@ import csharp from './csharp.svg';
 import linkedin from './socialMidia/linkedin.svg';
 import github from './socialMidia/github.svg';
 import instagram from './socialMidia/instagram.svg';
-import email from './socialMidia/e-mail.png';
+import email from './socialMidia/email.svg';
 
 export {
   js,

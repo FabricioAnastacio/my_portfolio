@@ -3,47 +3,92 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(109, 109, 109);
+  padding: 100px 0 0 0;
+  background-color: rgb(228, 228, 228);
 }
 
 .Nav-footer {
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 60%;
+  h1 {
+    display: flex;
+    align-items: end;
+    font-size: 48px;
+    background-color: gold;
+    height: 10px;
+    border-radius: 0 0 2vi 2vi;
+  }
   a {
+    color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    align-items: end;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 30px 30px 0 0;
+    font-size: 20px;
+    font-weight: 800;
+    height: 6px;
   }
 }
 
+.Nav-footer a:hover {
+  color: black;
+  transform: scale(1.05);
+  font-weight: 800;
+  border-radius: 5vh;
+  background-color: gold;
+}
+
 footer hr {
-  width: 60%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin: 100px 0;
 }
 
 .Footer-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  width: 60%;
-  a {
-    margin: 0 10px;
+  justify-content: space-evenly;
+  width: 70%;
+  padding-bottom: 10vmin;
+}
+
+.Contact-links {
+  display: grid;
+  place-items: start;
+  width: 200px;
+  button {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.685);
+    img {
+      width: 30px;
+    }
   }
-  
-  h2 {
-    margin-top: 20px;
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 2px;
   }
 }
 
 .Autor {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 10px;
   cursor: default;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(206, 206, 206);
   p {
     margin-left: 10px;
   }

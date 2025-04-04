@@ -10,7 +10,7 @@ class Contact extends React.Component {
       name: '',
       message: '',
       isDisable: false,
-      isSuccess: true,
+      isSuccess: false,
       isError: false,
     };
   }
@@ -24,7 +24,7 @@ class Contact extends React.Component {
 
   sendForm = async (event) => {
     event.preventDefault();
-    const { message, name } = this.state;
+    const { message, name, email } = this.state;
     this.setState({ isDisable: true });
     try {
       if (name === '') throw new Error();
@@ -37,7 +37,7 @@ class Contact extends React.Component {
         },
         body: JSON.stringify({
           name,
-          message,
+          message: `Menssagem: ${message}. (email: ${email})`,
         }),
       });
 
