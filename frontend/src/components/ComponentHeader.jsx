@@ -19,6 +19,9 @@ function Header() {
     console.log(valueSecund);
   };
 
+  const logo = modeThame === 0
+    ? arrayImgs[arrayImgs.length - 1] : arrayImgs[arrayImgs.length - 2];
+
   return (
     <header id="Header">
       <div
@@ -29,7 +32,7 @@ function Header() {
         tabIndex="0"
       >
         <img
-          src={ arrayImgs[arrayImgs.length - 1] }
+          src={ logo }
           alt="React"
           style={ { animationDuration: `${valueSecund}s` } }
           className="Icon-profile"

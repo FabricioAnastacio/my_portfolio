@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useContext } from 'react';
 import '../styles/Footer.css';
 import {
   linkedin,
@@ -7,8 +7,10 @@ import {
   email,
 } from '../svg';
 import Contact from './Contact';
+import AppContext from '../context/AppContext';
 
 function Footer() {
+  const { modeThame } = useContext(AppContext);
   const Email = 'fabricio12nastacio@gmail.com';
 
   const copyToClipboard = useCallback(async (text) => {
@@ -25,7 +27,7 @@ function Footer() {
     }
   }, []);
   return (
-    <footer id="Contact-footer">
+    <footer id="Contact-footer" className={ `Contact-footer-${modeThame}` }>
       <nav className="Nav-footer">
         <h1>CONTATO</h1>
         <a href="#Header">Voltar ao topo</a>

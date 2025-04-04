@@ -10,7 +10,7 @@ export default function PageDescription({ description, modeThame }) {
       <p className="Content-description">
         { resume }
       </p>
-      <div className="ScrollSecundary">
+      <div className={ `ScrollSecundary-${modeThame}` }>
         <div className="Rail">
           <div className="ImgScroll">
             <h1>Desenvolvedor FullStack</h1>

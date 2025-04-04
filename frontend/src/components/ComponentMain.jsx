@@ -1,7 +1,5 @@
 import { useContext, useEffect } from 'react';
 import '../styles/Main.css';
-// import backendIcon from '../imgs/icons/icons8-backend.png';
-// import frontendIcon from '../imgs/icons/icons8-front-end.png';
 import Projects from './Projects';
 import AppContext from '../context/AppContext';
 import FetchJson from '../hooks/fetchJson';
