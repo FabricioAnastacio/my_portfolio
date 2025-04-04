@@ -1,6 +1,6 @@
 import '../styles/LoadingPage.css';
 import { useNavigate } from 'react-router-dom';
-import rasengam from '../imgs/pngwing1.png';
+import arrayImgs from '../imgs/importImgs';
 import CountDown from '../hooks/countDownII';
 
 const num = 3;
@@ -13,7 +13,11 @@ function ComponentLoading() {
   return (
     <div className="Loading">
       <header className="Loading-header">
-        <img src={ rasengam } alt="rasengam" className="Loading-logo" />
+        <img
+          src={ arrayImgs[arrayImgs.length - 1] }
+          alt="Logo"
+          className="Loading-logo"
+        />
         <p>{`Loading... ${second}`}</p>
       </header>
     </div>

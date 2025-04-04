@@ -1,8 +1,11 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import AppContext from '../context/AppContext';
+import arrayImgs from '../imgs/importImgs';
 import '../styles/Header.css';
 
 function Header() {
+  const number = 5;
+  const [valueSecund, setSecund] = useState(number);
   const { setThame, modeThame } = useContext(AppContext);
 
   const handleClick = () => {
@@ -10,8 +13,29 @@ function Header() {
     else setThame(1);
   };
 
+  const handleLogo = () => {
+    setSecund(valueSecund - 1);
+    if (valueSecund === 1) setSecund(number);
+    console.log(valueSecund);
+  };
+
   return (
     <header id="Header">
+      <div
+        className="Icon-header"
+        onClick={ handleLogo }
+        role="button"
+        onKeyPress={ 0 }
+        tabIndex="0"
+      >
+        <img
+          src={ arrayImgs[arrayImgs.length - 1] }
+          alt="React"
+          style={ { animationDuration: `${valueSecund}s` } }
+          className="Icon-profile"
+        />
+        <h2>Dev Jr.</h2>
+      </div>
       <nav className="Nav-superior">
         <a href="#Contact-footer">Contact</a>
         <a href="#Projects">Projects</a>

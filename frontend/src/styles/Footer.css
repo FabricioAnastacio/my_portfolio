@@ -64,7 +64,7 @@ footer hr {
     align-items: center;
     margin: 2px;
     padding: 0;
-    cursor: pointer;
+    cursor: copy;
     border: 0;
     background-color: transparent;
     color: rgba(0, 0, 0, 0.685);

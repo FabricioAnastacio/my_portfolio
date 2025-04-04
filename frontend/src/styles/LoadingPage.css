@@ -3,25 +3,24 @@
 }
 
 .Loading-logo {
-  height: 30vmin;
+  height: 55px;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .Loading-logo {
-    animation: App-logo-spin infinite 0.1s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .Loading-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 @keyframes App-logo-spin {

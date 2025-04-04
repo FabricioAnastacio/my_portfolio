@@ -15,7 +15,7 @@ function Footer() {
     const customAlert = (txt) => alert(txt);
     try {
       await navigator.clipboard.writeText(text);
-      customAlert('Email copiado para area de tranferencia');
+      customAlert('Email copiado para area de transferência');
     } catch (e) {
       customAlert('Email não copiado, verifique o erro e o email no console');
       console.log({

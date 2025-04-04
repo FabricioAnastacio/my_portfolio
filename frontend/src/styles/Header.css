@@ -7,9 +7,24 @@ header {
   width: 100%;
   padding: 5px 0%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
+}
+
+.Icon-header {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  h2 {
+    font-size: 25px;
+  }
+  cursor: pointer;
+}
+
+.Icon-profile {
+  margin-right: 10px;
+  animation: App-logo-spin infinite linear;
 }
 
 .Nav-superior {
@@ -59,4 +74,13 @@ header button:hover {
 
 .Button-0 {
   background-image: url('../imgs/icons/icons8-sol.png');
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
