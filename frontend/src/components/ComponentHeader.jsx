@@ -40,9 +40,14 @@ function Header() {
         <h2>Dev Jr.</h2>
       </div>
       <nav className="Nav-superior">
-        <a href="#Contact-footer">Contact</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Description">Resume</a>
+        <a href="/CurriculoFabrício.pdf" download className="Button-CV-Header">
+          <button>
+            Baixar CV
+          </button>
+        </a>
+        <a className="Links-Header" href="#Contact-footer">Contact</a>
+        <a className="Links-Header" href="#Projects">Projects</a>
+        <a className="Links-Header" href="#Description">Resume</a>
         <button
           className={ `Button-${modeThame}` }
           onClick={ handleClick }

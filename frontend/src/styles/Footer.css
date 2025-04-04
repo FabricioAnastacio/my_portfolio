@@ -84,24 +84,49 @@ footer hr {
   display: grid;
   place-items: start;
   width: 200px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.Button-CV {
+  margin-top: 30px;
   button {
-    display: flex;
-    align-items: center;
-    margin: 2px;
-    padding: 0;
-    cursor: copy;
-    border: 0;
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.685);
-    img {
-      width: 30px;
-    }
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
   }
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin: 2px;
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px .5px gold;
+    color: gold;
+  }
+  button:active {
+    transform: scale(1);
+    box-shadow: 0px 0px 15px .5px rgba(255, 217, 0, 0);
+    color: gold;
+  }
+}
+
+.Button-Email {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 0;
+  cursor: copy;
+  border: 0;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.685);
+  img {
+    width: 30px;
   }
 }
 

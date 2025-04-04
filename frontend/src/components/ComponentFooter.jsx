@@ -36,21 +36,26 @@ function Footer() {
         <Contact />
         <hr />
         <section className="Contact-links">
-          <button onClick={ () => copyToClipboard(Email) }>
+          <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
             <img src={ email } alt="E-mail" />
             E-mail
           </button>
-          <a href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
+          <a className="links" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
             <img src={ github } alt="Github Link" />
             Github
           </a>
-          <a href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
+          <a className="links" href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
             <img src={ linkedin } alt="Linkedin Link" />
             Linkedin
           </a>
-          <a href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
+          <a className="links" href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
             <img src={ instagram } alt="Instagram Link" />
             Instagram
+          </a>
+          <a href="/CurriculoFabrício.pdf" download className="Button-CV">
+            <button>
+              Baixar CV
+            </button>
           </a>
         </section>
       </div>
