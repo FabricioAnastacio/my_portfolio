@@ -54,6 +54,7 @@
     animation-timeline: view();
     background-size: cover;
     background-position: center;
+    background-image: url("../imgs/frontend.png");
   }
   h1 {
     font-size: 48px;
@@ -119,9 +120,6 @@
   35% {
     background-image: url("../imgs/frontend.png");
   }
-  0% {
-    background-image: url("../imgs/frontend.png");
-  } 
 }
 
 /* #Page-thow ul li:hover {
