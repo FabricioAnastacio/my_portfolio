@@ -46,16 +46,6 @@
 .ImgScroll {
   top: 5vw;
   position: sticky;
-  .Image-Scroll {
-    width: 600px;
-    height: 350px;
-    box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
-    animation: scrollPage .5s step-end;
-    animation-timeline: view();
-    background-size: cover;
-    background-position: center;
-    background-image: url("../imgs/frontend.png");
-  }
   h1 {
     font-size: 48px;
     margin-bottom: 50px;
@@ -64,6 +54,17 @@
     width: 30px;
     border-radius: 5px;
   }
+}
+
+.Image-Scroll {
+  width: 600px;
+  height: 350px;
+  box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../imgs/frontend.png");
+  animation: scrollPage .5s step-end;
+  animation-timeline: view();
 }
 
 .ScrollSecundary-0 {
@@ -121,39 +122,3 @@
     background-image: url("../imgs/frontend.png");
   }
 }
-
-/* #Page-thow ul li:hover {
-  transform: scale(1.1);
-} */
-
-/* .Item-theme-1 {
-  box-shadow: 
-    inset 0px 0px 20px rgba(0, 0, 0, 0.596),
-    inset 0px 0px 10px rgba(0, 0, 0, 0.007),
-    0px 0px 10px rgba(0, 0, 0, 0.596)
-  ;
-}
-  
-.Item-theme-1:hover {
-  box-shadow:
-    inset 0px 0px 15px rgba(0, 0, 0, 0.596),
-    inset 0px 0px 5px rgba(0, 0, 0, 0.596),
-    0px 0px 5px rgba(0, 0, 0, 0.596)
-  ;
-} */
-
-/* .Item-theme-0 {
-  box-shadow:
-    inset 0px 0px 50px rgba(255, 255, 255, 0.863),
-    inset 0px 0px 5px rgb(187, 203, 238),
-    0px 0px 20px rgba(255, 255, 255, 0.541)
-  ;
-}
-
-.Item-theme-0:hover {
-  box-shadow:
-    inset 0px 0px 55px rgb(255, 255, 255),
-    inset 0px 0px 10px rgb(187, 203, 238),
-    0px 0px 50px rgba(255, 255, 255, 0.541)
-  ;
-} */
