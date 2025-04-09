@@ -90,6 +90,21 @@ footer hr {
   align-items: center;
   text-decoration: none;
   margin: 2px;
+  transition: .5s;
+}
+
+.links:hover {
+  text-shadow: 2px 0px 2px gold;
+  img {
+    transform: scale(1.1);
+    background-color: gold;
+    border-radius: 5vh;
+    box-shadow: 0 0px 10px 4px gold;
+  }
+}
+
+.links:active {
+  transform: scale(1);
 }
 
 .Button-CV {
@@ -125,8 +140,22 @@ footer hr {
   border: 0;
   background-color: transparent;
   color: rgba(0, 0, 0, 0.685);
+  transition: .5s;
+  font-family: 'SUSE';
+  font-weight: 600;
+  font-size: 16px;
   img {
     width: 30px;
+  }
+}
+
+.Button-Email:hover {
+  text-shadow: 2px 0px 2px gold;
+  img {
+    transform: scale(1.1);
+    background-color: gold;
+    border-radius: 5vh;
+    box-shadow: 0 0px 10px 4px gold;
   }
 }
 
