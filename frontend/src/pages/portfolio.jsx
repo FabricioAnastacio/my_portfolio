@@ -8,15 +8,15 @@ import Footer from '../components/ComponentFooter';
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
   const { innerWidth: width } = window;
-  const maxWidth = 920;  
-  
+  const maxWidth = 920;
+
   const desktopAPP = (
-      <div className={ `Portfolio-home-${modeThame}` }>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    );
+    <div className={ `Portfolio-home-${modeThame}` }>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
 
   const mobileAPP = (
     <h1
