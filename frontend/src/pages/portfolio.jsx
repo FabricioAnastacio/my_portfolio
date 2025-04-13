@@ -29,7 +29,9 @@ function Portfolio() {
         color: 'red',
       } }
     >
-      Desculpe, a versão Mobile esta em produção!
+      Desculpe
+      <br />
+      A versão Mobile esta em produção!
     </h1>
   );
 
