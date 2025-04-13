@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import AppContext from '../context/AppContext';
-import arrayImgs from '../imgs/importImgs';
+import AppContext from '../../context/AppContext';
+import arrayImgs from '../../imgs/importImgs';
 import '../styles/Header.css';
 
 function Header() {

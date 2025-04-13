@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Carousel from './Carousel';
-import fotoF from '../imgs/fabricio_fot.png';
+import fotoF from '../../imgs/fabricio_fot.png';
 import '../styles/PageInitial.css';
 
 function PageInitial(props) {

@@ -19,7 +19,5 @@ code {
 }
 
 @media screen and (max-width: 920px) {
-  #root {
-    opacity: 0;
-  }
+  
 }

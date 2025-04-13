@@ -1,8 +1,8 @@
 import { useContext, useEffect } from 'react';
 import '../styles/Main.css';
 import Projects from './Projects';
-import AppContext from '../context/AppContext';
-import FetchJson from '../hooks/fetchJson';
+import AppContext from '../../context/AppContext';
+import FetchJson from '../../hooks/fetchJson';
 import PageDescription from './PageDescription';
 import PageInitial from './PageInitial';
 

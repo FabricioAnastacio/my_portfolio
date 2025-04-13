@@ -1,20 +1,26 @@
 import { useContext } from 'react';
-import '../styles/Portfolio.css';
-import Main from '../components/ComponentMain';
-import Header from '../components/ComponentHeader';
+import '../style/Portfolio.css';
+import Main from '../desktop/components/ComponentMain';
+import Header from '../desktop/components/ComponentHeader';
 import AppContext from '../context/AppContext';
-import Footer from '../components/ComponentFooter';
+import Footer from '../desktop/components/ComponentFooter';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
+  const { innerWidth: width } = window;
+  const maxWidth = 920;
 
-  return (
+  const desktopAPP = (
     <div className={ `Portfolio-home-${modeThame}` }>
       <Header />
       <Main />
       <Footer />
     </div>
   );
+
+  const mobileAPP = (<h1>Mobile!</h1>);
+
+  return width > maxWidth ? desktopAPP : mobileAPP;
 }
 
 export default Portfolio;

@@ -81,7 +81,7 @@ header {
 }
 
 header button {
-  background-image: url('../imgs/icons/icons8-lua.png');
+  background-image: url('../../imgs/icons/icons8-lua.png');
   background-position: center;
   background-size: 60px;
   padding: 20px;
@@ -97,7 +97,7 @@ header button:hover {
 }
 
 .Button-0 {
-  background-image: url('../imgs/icons/icons8-sol.png');
+  background-image: url('../../imgs/icons/icons8-sol.png');
 }
 
 @keyframes App-logo-spin {

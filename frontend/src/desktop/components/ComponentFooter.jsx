@@ -5,9 +5,9 @@ import {
   github,
   instagram,
   email,
-} from '../svg';
+} from '../../svg';
 import Contact from './Contact';
-import AppContext from '../context/AppContext';
+import AppContext from '../../context/AppContext';
 
 function Footer() {
   const { modeThame } = useContext(AppContext);

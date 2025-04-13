@@ -62,7 +62,7 @@
   box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
   background-size: cover;
   background-position: center;
-  background-image: url("../imgs/frontend.png");
+  background-image: url("../../imgs/frontend.png");
   animation: scrollPage .5s step-end;
   animation-timeline: view();
 }
@@ -110,15 +110,15 @@
 
 @keyframes scrollPage {
   100%{
-    background-image: url("../imgs/code_tybe_hotel.png");
+    background-image: url("../../imgs/code_tybe_hotel.png");
   }
   60% {
-    background-image: url("../imgs/code_tybe_hotel.png");
+    background-image: url("../../imgs/code_tybe_hotel.png");
   }
   40% {
-    background-image: url("../imgs/mapWorkbench-Exemple.png");
+    background-image: url("../../imgs/mapWorkbench-Exemple.png");
   }
   35% {
-    background-image: url("../imgs/frontend.png");
+    background-image: url("../../imgs/frontend.png");
   }
 }
