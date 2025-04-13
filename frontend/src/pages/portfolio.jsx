@@ -7,14 +7,33 @@ import Footer from '../components/ComponentFooter';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
+  const { innerWidth: width } = window;
+  const maxWidth = 920;  
+  
+  const desktopAPP = (
+      <div className={ `Portfolio-home-${modeThame}` }>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    );
 
-  return (
-    <div className={ `Portfolio-home-${modeThame}` }>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+  const mobileAPP = (
+    <h1
+      style={ {
+        textAlign: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        color: 'red',
+      } }
+    >
+      Desculpe, a versão Mobile esta em produção!
+    </h1>
   );
+
+  return width > maxWidth ? desktopAPP : mobileAPP;
 }
 
 export default Portfolio;
