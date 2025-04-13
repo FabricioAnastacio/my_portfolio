@@ -18,7 +18,22 @@ function Portfolio() {
     </div>
   );
 
-  const mobileAPP = (<h1>Mobile!</h1>);
+  const mobileAPP = (
+    <h1
+      style={ {
+        textAlign: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        color: 'red',
+      } }
+    >
+      Desculpe
+      <br />
+      A versão Mobile esta em produção!
+    </h1>
+  );
 
   return width > maxWidth ? desktopAPP : mobileAPP;
 }
