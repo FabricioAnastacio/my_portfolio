@@ -5,6 +5,7 @@ import Header from '../desktop/components/ComponentHeader';
 import AppContext from '../context/AppContext';
 import Footer from '../desktop/components/ComponentFooter';
 import HeaderMobile from '../mobile/components/ComponentHeader';
+import FooterMobile from '../mobile/components/ComponentFooter';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
@@ -36,6 +37,7 @@ function Portfolio() {
         <br />
         A versão Mobile esta em produção!
       </h1>
+      <FooterMobile />
     </div>
   );
 

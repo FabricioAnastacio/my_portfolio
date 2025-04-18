@@ -1,12 +1,13 @@
 import { useCallback, useContext } from 'react';
 import '../styles/Footer.css';
+import '../styles/Contact.css';
 import {
   linkedin,
   github,
   instagram,
   email,
 } from '../../svg';
-import Contact from './Contact';
+import Contact from '../../services/Contact';
 import AppContext from '../../context/AppContext';
 
 function Footer() {
@@ -34,7 +35,7 @@ function Footer() {
       </nav>
       <div className="Footer-links">
         <Contact />
-        <hr />
+        <hr className="Line-Desktop" />
         <section className="Contact-links">
           <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
             <img src={ email } alt="E-mail" />

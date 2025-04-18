@@ -1,0 +1,63 @@
+.Footer-Mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Line-Mobile {
+  width: 100%;
+}
+
+.Nav-Footer-Mobile {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0 20px;
+  h1 {
+    background-color: gold;
+    display: flex;
+    align-items: end;
+    height: 10px;
+    border-radius: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+}
+
+.Contact-Mobile {
+  display: flex;
+  align-items: start;
+}
+
+.Links-Mobile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px 0;
+  img {
+    width: 35px;
+    margin: 0 10px;
+  }
+}
+
+.Autor-Mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  height: 100px;
+  padding: 0 50px;
+  background-color: black;
+  color: white;
+}
+
+.Button-Up {
+  margin-right: 20px;
+  img {
+    width: 30px;
+  }
+}
