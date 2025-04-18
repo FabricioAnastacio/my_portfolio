@@ -1,4 +1,3 @@
-import '../styles/Carousel.css';
 import {
   js,
   py,
@@ -11,7 +10,7 @@ import {
   reactSvg,
   mysqlSvg,
   csharp,
-} from '../../svg/index';
+} from '../svg/index';
 
 function Carousel() {
   return (

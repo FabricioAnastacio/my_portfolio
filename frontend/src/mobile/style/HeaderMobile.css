@@ -33,6 +33,7 @@
 
 .Img-Logo {
   width: 30px;
+  animation: App-logo-spin 6s infinite linear;
 }
 
 .Navegation-Header-Open {
@@ -91,5 +92,14 @@
     transform: scale(.9);
     box-shadow: 0px 0px 15px .5px gold;
     color: gold;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

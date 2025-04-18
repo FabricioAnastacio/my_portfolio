@@ -6,6 +6,7 @@ import AppContext from '../context/AppContext';
 import Footer from '../desktop/components/ComponentFooter';
 import HeaderMobile from '../mobile/components/ComponentHeader';
 import FooterMobile from '../mobile/components/ComponentFooter';
+import MainMobile from '../mobile/components/ComponentMain';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
@@ -23,20 +24,7 @@ function Portfolio() {
   const mobileAPP = (
     <div>
       <HeaderMobile />
-      <h1
-        style={ {
-          textAlign: 'center',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100vh',
-          color: 'red',
-        } }
-      >
-        Desculpe
-        <br />
-        A versão Mobile esta em produção!
-      </h1>
+      <MainMobile />
       <FooterMobile />
     </div>
   );
