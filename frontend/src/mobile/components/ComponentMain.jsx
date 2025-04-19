@@ -3,11 +3,11 @@ import fotoF from '../../imgs/fabricio_fot.png';
 import AppContext from '../../context/AppContext';
 import FetchJson from '../../hooks/fetchJson';
 import '../style/MainMobile.css';
-import '../style/CarouselMobile.css';
+import PageDescriptionMobile from './PageDescriptionMobile';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
-  const { data } = useContext(AppContext);
+  const { data, modeThame } = useContext(AppContext);
 
   useEffect(() => {
     refresh();
@@ -42,20 +42,26 @@ function MainMobile() {
   }
 
   return (
-    <section className="Content-First-Mobile">
-      <img
-        className="Picture-Mobile"
-        src={ fotoF }
-        alt="Foto de Fabricio"
+    <main>
+      <section className="Content-First-Mobile">
+        <img
+          className="Picture-Mobile"
+          src={ fotoF }
+          alt="Foto de Fabricio"
+        />
+        <h1>{ data.myname }</h1>
+        <h3>
+          Desenvolvedor
+          <br />
+          { refactorItems(data.stacks) }
+        </h3>
+        <p>{ refactorItems(data.languages) }</p>
+      </section>
+      <PageDescriptionMobile
+        modeThame={ modeThame }
+        description={ data.description }
       />
-      <h1>{ data.myname }</h1>
-      <h3>
-        Desenvolvedor
-        <br />
-        { refactorItems(data.stacks) }
-      </h3>
-      <p>{ refactorItems(data.languages) }</p>
-    </section>
+    </main>
   );
 }
 
