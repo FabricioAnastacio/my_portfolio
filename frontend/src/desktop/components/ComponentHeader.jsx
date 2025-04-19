@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import AppContext from '../context/AppContext';
-import arrayImgs from '../imgs/importImgs';
+import AppContext from '../../context/AppContext';
+import arrayImgs from '../../imgs/importImgs';
 import '../styles/Header.css';
 
 function Header() {
@@ -45,9 +45,9 @@ function Header() {
             Baixar CV
           </button>
         </a>
-        <a className="Links-Header" href="#Contact-footer">Contact</a>
-        <a className="Links-Header" href="#Projects">Projects</a>
-        <a className="Links-Header" href="#Description">Resume</a>
+        <a className="Links-Header" href="#Contact-footer">Contato</a>
+        <a className="Links-Header" href="#Projects">Projetos</a>
+        <a className="Links-Header" href="#Description">Resumo</a>
         <button
           className={ `Button-${modeThame}` }
           onClick={ handleClick }

@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Carousel from './Carousel';
-import fotoF from '../imgs/fabricio_fot.png';
+import Carousel from '../../services/Carousel';
+import fotoF from '../../imgs/fabricio_fot.png';
 import '../styles/PageInitial.css';
+import '../styles/Carousel.css';
 
 function PageInitial(props) {
   const { stacks, languages, name } = props;

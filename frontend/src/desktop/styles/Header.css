@@ -80,8 +80,8 @@ header {
   transform: scale(0.99);
 }
 
-header button {
-  background-image: url('../imgs/icons/icons8-lua.png');
+.Button-1 {
+  background-image: url('../../imgs/icons/icons8-lua.png');
   background-position: center;
   background-size: 60px;
   padding: 20px;
@@ -92,12 +92,20 @@ header button {
   transition: all .2s;
 }
 
-header button:hover {
+.Button-0:hover, .Button-1:hover {
   transform: scale(1.1);
 }
 
 .Button-0 {
-  background-image: url('../imgs/icons/icons8-sol.png');
+  background-image: url('../../imgs/icons/icons8-sol.png');
+  background-position: center;
+  background-size: 60px;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  cursor: pointer;
+  transition: all .2s;
 }
 
 @keyframes App-logo-spin {

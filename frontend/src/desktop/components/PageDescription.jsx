@@ -13,19 +13,19 @@ export default function PageDescription({ description, modeThame }) {
       <div className={ `ScrollSecundary-${modeThame}` }>
         <div className="Rail">
           <div className="ImgScroll">
-            <h1>Desenvolvedor FullStack</h1>
+            <h1>Desenvolvedor Full_Stack</h1>
             <div className="Image-Scroll" />
           </div>
         </div>
         <ul>
           <li>
             <hr />
-            <h2>Frontend</h2>
+            <h2>Front-end</h2>
             <p>{ frontend }</p>
           </li>
           <li>
             <hr />
-            <h2>Backend</h2>
+            <h2>Back-end</h2>
             <p>{ backend }</p>
           </li>
           <li>

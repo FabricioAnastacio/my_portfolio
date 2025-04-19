@@ -1,9 +1,12 @@
 import { useContext } from 'react';
-import '../styles/Portfolio.css';
-import Main from '../components/ComponentMain';
-import Header from '../components/ComponentHeader';
+import '../style/Portfolio.css';
+import Main from '../desktop/components/ComponentMain';
+import Header from '../desktop/components/ComponentHeader';
 import AppContext from '../context/AppContext';
-import Footer from '../components/ComponentFooter';
+import Footer from '../desktop/components/ComponentFooter';
+import HeaderMobile from '../mobile/components/ComponentHeader';
+import FooterMobile from '../mobile/components/ComponentFooter';
+import MainMobile from '../mobile/components/ComponentMain';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);
@@ -19,20 +22,11 @@ function Portfolio() {
   );
 
   const mobileAPP = (
-    <h1
-      style={ {
-        textAlign: 'center',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        color: 'red',
-      } }
-    >
-      Desculpe
-      <br />
-      A versão Mobile esta em produção!
-    </h1>
+    <div className={ `Portfolio-home-${modeThame}` }>
+      <HeaderMobile />
+      <MainMobile />
+      <FooterMobile />
+    </div>
   );
 
   return width > maxWidth ? desktopAPP : mobileAPP;

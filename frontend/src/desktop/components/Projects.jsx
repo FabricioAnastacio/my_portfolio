@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import '../styles/Projects.css';
 import { useContext } from 'react';
-import AppContext from '../context/AppContext';
+import AppContext from '../../context/AppContext';
 
 function Projects(props) {
   const { dataList } = props;
@@ -17,20 +17,20 @@ function Projects(props) {
         {
           dataList.map((item, i) => (
             <li key={ i } className={ `Project-${modeThame}` }>
-              <div
-                className="Project-Bunner"
-                style={ { backgroundImage: `url(${item.img})` } }
-              >
-                <a
-                  href={ item.link }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Saiba mais
-                  <p>Github</p>
-                </a>
-              </div>
               <div className="Project-description">
+                <div
+                  className="Project-Bunner"
+                  style={ { backgroundImage: `url(${item.img})` } }
+                >
+                  <a
+                    href={ item.link }
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Saiba mais
+                    <p>Github</p>
+                  </a>
+                </div>
                 <h3>{ item.description }</h3>
                 <ul className="Project-technologies">
                   {

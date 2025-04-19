@@ -1,4 +1,3 @@
-import '../styles/Carousel.css';
 import {
   js,
   py,

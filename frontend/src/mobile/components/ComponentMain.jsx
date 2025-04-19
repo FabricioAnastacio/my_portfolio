@@ -1,12 +1,12 @@
-import { useContext, useEffect } from 'react';
-import '../styles/Main.css';
-import Projects from './Projects';
-import AppContext from '../context/AppContext';
-import FetchJson from '../hooks/fetchJson';
-import PageDescription from './PageDescription';
-import PageInitial from './PageInitial';
+import React, { useContext, useEffect } from 'react';
+import fotoF from '../../imgs/fabricio_fot.png';
+import AppContext from '../../context/AppContext';
+import FetchJson from '../../hooks/fetchJson';
+import '../style/MainMobile.css';
+import PageDescriptionMobile from './PageDescriptionMobile';
+import ProjectsMobile from './ProjectsMobile';
 
-function Main() {
+function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
   const { data, modeThame } = useContext(AppContext);
 
@@ -15,6 +15,7 @@ function Main() {
   }, []);
 
   const refactorItems = (item) => {
+    console.log(item);
     let response = '';
     const [isStack, firstItem] = item;
     response = firstItem;
@@ -42,22 +43,31 @@ function Main() {
   }
 
   return (
-    <main className="Content-main">
-      <PageInitial
-        name={ data.myname }
-        stacks={ refactorItems(data.stacks) }
-        languages={ refactorItems(data.languages) }
-      />
-      <PageDescription
+    <main>
+      <section className="Content-First-Mobile">
+        <img
+          className={ `Picture-Mobile-${modeThame}` }
+          src={ fotoF }
+          alt="Foto de Fabricio"
+        />
+        <h1>{ data.myname }</h1>
+        <h3>
+          Desenvolvedor
+          <br />
+          { refactorItems(data.stacks) }
+        </h3>
+        <p>{ refactorItems(data.languages) }</p>
+      </section>
+      <PageDescriptionMobile
         modeThame={ modeThame }
         description={ data.description }
       />
       <section>
-        <p className="Content-description">
+        <p className="Content-description-Mobile">
           { data.description.project }
         </p>
-        <Projects dataList={ data.listProjects } />
-        <p className="Content-description">
+        <ProjectsMobile dataList={ data.listProjects } />
+        <p className="Content-description-Mobile">
           { data.description.projectThow }
         </p>
       </section>
@@ -65,4 +75,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default MainMobile;
