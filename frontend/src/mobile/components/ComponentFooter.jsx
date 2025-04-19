@@ -7,6 +7,7 @@ import buttonUp from '../../imgs/mobile/icons8-para-cima-48.png';
 function FooterMobile() {
   return (
     <footer id="Contact-footer">
+      <hr className="Line-Footer" />
       <nav className="Nav-Footer-Mobile">
         <h1>CONTATO</h1>
         <a href="#Header" className="Button-Up">

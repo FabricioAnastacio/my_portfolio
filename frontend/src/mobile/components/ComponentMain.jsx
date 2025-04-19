@@ -4,6 +4,7 @@ import AppContext from '../../context/AppContext';
 import FetchJson from '../../hooks/fetchJson';
 import '../style/MainMobile.css';
 import PageDescriptionMobile from './PageDescriptionMobile';
+import ProjectsMobile from './ProjectsMobile';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
@@ -61,6 +62,15 @@ function MainMobile() {
         modeThame={ modeThame }
         description={ data.description }
       />
+      <section>
+        <p className="Content-description-Mobile">
+          { data.description.project }
+        </p>
+        <ProjectsMobile dataList={ data.listProjects } />
+        <p className="Content-description-Mobile">
+          { data.description.projectThow }
+        </p>
+      </section>
     </main>
   );
 }
