@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import '../styles/Projects.css';
+import '../../layouts/desktop/Projects.css';
 import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import AppContext from '../../contexts/AppContext';
 
 function Projects(props) {
   const { dataList } = props;

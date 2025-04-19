@@ -1,14 +1,14 @@
 import { useCallback, useContext } from 'react';
-import '../styles/Footer.css';
-import '../styles/Contact.css';
+import '../../layouts/desktop/Footer.css';
+import '../../layouts/desktop/Contact.css';
 import {
   linkedin,
   github,
   instagram,
   email,
-} from '../../svg';
-import Contact from '../../services/Contact';
-import AppContext from '../../context/AppContext';
+} from '../../assets/svg';
+import Contact from '../common/Contact';
+import AppContext from '../../contexts/AppContext';
 
 function Footer() {
   const { modeThame } = useContext(AppContext);

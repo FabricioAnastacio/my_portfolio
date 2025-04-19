@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
-import AppContext from '../context/AppContext';
-import imags from '../imgs/importImgs';
-import exempleImage from '../imgs/exemple_img.png';
+import imags from '../assets/imgs/importImgs';
+import exempleImage from '../assets/imgs/exemple_img.png';
+import AppContext from '../contexts/AppContext';
 
 export default function FetchJson() {
   const { setData } = useContext(AppContext);

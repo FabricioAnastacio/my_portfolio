@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
-import AppContext from '../../context/AppContext';
-import arrayImgs from '../../imgs/importImgs';
-import '../styles/Header.css';
+import arrayImgs from '../../assets/imgs/importImgs';
+import '../../layouts/desktop/Header.css';
+import AppContext from '../../contexts/AppContext';
 
 function Header() {
   const number = 5;

@@ -55,7 +55,7 @@
 
 .Button-Theme-1 {
   background-color: transparent;
-  background-image: url("../../imgs/icons/icons8-lua.png");
+  background-image: url("../../assets/imgs/icons/icons8-lua.png");
   /* background-image: url("../../imgs/mobile/icons8-cardápio.gif"); */
   background-size: 50px;
   background-position: center;
@@ -67,7 +67,7 @@
 
 .Button-Theme-0 {
   background-color: transparent;
-  background-image: url("../../imgs/icons/icons8-sol.png");
+  background-image: url("../../assets/imgs/icons/icons8-sol.png");
   /* background-image: url("../../imgs/mobile/icons8-cardápio.gif"); */
   background-size: 50px;
   background-position: center;

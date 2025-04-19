@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import arrayImgs from '../../imgs/importImgs';
-import AppContext from '../../context/AppContext';
-import '../style/HeaderMobile.css';
+import arrayImgs from '../../assets/imgs/importImgs';
+import '../../layouts/mobile/HeaderMobile.css';
+import AppContext from '../../contexts/AppContext';
 
 function HeaderMobile() {
   const { modeThame, setThame } = useContext(AppContext);

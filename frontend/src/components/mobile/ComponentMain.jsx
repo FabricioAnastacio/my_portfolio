@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import fotoF from '../../imgs/fabricio_fot.png';
-import AppContext from '../../context/AppContext';
+import fotoF from '../../assets/imgs/fabricio_fot.png';
 import FetchJson from '../../hooks/fetchJson';
-import '../style/MainMobile.css';
+import '../../layouts/mobile/MainMobile.css';
 import PageDescriptionMobile from './PageDescriptionMobile';
 import ProjectsMobile from './ProjectsMobile';
+import AppContext from '../../contexts/AppContext';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
@@ -15,7 +15,6 @@ function MainMobile() {
   }, []);
 
   const refactorItems = (item) => {
-    console.log(item);
     let response = '';
     const [isStack, firstItem] = item;
     response = firstItem;
