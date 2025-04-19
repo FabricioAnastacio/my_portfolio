@@ -53,7 +53,7 @@
   font-size: 18px;
 }
 
-.Button-Menu-1 {
+.Button-Theme-1 {
   background-color: transparent;
   background-image: url("../../imgs/icons/icons8-lua.png");
   /* background-image: url("../../imgs/mobile/icons8-cardápio.gif"); */
@@ -65,7 +65,7 @@
   transition: all .2s;
 }
 
-.Button-Menu-0 {
+.Button-Theme-0 {
   background-color: transparent;
   background-image: url("../../imgs/icons/icons8-sol.png");
   /* background-image: url("../../imgs/mobile/icons8-cardápio.gif"); */
@@ -77,7 +77,7 @@
   transition: all .2s;
 }
 
-.Button-CV-Mobile {
+.Button-CV-Mobile-1, .Button-CV-Mobile-0 {
   button {
     font-size: 15px;
     border: 1px solid black;
@@ -92,6 +92,12 @@
     transform: scale(.9);
     box-shadow: 0px 0px 15px .5px gold;
     color: gold;
+  }
+}
+
+.Button-CV-Mobile-0 {
+  button {
+    box-shadow: 0px 0px 10px .1px gold;
   }
 }
 

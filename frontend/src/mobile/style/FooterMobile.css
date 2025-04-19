@@ -2,6 +2,32 @@
   margin: 10vmin 0 5px 0;
 }
 
+.Footer-0-Mobile {
+  background-color: rgba(228, 228, 228, 0.397); 
+  color: black;
+  input {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  textarea {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  textarea:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  a {
+    color: black;
+  }
+  .Autor {
+    background-color: black;
+    color: white;
+  }
+}
+
 .Footer-Mobile {
   display: flex;
   flex-direction: column;

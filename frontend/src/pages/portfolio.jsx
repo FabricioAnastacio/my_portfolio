@@ -22,7 +22,7 @@ function Portfolio() {
   );
 
   const mobileAPP = (
-    <div>
+    <div className={ `Portfolio-home-${modeThame}` }>
       <HeaderMobile />
       <MainMobile />
       <FooterMobile />

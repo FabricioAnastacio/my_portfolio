@@ -21,13 +21,17 @@ function HeaderMobile() {
           <h2>Dev Jr.</h2>
         </div>
         <div className="Header-stage2">
-          <a href="/CurriculoFabrício.pdf" download className="Button-CV-Mobile">
+          <a
+            href="/CurriculoFabrício.pdf"
+            download
+            className={ `Button-CV-Mobile-${modeThame}` }
+          >
             <button>
               Baixar CV
             </button>
           </a>
           <button
-            className={ `Button-Menu-${modeThame}` }
+            className={ `Button-Theme-${modeThame}` }
             onClick={ handleClick }
             aria-label="Theme"
           />

@@ -46,7 +46,7 @@ function MainMobile() {
     <main>
       <section className="Content-First-Mobile">
         <img
-          className="Picture-Mobile"
+          className={ `Picture-Mobile-${modeThame}` }
           src={ fotoF }
           alt="Foto de Fabricio"
         />

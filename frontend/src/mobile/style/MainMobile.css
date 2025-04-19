@@ -3,12 +3,12 @@
   margin: 33vmin 0 10vmin 0;
 }
 
-.Picture-Mobile {
+.Picture-Mobile-0, .Picture-Mobile-1 {
   width: 42vmin;
   border-radius: 50%;
   transition: .2s linear;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.836);
-  background-color: rgb(127, 160, 7);
+  background-color: rgba(136, 187, 16, 0.623);
   padding: 1px;
 }
 
@@ -61,13 +61,12 @@
   background-image: url("../../imgs/frontend.png");
 }
 
-.ScrollSecundary-1-Mobile {
+.ScrollSecundary-Mobile {
   padding-top: 20vmin;
   display: flex;
   align-items: start;
   flex-direction: column;
   width: 100%;
-  background-color: rgb(228, 228, 228);
   ul {
     padding: 0 10px 0 20px;
     margin-bottom: 30vmin;

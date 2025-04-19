@@ -9,7 +9,7 @@ export default function PageDescriptionMobile({ description, modeThame }) {
       <p id="Description" className="Content-description-Mobile">
         { resume }
       </p>
-      <div className={ `ScrollSecundary-${modeThame}-Mobile` }>
+      <div className="ScrollSecundary-Mobile">
         <h1 className="Title-Description">Desenvolvedor Full_Stack</h1>
         <ul>
           <li>
