@@ -1,4 +1,4 @@
-import ComponentLoading from '../desktop/components/ComponentLoading';
+import ComponentLoading from '../components/desktop/ComponentLoading';
 
 function InitialPage() {
   return (

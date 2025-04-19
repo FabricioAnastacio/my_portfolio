@@ -9,6 +9,11 @@
 .Projects-title-Mobile {
   font-size: 30px;
   margin-left: 10px;
+  h1 {
+    position: relative;
+    margin-bottom: -15px;
+    z-index: 1;
+  }
 }
 
 .Emphasis-title-Mobile {
@@ -16,7 +21,7 @@
   border: 1px solid gold;
   border-radius: 0 0 2vi 2vi;
   height: 10px;
-  width: 250px;
+  width: 225px;
   position: absolute;
 }
 

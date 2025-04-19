@@ -10,7 +10,7 @@ import {
   reactSvg,
   mysqlSvg,
   csharp,
-} from '../svg/index';
+} from '../../assets/svg/index';
 
 function Carousel() {
   return (

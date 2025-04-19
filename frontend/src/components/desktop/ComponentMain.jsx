@@ -1,10 +1,10 @@
 import { useContext, useEffect } from 'react';
-import '../styles/Main.css';
+import '../../layouts/desktop/Main.css';
 import Projects from './Projects';
-import AppContext from '../../context/AppContext';
 import FetchJson from '../../hooks/fetchJson';
 import PageDescription from './PageDescription';
 import PageInitial from './PageInitial';
+import AppContext from '../../contexts/AppContext';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();

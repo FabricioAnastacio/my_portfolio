@@ -1,6 +1,6 @@
-import '../styles/LoadingPage.css';
+import '../../layouts/desktop/LoadingPage.css';
 import { useNavigate } from 'react-router-dom';
-import arrayImgs from '../../imgs/importImgs';
+import arrayImgs from '../../assets/imgs/importImgs';
 import CountDown from '../../hooks/countDownII';
 
 const num = 3;

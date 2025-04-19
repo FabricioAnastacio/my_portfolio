@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import Contact from '../../services/Contact';
-import { github, instagram, linkedin } from '../../svg';
-import '../style/FooterMobile.css';
-import buttonUp from '../../imgs/mobile/icons8-para-cima-48.png';
-import AppContext from '../../context/AppContext';
+import { github, instagram, linkedin } from '../../assets/svg';
+import '../../layouts/mobile/FooterMobile.css';
+import buttonUp from '../../assets/imgs/mobile/icons8-para-cima-48.png';
+import AppContext from '../../contexts/AppContext';
+import Contact from '../common/Contact';
 
 function FooterMobile() {
   const { modeThame } = useContext(AppContext);
