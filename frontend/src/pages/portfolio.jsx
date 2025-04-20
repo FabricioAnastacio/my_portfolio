@@ -1,12 +1,12 @@
 import { useContext } from 'react';
-import '../style/Portfolio.css';
-import Main from '../desktop/components/ComponentMain';
-import Header from '../desktop/components/ComponentHeader';
-import AppContext from '../context/AppContext';
-import Footer from '../desktop/components/ComponentFooter';
-import HeaderMobile from '../mobile/components/ComponentHeader';
-import FooterMobile from '../mobile/components/ComponentFooter';
-import MainMobile from '../mobile/components/ComponentMain';
+import '../assets/style/Portfolio.css';
+import Header from '../components/desktop/ComponentHeader';
+import Main from '../components/desktop/ComponentMain';
+import Footer from '../components/desktop/ComponentFooter';
+import HeaderMobile from '../components/mobile/ComponentHeader';
+import MainMobile from '../components/mobile/ComponentMain';
+import FooterMobile from '../components/mobile/ComponentFooter';
+import AppContext from '../contexts/AppContext';
 
 function Portfolio() {
   const { modeThame } = useContext(AppContext);

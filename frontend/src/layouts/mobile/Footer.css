@@ -1,0 +1,107 @@
+.Line-Footer {
+  margin: 10vmin 0 5px 0;
+}
+
+.Footer-0-Mobile {
+  background-color: rgba(228, 228, 228, 0.397); 
+  color: black;
+  input {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  textarea {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  textarea:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  a {
+    color: black;
+  }
+  .Autor {
+    background-color: black;
+    color: white;
+  }
+}
+
+.Footer-Mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Line-Mobile {
+  width: 100%;
+}
+
+.Nav-Footer-Mobile {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0 20px;
+  h1 {
+    background-color: gold;
+    display: flex;
+    align-items: end;
+    height: 10px;
+    border-radius: 0 0 2vi 2vi;
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+}
+
+.Contact-Mobile {
+  display: flex;
+  align-items: start;
+}
+
+.Links-Mobile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px 0;
+  img {
+    width: 35px;
+    margin: 0 10px;
+  }
+}
+
+.Autor-Mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 20px 40px;
+  section {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 350px;
+  }
+}
+
+.Versiculo-Mobile {
+  margin-top: 20px;
+  text-align: center;
+  :nth-child(1) {
+    font-style: italic;
+  }
+}
+
+.Button-Up {
+  margin-right: 20px;
+  img {
+    width: 30px;
+  }
+}

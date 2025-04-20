@@ -1,0 +1,89 @@
+.Content-first-Mobile {
+  text-align: center;
+  margin: 33vmin 0 10vmin 0;
+}
+
+.Picture-Mobile {
+  width: 42vmin;
+  border-radius: 50%;
+  transition: .2s linear;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.836);
+  background-color: rgba(136, 187, 16, 0.623);
+  padding: 1px;
+}
+
+.Content-first-Mobile {
+  h1 {
+    margin: 10px 0;
+    font-weight: 800;
+    font-size: 25px;
+  }
+  h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.Page-thow-Mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vmin;
+}
+
+.Title-Description {
+  font-size: 38px;
+  margin: 0 0 50px 10px;
+  font-weight: 800;
+  background-color: gold;
+  width: 0px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.Content-description-Mobile {
+  font-size: 15px;
+  padding: 40px 10px;
+  text-align: center;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+  line-height: 1.6em;
+}
+
+.Image-Mobile {
+  width: 60px;
+  height: 30px;
+  box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../assets/imgs/frontend.png");
+}
+
+.ScrollSecundary-Mobile {
+  padding-top: 20vmin;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  ul {
+    padding: 0 10px 0 20px;
+    margin-bottom: 30vmin;
+  }
+  li {
+    list-style: none;
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 5px;
+      line-height: 1.6em;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.List-projects-Desktop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects-title-Desktop {
+  width: 90%;
+  font-size: 48px;
+}
+
+.Emphasis-title-Desktop {
+  background-color: gold;
+  border: 1px solid gold;
+  border-radius: 0 0 2vi 2vi;
+  height: 10px;
+  width: 250px;
+  position: absolute;
+}
+
+.Projects-Desktop {
+  margin: 80px 0;
+  width: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Project-0-Desktop, .Project-1-Desktop {
+  list-style: none;
+  display: flex;
+  flex-grow: 0;
+  flex-basis: 0%;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.048);
+  color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0px 0px 30px .1px rgba(0, 0, 0, 0.637);
+  h3 {
+    margin-top: 10px;
+  }
+}
+
+.Project-0-Desktop {
+  box-shadow: 0px 0px 10px .1px rgba(255, 217, 0, 0.452);
+  color: white;
+  background-color: black;
+}
+
+.Project-Bunner-Desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40vmin;
+  height: 17vmin;
+  border-radius: 1vh;
+  background-size: 100%;
+  transition: background-size 0.01s;
+  -webkit-transition: background-size 1s;
+  background-position: center;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: rgb(255, 239, 148);
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+    transition: all .5s;
+    p {
+      display: flex;
+      align-items: end;
+      color: white;
+      background-color: rgba(255, 217, 0, 0.589);
+      height: 10px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.Project-Bunner-Desktop:hover {
+  background-size: 120%;
+  a {
+    opacity: 0;
+  }
+}
+
+.Project-Bunner-Desktop:active {
+  opacity: 0.7;
+}
+
+.Project-description-Desktop {
+  h3 {
+    width: auto;
+    padding: 0 15px 15px;
+    font-weight: 800;
+    font-size: 20px;
+  }
+}
+
+.Project-Tags-Desktop {
+  text-align: end;
+}
+
+.Project-technologies-Desktop {
+  li {
+    font-size: 19px;
+    padding-right: 50px;
+  }
+}
