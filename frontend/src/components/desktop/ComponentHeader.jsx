@@ -44,7 +44,7 @@ function Header() {
         <ButtonCV platform="Desktop" modeThame={ modeThame } />
         <a className="Links-Header" href="#Contact-footer">Contato</a>
         <a className="Links-Header" href="#Projects">Projetos</a>
-        <a className="Links-Header" href="#Description">Resumo</a>
+        <a className="Links-Header" href="#Page-thow">Resumo</a>
         <button
           className={ `Button-${modeThame}` }
           onClick={ handleClick }
