@@ -1,10 +1,13 @@
 import { useContext, useEffect } from 'react';
-import '../../layouts/desktop/Main.css';
-import Projects from './Projects';
+import Projects from '../common/Projects';
 import FetchJson from '../../hooks/fetchJson';
 import PageDescription from './PageDescription';
 import PageInitial from '../common/PageInitial';
 import AppContext from '../../contexts/AppContext';
+import '../../layouts/desktop/Main.css';
+import '../../layouts/desktop/Projects.css';
+import '../../layouts/desktop/PageInitial.css';
+import '../../layouts/desktop/Carousel.css';
 
 function Main() {
   const [loading, erro, refresh] = FetchJson();
@@ -56,6 +59,7 @@ function Main() {
       <Projects
         dataList={ data.listProjects }
         description={ data.description }
+        platform="Desktop"
       />
     </main>
   );

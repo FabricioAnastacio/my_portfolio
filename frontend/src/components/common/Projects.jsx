@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import '../../layouts/desktop/Projects.css';
 import { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 
@@ -7,25 +6,26 @@ function Projects(props) {
   const {
     dataList,
     description,
+    platform,
   } = props;
   const { modeThame } = useContext(AppContext);
 
   return (
-    <div className="List-projects">
-      <p className="Content-description">
+    <div className={ `List-projects-${platform}` }>
+      <p className={ `Content-description-${platform}` }>
         { description.project }
       </p>
-      <div className="Projects-title">
+      <div className={ `Projects-title-${platform}` }>
         <h1>Projetos em destaque</h1>
-        <hr className="Emphasis-title" />
+        <hr className={ `Emphasis-title-${platform}` } />
       </div>
-      <ul className="Projects">
+      <ul className={ `Projects-${platform}` }>
         {
           dataList.map((item, i) => (
-            <li key={ i } className={ `Project-${modeThame}` }>
-              <div className="Project-description">
+            <li key={ i } className={ `Project-${modeThame}-${platform}` }>
+              <div className={ `Project-description-${platform}` }>
                 <div
-                  className="Project-Bunner"
+                  className={ `Project-Bunner-${platform}` }
                   style={ { backgroundImage: `url(${item.img})` } }
                 >
                   <a
@@ -38,7 +38,7 @@ function Projects(props) {
                   </a>
                 </div>
                 <h3>{ item.description }</h3>
-                <ul className="Project-technologies">
+                <ul className={ `Project-technologies-${platform}` }>
                   {
                     item.technologies.map((tec, index) => (
                       <li key={ index }>
@@ -48,12 +48,12 @@ function Projects(props) {
                   }
                 </ul>
               </div>
-              <h3 className="Project-Tags">{ item.tags }</h3>
+              <h3 className={ `Project-Tags-${platform}` }>{ item.tags }</h3>
             </li>
           ))
         }
       </ul>
-      <p className="Content-description">
+      <p className={ `Content-description-${platform}` }>
         { description.projectThow }
       </p>
     </div>
@@ -65,6 +65,7 @@ Projects.propTypes = {
     PropTypes.object.isRequired,
   ).isRequired,
   description: PropTypes.objectOf(PropTypes.string).isRequired,
+  platform: PropTypes.string.isRequired,
 };
 
 export default Projects;

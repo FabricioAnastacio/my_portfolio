@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Carousel from './Carousel';
 import fotoF from '../../assets/imgs/fabricio_fot.png';
-import '../../layouts/desktop/PageInitial.css';
-import '../../layouts/desktop/Carousel.css';
 
 function PageInitial(props) {
   const { stacks, languages, name, platform } = props;

@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import FetchJson from '../../hooks/fetchJson';
-import '../../layouts/mobile/MainMobile.css';
 import PageDescriptionMobile from './PageDescriptionMobile';
-import ProjectsMobile from './ProjectsMobile';
 import AppContext from '../../contexts/AppContext';
 import PageInitial from '../common/PageInitial';
+import Projects from '../common/Projects';
+import '../../layouts/mobile/MainMobile.css';
+import '../../layouts/mobile/ProjectsMobile.css';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
@@ -53,15 +54,11 @@ function MainMobile() {
         modeThame={ modeThame }
         description={ data.description }
       />
-      <section>
-        <p className="Content-description-Mobile">
-          { data.description.project }
-        </p>
-        <ProjectsMobile dataList={ data.listProjects } />
-        <p className="Content-description-Mobile">
-          { data.description.projectThow }
-        </p>
-      </section>
+      <Projects
+        dataList={ data.listProjects }
+        description={ data.description }
+        platform="Mobile"
+      />
     </main>
   );
 }

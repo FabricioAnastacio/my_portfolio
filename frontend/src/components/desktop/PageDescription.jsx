@@ -8,7 +8,7 @@ export default function PageDescription({ description, modeThame }) {
   return (
     <div id="Page-thow">
       <hr id="Description" className={ `Hr-thame-${modeThame}` } />
-      <p className="Content-description">
+      <p className="Content-description-Desktop">
         { resume }
       </p>
       <div className={ `ScrollSecundary-${modeThame}` }>
@@ -24,7 +24,7 @@ export default function PageDescription({ description, modeThame }) {
           cs={ cs }
         />
       </div>
-      <p className="Content-description">
+      <p className="Content-description-Desktop">
         { resumeThow }
       </p>
       <hr id="Projects" className={ `Hr-thame-${modeThame}` } />
