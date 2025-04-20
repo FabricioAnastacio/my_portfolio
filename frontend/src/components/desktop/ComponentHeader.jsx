@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import arrayImgs from '../../assets/imgs/importImgs';
 import '../../layouts/desktop/Header.css';
 import AppContext from '../../contexts/AppContext';
+import ButtonCV from '../common/ButtonCV';
 
 function Header() {
   const number = 5;
@@ -40,11 +41,7 @@ function Header() {
         <h2>Dev Jr.</h2>
       </div>
       <nav className="Nav-superior">
-        <a href="/CurriculoFabrício.pdf" download className="Button-CV-Header">
-          <button>
-            Baixar CV
-          </button>
-        </a>
+        <ButtonCV platform="Desktop" modeThame={ modeThame } />
         <a className="Links-Header" href="#Contact-footer">Contato</a>
         <a className="Links-Header" href="#Projects">Projetos</a>
         <a className="Links-Header" href="#Description">Resumo</a>

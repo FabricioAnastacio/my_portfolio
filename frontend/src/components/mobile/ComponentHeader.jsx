@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import arrayImgs from '../../assets/imgs/importImgs';
-import '../../layouts/mobile/HeaderMobile.css';
+import '../../layouts/mobile/Header.css';
 import AppContext from '../../contexts/AppContext';
+import ButtonCV from '../common/ButtonCV';
 
 function HeaderMobile() {
   const { modeThame, setThame } = useContext(AppContext);
@@ -21,15 +22,7 @@ function HeaderMobile() {
           <h2>Dev Jr.</h2>
         </div>
         <div className="Header-stage2">
-          <a
-            href="/CurriculoFabrício.pdf"
-            download
-            className={ `Button-CV-Mobile-${modeThame}` }
-          >
-            <button>
-              Baixar CV
-            </button>
-          </a>
+          <ButtonCV platform="Mobile" modeThame={ modeThame } />
           <button
             className={ `Button-Theme-${modeThame}` }
             onClick={ handleClick }

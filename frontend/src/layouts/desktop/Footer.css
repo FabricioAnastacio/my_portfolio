@@ -93,6 +93,10 @@
   transition: .5s;
 }
 
+.links:nth-child(4) {
+  margin-bottom: 30px;
+}
+
 .links:hover {
   text-shadow: 2px 0px 2px gold;
   img {
@@ -107,8 +111,7 @@
   transform: scale(1);
 }
 
-.Button-CV {
-  margin-top: 30px;
+.Button-CV-Desktop-0, .Button-CV-Desktop-1 {
   button {
     font-size: 18px;
     border: 1px solid black;
@@ -159,7 +162,7 @@
   }
 }
 
-.Autor {
+.Autor-Desktop {
   display: flex;
   align-items: center;
   justify-content: center;

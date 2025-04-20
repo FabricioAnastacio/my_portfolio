@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { github, instagram, linkedin } from '../../assets/svg';
-import '../../layouts/mobile/FooterMobile.css';
+import '../../layouts/mobile/Footer.css';
 import buttonUp from '../../assets/imgs/mobile/icons8-para-cima-48.png';
 import AppContext from '../../contexts/AppContext';
 import Contact from '../common/Contact';
+import FooterAutor from '../common/FooterAutor';
+import ButtonCV from '../common/ButtonCV';
 
 function FooterMobile() {
   const { modeThame } = useContext(AppContext);
@@ -31,21 +33,9 @@ function FooterMobile() {
             <img src={ instagram } alt="Instagram Link" />
           </a>
         </section>
-        <a
-          href="/CurriculoFabrício.pdf"
-          download
-          className={ `Button-CV-Mobile-${modeThame}` }
-        >
-          <button>
-            Baixar CV
-          </button>
-        </a>
+        <ButtonCV platform="Mobile" modeThame={ modeThame } />
       </div>
-      <div className="Autor-Mobile">
-        <p>Fabrício&reg; 2024</p>
-        <p>|</p>
-        <p>Obrigado por acessar.</p>
-      </div>
+      <FooterAutor platform="Mobile" />
     </footer>
   );
 }

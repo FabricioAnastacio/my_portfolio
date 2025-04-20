@@ -9,6 +9,8 @@ import {
 } from '../../assets/svg';
 import Contact from '../common/Contact';
 import AppContext from '../../contexts/AppContext';
+import FooterAutor from '../common/FooterAutor';
+import ButtonCV from '../common/ButtonCV';
 
 function Footer() {
   const { modeThame } = useContext(AppContext);
@@ -53,18 +55,10 @@ function Footer() {
             <img src={ instagram } alt="Instagram Link" />
             Instagram
           </a>
-          <a href="/CurriculoFabrício.pdf" download className="Button-CV">
-            <button>
-              Baixar CV
-            </button>
-          </a>
+          <ButtonCV platform="Desktop" modeThame={ modeThame } />
         </section>
       </div>
-      <div className="Autor">
-        <p>Fabrício&reg; 2024</p>
-        <p>|</p>
-        <p>Obrigado por acessar.</p>
-      </div>
+      <FooterAutor platform="Desktop" />
     </footer>
   );
 }

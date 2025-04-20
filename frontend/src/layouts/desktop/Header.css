@@ -46,7 +46,7 @@ header {
   transition: background 0.2s;
 }
 
-.Button-CV-Header {
+.Button-CV-Desktop-1, .Button-CV-Desktop-0 {
   button {
     font-size: 18px;
     border: 1px solid black;

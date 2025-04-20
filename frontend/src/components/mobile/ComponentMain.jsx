@@ -3,8 +3,8 @@ import FetchJson from '../../hooks/fetchJson';
 import AppContext from '../../contexts/AppContext';
 import PageInitial from '../common/PageInitial';
 import Projects from '../common/Projects';
-import '../../layouts/mobile/MainMobile.css';
-import '../../layouts/mobile/ProjectsMobile.css';
+import '../../layouts/mobile/Main.css';
+import '../../layouts/mobile/Projects.css';
 import PageDescription from '../common/PageDescription';
 
 function MainMobile() {
