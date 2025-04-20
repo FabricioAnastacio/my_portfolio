@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import Projects from '../common/Projects';
 import FetchJson from '../../hooks/fetchJson';
-import PageDescription from './PageDescription';
+import PageDescription from '../common/PageDescription';
 import PageInitial from '../common/PageInitial';
 import AppContext from '../../contexts/AppContext';
 import '../../layouts/desktop/Main.css';
@@ -55,6 +55,7 @@ function Main() {
       <PageDescription
         modeThame={ modeThame }
         description={ data.description }
+        platform="Desktop"
       />
       <Projects
         dataList={ data.listProjects }

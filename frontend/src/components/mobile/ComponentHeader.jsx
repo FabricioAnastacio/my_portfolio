@@ -40,7 +40,7 @@ function HeaderMobile() {
       <nav className={ `Navegation-Header-${'Open'}` }>
         <a className="Navegation" href="#Contact-footer">Contato</a>
         <a className="Navegation" href="#Projects">Projetos</a>
-        <a className="Navegation" href="#Description">Resumo</a>
+        <a className="Navegation" href="#Page-thow">Resumo</a>
       </nav>
     </header>
   );

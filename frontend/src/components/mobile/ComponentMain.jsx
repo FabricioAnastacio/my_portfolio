@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import FetchJson from '../../hooks/fetchJson';
-import PageDescriptionMobile from './PageDescriptionMobile';
 import AppContext from '../../contexts/AppContext';
 import PageInitial from '../common/PageInitial';
 import Projects from '../common/Projects';
 import '../../layouts/mobile/MainMobile.css';
 import '../../layouts/mobile/ProjectsMobile.css';
+import PageDescription from '../common/PageDescription';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
@@ -50,9 +50,10 @@ function MainMobile() {
         languages={ refactorItems(data.languages) }
         platform="Mobile"
       />
-      <PageDescriptionMobile
+      <PageDescription
         modeThame={ modeThame }
         description={ data.description }
+        platform="Mobile"
       />
       <Projects
         dataList={ data.listProjects }

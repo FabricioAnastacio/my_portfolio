@@ -24,7 +24,7 @@
   }
 }
 
-#Page-thow-Mobile {
+.Page-thow-Mobile {
   display: flex;
   align-items: center;
   flex-direction: column;
