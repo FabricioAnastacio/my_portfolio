@@ -77,13 +77,27 @@
 
 .Autor-Mobile {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  height: 100px;
-  padding: 0 50px;
+  flex-direction: column;
   background-color: black;
   color: white;
+  margin-top: 20px;
+  padding: 20px 40px;
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+  }
+}
+
+.Versiculo-Mobile {
+  margin-top: 20px;
+  text-align: center;
+  :nth-child(1) {
+    font-style: italic;
+  }
 }
 
 .Button-Up {
