@@ -3,7 +3,7 @@ import '../../layouts/desktop/Main.css';
 import Projects from './Projects';
 import FetchJson from '../../hooks/fetchJson';
 import PageDescription from './PageDescription';
-import PageInitial from './PageInitial';
+import PageInitial from '../common/PageInitial';
 import AppContext from '../../contexts/AppContext';
 
 function Main() {
@@ -42,25 +42,21 @@ function Main() {
   }
 
   return (
-    <main className="Content-main">
+    <main>
       <PageInitial
         name={ data.myname }
         stacks={ refactorItems(data.stacks) }
         languages={ refactorItems(data.languages) }
+        platform="Desktop"
       />
       <PageDescription
         modeThame={ modeThame }
         description={ data.description }
       />
-      <section>
-        <p className="Content-description">
-          { data.description.project }
-        </p>
-        <Projects dataList={ data.listProjects } />
-        <p className="Content-description">
-          { data.description.projectThow }
-        </p>
-      </section>
+      <Projects
+        dataList={ data.listProjects }
+        description={ data.description }
+      />
     </main>
   );
 }

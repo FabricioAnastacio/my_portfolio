@@ -1,9 +1,9 @@
-.Content-First-Mobile {
+.Content-first-Mobile {
   text-align: center;
   margin: 33vmin 0 10vmin 0;
 }
 
-.Picture-Mobile-0, .Picture-Mobile-1 {
+.Picture-Mobile {
   width: 42vmin;
   border-radius: 50%;
   transition: .2s linear;
@@ -12,7 +12,7 @@
   padding: 1px;
 }
 
-.Content-First-Mobile {
+.Content-first-Mobile {
   h1 {
     margin: 10px 0;
     font-weight: 800;

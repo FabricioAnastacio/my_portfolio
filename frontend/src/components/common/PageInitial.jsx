@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Carousel from '../common/Carousel';
+import Carousel from './Carousel';
 import fotoF from '../../assets/imgs/fabricio_fot.png';
 import '../../layouts/desktop/PageInitial.css';
 import '../../layouts/desktop/Carousel.css';
 
 function PageInitial(props) {
-  const { stacks, languages, name } = props;
+  const { stacks, languages, name, platform } = props;
 
   return (
-    <section className="Content-first-page">
+    <section className={ `Content-first-${platform}` }>
       <img
-        className="Picture"
+        className={ `Picture-${platform}` }
         src={ fotoF }
         alt="Foto de Fabricio"
       />
@@ -22,7 +22,7 @@ function PageInitial(props) {
         { stacks }
       </h3>
       <p>{ languages }</p>
-      <Carousel />
+      { platform === 'Desktop' && <Carousel /> }
     </section>
   );
 }
@@ -31,6 +31,7 @@ PageInitial.propTypes = {
   name: PropTypes.string.isRequired,
   stacks: PropTypes.string.isRequired,
   languages: PropTypes.string.isRequired,
+  platform: PropTypes.string.isRequired,
 };
 
 export default PageInitial;

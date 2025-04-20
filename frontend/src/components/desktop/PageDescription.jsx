@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import ListStacks from '../common/ListStacks';
 
 export default function PageDescription({ description, modeThame }) {
   const { resume, frontend, backend, cs, resumeThow } = description;
@@ -17,23 +18,11 @@ export default function PageDescription({ description, modeThame }) {
             <div className="Image-Scroll" />
           </div>
         </div>
-        <ul>
-          <li>
-            <hr />
-            <h2>Front-end</h2>
-            <p>{ frontend }</p>
-          </li>
-          <li>
-            <hr />
-            <h2>Back-end</h2>
-            <p>{ backend }</p>
-          </li>
-          <li>
-            <hr />
-            <h2>Ciência da Computação</h2>
-            <p>{ cs }</p>
-          </li>
-        </ul>
+        <ListStacks
+          frontend={ frontend }
+          backend={ backend }
+          cs={ cs }
+        />
       </div>
       <p className="Content-description">
         { resumeThow }

@@ -1,10 +1,10 @@
-.Content-first-page {
+.Content-first-Desktop {
   margin: 13vmin 0 10vmin 0;
   padding: 0 20%;
   text-align: center;
 }
 
-.Picture {
+.Picture-Desktop {
   height: 32vmin;
   border-radius: 50%;
   transition: .2s linear;
@@ -14,7 +14,7 @@
 }
 
 
-.Content-first-page {
+.Content-first-Desktop {
   h1 {
     margin-bottom: 10px;
     font-weight: 800;
@@ -26,7 +26,7 @@
   }
 }
 
-.Content-first-page p {
+.Content-first-Desktop p {
   font-weight: 400;
   font-size: 22px;
   margin: 20px 0;

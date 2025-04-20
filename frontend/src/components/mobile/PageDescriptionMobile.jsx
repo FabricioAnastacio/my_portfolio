@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import ListStacks from '../common/ListStacks';
 
 export default function PageDescriptionMobile({ description, modeThame }) {
   const { resume, frontend, backend, cs, resumeThow } = description;
@@ -11,23 +12,11 @@ export default function PageDescriptionMobile({ description, modeThame }) {
       </p>
       <div className="ScrollSecundary-Mobile">
         <h1 className="Title-Description">Desenvolvedor Full_Stack</h1>
-        <ul>
-          <li>
-            <h2>Front-end</h2>
-            <p>{ frontend }</p>
-            <hr />
-          </li>
-          <li>
-            <h2>Back-end</h2>
-            <p>{ backend }</p>
-            <hr />
-          </li>
-          <li>
-            <h2>Ciência da Computação</h2>
-            <p>{ cs }</p>
-            <hr />
-          </li>
-        </ul>
+        <ListStacks
+          frontend={ frontend }
+          backend={ backend }
+          cs={ cs }
+        />
       </div>
       <p className="Content-description-Mobile">
         { resumeThow }

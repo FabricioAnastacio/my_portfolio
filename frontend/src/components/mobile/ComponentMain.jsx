@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import fotoF from '../../assets/imgs/fabricio_fot.png';
 import FetchJson from '../../hooks/fetchJson';
 import '../../layouts/mobile/MainMobile.css';
 import PageDescriptionMobile from './PageDescriptionMobile';
 import ProjectsMobile from './ProjectsMobile';
 import AppContext from '../../contexts/AppContext';
+import PageInitial from '../common/PageInitial';
 
 function MainMobile() {
   const [loading, erro, refresh] = FetchJson();
@@ -43,20 +43,12 @@ function MainMobile() {
 
   return (
     <main>
-      <section className="Content-First-Mobile">
-        <img
-          className={ `Picture-Mobile-${modeThame}` }
-          src={ fotoF }
-          alt="Foto de Fabricio"
-        />
-        <h1>{ data.myname }</h1>
-        <h3>
-          Desenvolvedor
-          <br />
-          { refactorItems(data.stacks) }
-        </h3>
-        <p>{ refactorItems(data.languages) }</p>
-      </section>
+      <PageInitial
+        name={ data.myname }
+        stacks={ refactorItems(data.stacks) }
+        languages={ refactorItems(data.languages) }
+        platform="Mobile"
+      />
       <PageDescriptionMobile
         modeThame={ modeThame }
         description={ data.description }

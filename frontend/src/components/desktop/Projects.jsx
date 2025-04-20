@@ -4,11 +4,17 @@ import { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 
 function Projects(props) {
-  const { dataList } = props;
+  const {
+    dataList,
+    description,
+  } = props;
   const { modeThame } = useContext(AppContext);
 
   return (
     <div className="List-projects">
+      <p className="Content-description">
+        { description.project }
+      </p>
       <div className="Projects-title">
         <h1>Projetos em destaque</h1>
         <hr className="Emphasis-title" />
@@ -47,6 +53,9 @@ function Projects(props) {
           ))
         }
       </ul>
+      <p className="Content-description">
+        { description.projectThow }
+      </p>
     </div>
   );
 }
@@ -55,6 +64,7 @@ Projects.propTypes = {
   dataList: PropTypes.arrayOf(
     PropTypes.object.isRequired,
   ).isRequired,
+  description: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default Projects;
