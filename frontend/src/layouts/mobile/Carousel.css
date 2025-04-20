@@ -1,5 +1,5 @@
-.Carusel-Desktop {
-  margin-top: 8vmin;
+.Carusel-Mobile {
+  margin-top: 15vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,9 +8,9 @@
     position: absolute;
     opacity: 0;
     list-style: none;
-    width: 45px;
+    width: 25px;
     margin: 0 10px;
-    animation: move 22.5s linear;
+    animation: moveMobile 20s linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: 0;
@@ -47,12 +47,13 @@
   }
   :nth-child(11) {
     animation-delay: 20s;
+    display: none;
   }
 }
 
-@keyframes move {
+@keyframes moveMobile {
   100% {
-    transform: translateX(-370px);
+    transform: translateX(-190px);
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.363));
     opacity: 0;
   }
@@ -69,7 +70,7 @@
     filter: drop-shadow(0px 9px 3px rgba(0, 0, 0, 0.363));
   }
   0% {
-    transform: translateX(360px);
+    transform: translateX(145px);
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.363));
     opacity: 0;
   }

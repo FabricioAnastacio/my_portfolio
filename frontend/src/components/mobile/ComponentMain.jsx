@@ -5,6 +5,7 @@ import PageInitial from '../common/PageInitial';
 import Projects from '../common/Projects';
 import '../../layouts/mobile/Main.css';
 import '../../layouts/mobile/Projects.css';
+import '../../layouts/mobile/Carousel.css';
 import PageDescription from '../common/PageDescription';
 
 function MainMobile() {

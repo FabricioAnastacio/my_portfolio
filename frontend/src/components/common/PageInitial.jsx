@@ -20,7 +20,7 @@ function PageInitial(props) {
         { stacks }
       </h3>
       <p>{ languages }</p>
-      { platform === 'Desktop' && <Carousel /> }
+      <Carousel platform={ platform } />
     </section>
   );
 }
