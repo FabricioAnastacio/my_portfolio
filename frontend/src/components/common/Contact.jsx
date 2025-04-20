@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import iconReturn from '../../assets/imgs/icons/icons8-retornar-48.png';
 
 class Contact extends React.Component {
   constructor() {
@@ -88,6 +89,7 @@ class Contact extends React.Component {
             className="Btm-Success"
             onClick={ () => this.setState({ isError: false }) }
           >
+            <img src={ iconReturn } alt="Retornar" />
             Retornar
           </button>
         </section>

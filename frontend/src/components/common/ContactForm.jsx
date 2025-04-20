@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import iconSend from '../../assets/imgs/icons/icons8-enviar-48.png';
+import iconBroom from '../../assets/imgs/icons/icons8-broom-48.png';
 
 class ContactForm extends React.Component {
   render() {
@@ -72,6 +74,7 @@ class ContactForm extends React.Component {
             onClick={ sendForm }
             disabled={ isDisable }
           >
+            <img src={ iconSend } alt="Enviar" />
             { isDisable ? 'Enviando...' : 'Enviar' }
           </button>
           <button
@@ -79,6 +82,7 @@ class ContactForm extends React.Component {
             onClick={ resetForm }
             disabled={ isDisable }
           >
+            <img src={ iconBroom } alt="Limpar" />
             Limpar
           </button>
         </div>

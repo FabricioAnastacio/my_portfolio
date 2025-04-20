@@ -18,6 +18,15 @@
 
 .Contact-Error {
   color: rgb(129, 0, 0);
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
 }
 
 form {
@@ -79,6 +88,10 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  img {
+    width: 20px;
+    margin-right: 5px;
+  }
 }
 
 .Button-send, .Btm-Success {
@@ -96,6 +109,11 @@ textarea:focus {
   }
 }
 
+.Button-send {
+  display: flex;
+  align-items: center;
+}
+
 .Button-send:disabled {
   background-color: rgba(60, 60, 255, 0.596);
   &:hover{
@@ -106,7 +124,9 @@ textarea:focus {
 }
 
 .Button-clear {
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px 10px 20px;
   background-color: rgb(255, 60, 60);
   color: white;
   font-size: 15px;

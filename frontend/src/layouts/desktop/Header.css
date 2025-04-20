@@ -47,6 +47,9 @@ header {
 }
 
 .Button-CV-Desktop-1, .Button-CV-Desktop-0 {
+  img {
+    display: none;
+  }
   button {
     font-size: 18px;
     border: 1px solid black;

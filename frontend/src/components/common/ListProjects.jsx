@@ -17,16 +17,16 @@ function ListProjects({ modeThame, platform, dataList }) {
             </a>
           </div>
           <h3>{ item.description }</h3>
-          <ul className={ `Project-technologies-${platform}` }>
-            {
-              item.technologies.map((tec, index) => (
-                <li key={ index }>
-                  { tec }
-                </li>
-              ))
-            }
-          </ul>
         </div>
+        <ul className={ `Project-technologies-${platform}` }>
+          {
+            item.technologies.map((tec, index) => (
+              <li key={ index }>
+                { tec }
+              </li>
+            ))
+          }
+        </ul>
         <h3 className={ `Project-Tags-${platform}` }>{ item.tags }</h3>
       </li>
     ))
