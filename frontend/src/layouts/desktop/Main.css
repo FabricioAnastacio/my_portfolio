@@ -1,3 +1,63 @@
+.Paleta-de-cores {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 10px;
+  font-style: italic;
+  position: fixed;
+  z-index: 1;
+  :nth-child(1) {
+    background-color: #0B0F0D;
+    width: 60px;
+    height: 40px;
+    color: white;
+  };
+  :nth-child(2) {
+    background-color: #F1F3EF;
+    color: black;
+    width: 60px;
+    height: 40px;
+  }
+  :nth-child(3) {
+    background-color: #121A16;
+    color: white;
+    width: 60px;
+    height: 40px;
+  };
+  :nth-child(4) {
+    background-color: #18231D;
+    color: white;
+    width: 60px;
+    height: 40px;
+  };
+  :nth-child(5) {
+    background-color: #E4E8E3;
+    height: 40px;
+    width: 60px;
+  };
+  :nth-child(6) {
+    background-color: #96A29A;
+    height: 40px;
+    width: 60px;
+  };
+  :nth-child(7) {
+    background-color: #7FAF8C;
+    height: 40px;
+    width: 60px;
+  };
+  :nth-child(8) {
+    background-color: #A8C7A8;
+    height: 40px;
+    width: 60px;
+  };
+  :nth-child(9) {
+    background-color: #26342C;
+    color: white;
+    height: 40px;
+    width: 60px;
+  };
+}
+
 .Content-loading {
   display: flex;
   text-align: center;

@@ -28,7 +28,7 @@ function Main() {
       return response;
     }
     item.forEach((e, index) => {
-      if (index > 1) response += ` - ${e}`;
+      if (index > 1) response += ` · ${e}`;
     });
     return response;
   };
@@ -48,7 +48,7 @@ function Main() {
     <main>
       <PageInitial
         name={ data.myname }
-        stacks={ refactorItems(data.stacks) }
+        // stacks={ refactorItems(data.stacks) }
         languages={ refactorItems(data.languages) }
         platform="Desktop"
       />
