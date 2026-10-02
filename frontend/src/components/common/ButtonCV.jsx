@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import inconCV from '../../assets/imgs/icons/icons8-cv-48.png';
 
 function ButtonCV({ platform, modeThame }) {
   return (
@@ -8,10 +7,7 @@ function ButtonCV({ platform, modeThame }) {
       download
       className={ `Button-CV-${platform}-${modeThame}` }
     >
-      <button>
-        <img src={ inconCV } alt="Curriculo" />
-        Baixar CV
-      </button>
+      Baixar CV
     </a>
   );
 }

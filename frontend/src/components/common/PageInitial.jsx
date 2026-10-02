@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Carousel from './Carousel';
-import fotoF from '../../assets/imgs/fabricio_fot.png';
+// import fotoF from '../../assets/imgs/fabricio_fot.png';
 
 function PageInitial(props) {
   const { name, languages, platform } = props;
@@ -18,17 +18,17 @@ function PageInitial(props) {
           clareza, funcionalidade e evolução.
         </p>
         <div className="Hero-Links">
-          <a href="#Projects">Projetos ↗</a>
-          <a href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a className="Hero-Link" href="#Projects">Projetos ↗</a>
+          <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
         <p className="Hero-languages">{ languages }</p>
         <Carousel platform={ platform } />
       </div>
-      <img
+      {/* <img
         className={ `Picture-${platform}` }
         src={ fotoF }
         alt="Foto de Fabricio"
-      />
+      /> */}
     </section>
   );
 }

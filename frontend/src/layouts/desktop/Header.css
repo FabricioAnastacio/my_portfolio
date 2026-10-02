@@ -4,92 +4,87 @@
 
 header {
   height: 10vh;
-  width: 100%;
-  padding: 5px 0%;
+  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  background-color: #121A16;
 }
 
 .Icon-header {
   display: flex;
   align-items: center;
-  margin-left: 50px;
   h2 {
-    font-size: clamp(2rem, 3vw, 3rem);
-    font-weight: 600;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 400;
   }
-  cursor: pointer;
 }
 
 .Icon-profile {
   margin-right: 10px;
-  animation: App-logo-spin infinite linear;
+  height: 35px;
+  animation: App-logo-spin 50s infinite linear;
 }
 
 .Nav-superior {
-  width: 45%;
+  width: 28%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .Links-Header {
-  margin-top: 15px;
   display: flex;
   text-decoration: none;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1rem);
-  font-weight: 400;
-  padding: 0 10px;
-  height: 5px;
-  align-items: end;
-  transition: background 0.2s;
+  margin: 0 1px;
+  transition: all .1s linear;
+  color: #7FAF8C;
+  border-bottom: 1px
 }
 
-.Button-CV-Desktop-1, .Button-CV-Desktop-0 {
-  img {
-    display: none;
-  }
-  button {
-    font-family: 'Manrope';
-    font-size: clamp(.8rem, 1vw, .9rem);
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s;
-  }
-  button:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px .5px gold;
-    color: gold;
-  }
-  button:active {
-    transform: scale(1);
-    box-shadow: 0px 0px 15px .5px rgba(255, 217, 0, 0);
-    color: gold;
-  }
-}
-
-.Nav-superior a:hover {
-  transform: scale(1.05);
-  font-weight: 800;
-  border-radius: 5vh;
-  background-color: gold;
+.Links-Header:hover {
+  transform: scale(1.02);
+  color: #A8C7A8;
+  border-bottom-style: solid;
 }
 
 .Nav-superior a:active {
-  transform: scale(0.99);
+  transform: scale(1);
+}
+
+.Button-CV-Desktop-1, .Button-CV-Desktop-0 {
+  font-family: 'Manrope';
+  font-size: clamp(.8rem, 1vw, .9rem);
+  border: 1px solid #26342C;
+  background-color: #26342C;
+  color: #7FAF8C;
+  border-radius: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.Button-CV-Desktop-1:hover, .Button-CV-Desktop-0:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px #A8C7A8;
+  color: #A8C7A8;
+}
+
+.Button-CV-Desktop-1:active, .Button-CV-Desktop-0:active {
+  transform: scale(.9);
+  box-shadow: 0px 0px 1px 1px #A8C7A8;
+  color: #7FAF8C;
 }
 
 .Button-1 {
   background-image: url('../../assets/imgs/icons/icons8-lua.png');
   background-position: center;
-  background-size: 60px;
-  padding: 20px;
+  background-size: 35px;
+  padding: 10px;
   border: none;
   background-color: transparent;
   margin: 0;
@@ -104,8 +99,8 @@ header {
 .Button-0 {
   background-image: url('../../assets/imgs/icons/icons8-sol.png');
   background-position: center;
-  background-size: 60px;
-  padding: 20px;
+  background-size: 35px;
+  padding: 10px;
   border: none;
   background-color: transparent;
   margin: 0;

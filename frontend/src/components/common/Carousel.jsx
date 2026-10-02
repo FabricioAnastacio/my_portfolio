@@ -11,6 +11,8 @@ import {
   reactSvg,
   mysqlSvg,
   csharp,
+  cpp,
+  c,
 } from '../../assets/svg/index';
 
 function Carousel({ platform }) {
@@ -27,6 +29,8 @@ function Carousel({ platform }) {
       <li><img src={ docker } alt="Docker" /></li>
       <li><img src={ mysqlSvg } alt="MySql" /></li>
       <li><img src={ csharp } alt="CSharp" /></li>
+      <li><img src={ cpp } alt="Cpp" /></li>
+      <li><img src={ c } alt="C" /></li>
     </ul>
   );
 }

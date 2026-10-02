@@ -1,12 +1,10 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import arrayImgs from '../../assets/imgs/importImgs';
 import '../../layouts/desktop/Header.css';
 import AppContext from '../../contexts/AppContext';
 import ButtonCV from '../common/ButtonCV';
 
 function Header() {
-  const number = 5;
-  const [valueSecund, setSecund] = useState(number);
   const { setThame, modeThame } = useContext(AppContext);
 
   const handleClick = () => {
@@ -14,31 +12,19 @@ function Header() {
     else setThame(1);
   };
 
-  const handleLogo = () => {
-    setSecund(valueSecund - 1);
-    if (valueSecund === 1) setSecund(number);
-    console.log(valueSecund);
-  };
-
-  const logo = modeThame === 0
-    ? arrayImgs[arrayImgs.length - 1] : arrayImgs[arrayImgs.length - 2];
+  const logo = arrayImgs[arrayImgs.length - 1];
 
   return (
     <header id="Header">
       <div
         className="Icon-header"
-        onClick={ handleLogo }
-        role="button"
-        onKeyPress={ 0 }
-        tabIndex="0"
       >
         <img
           src={ logo }
           alt="React"
-          style={ { animationDuration: `${valueSecund}s` } }
           className="Icon-profile"
         />
-        <h2>Dev Jr.</h2>
+        <h2>.Dev</h2>
       </div>
       <nav className="Nav-superior">
         <ButtonCV platform="Desktop" modeThame={ modeThame } />

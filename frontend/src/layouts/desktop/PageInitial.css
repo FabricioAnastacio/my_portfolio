@@ -39,6 +39,10 @@
   justify-content: space-between;
 }
 
+.Hero-Link:hover {
+  color: #A8C7A8;
+}
+
 .Hero-languages {
   font-weight: 400;
   font-size: 14px;

@@ -5,18 +5,23 @@
   transition: all .5s linear;
 }
 
+
 .Portfolio-home-1 {
-  background-color: white;
-  color: black;
-  a {
-    color: black;
+  background-color: #F1F3EF;
+  h1, h2 {
+    color: #E4E8E3;
+  }
+  h3, h4, p, a {
+    color: #96A29A;
   }
 }
 
 .Portfolio-home-0 {
-  background-color: #121216;
-  color: white;
-  a {
-    color: white;
+  background-color: #0B0F0D;
+  h1, h2, h3 {
+    color: #E4E8E3;
+  }
+  h4, p, a {
+    color: #96A29A;
   }
 }

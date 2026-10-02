@@ -1,19 +1,24 @@
 .Carusel-Desktop {
   margin-top: 8vmin;
+  border-top: 1px solid #1a2720;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 50%;
+  width: 70%;
   li {
     img {
-      height: 25px
+      height: 20px;
+      filter: grayscale(100%);
     };
+    :hover {
+      filter: grayscale(0);
+    }
     position: absolute;
     opacity: 0;
     list-style: none;
     margin: 0 10px;
-    animation: move 22s linear;
+    animation: move 36s linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: 0;
@@ -22,40 +27,46 @@
     animation-delay: 0s;
   }
   :nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
   :nth-child(3) {
-    animation-delay: 4s;
-  }
-  :nth-child(4) {
     animation-delay: 6s;
   }
+  :nth-child(4) {
+    animation-delay: 9s;
+  }
   :nth-child(5) {
-    animation-delay: 8s;
-  }
-  :nth-child(6) {
-    animation-delay: 10s;
-  }
-  :nth-child(7) {
     animation-delay: 12s;
   }
-  :nth-child(8) {
-    animation-delay: 14s;
+  :nth-child(6) {
+    animation-delay: 15s;
   }
-  :nth-child(9) {
-    animation-delay: 16s;
-  }
-  :nth-child(10) {
+  :nth-child(7) {
     animation-delay: 18s;
   }
+  :nth-child(8) {
+    animation-delay: 21s;
+  }
+  :nth-child(9) {
+    animation-delay: 24s;
+  }
+  :nth-child(10) {
+    animation-delay: 27s;
+  }
   :nth-child(11) {
-    animation-delay: 20s;
+    animation-delay: 30s;
+  }
+  :nth-child(12) {
+    animation-delay: 33s;
+  }
+  :nth-child(13) {
+    animation-delay: 36s;
   }
 }
 
 @keyframes move {
   100% {
-    transform: translateX(-210px);
+    transform: translateX(-250px);
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.363));
     opacity: 0;
   }
@@ -72,7 +83,7 @@
     filter: drop-shadow(0px 9px 3px rgba(0, 0, 0, 0.363));
   }
   0% {
-    transform: translateX(160px);
+    transform: translateX(200px);
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.363));
     opacity: 0;
   }
