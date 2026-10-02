@@ -1,20 +1,17 @@
-import { useContext } from 'react';
-import '../assets/style/Portfolio.css';
 import Header from '../components/desktop/ComponentHeader';
 import Main from '../components/desktop/ComponentMain';
 import Footer from '../components/desktop/ComponentFooter';
 import HeaderMobile from '../components/mobile/ComponentHeader';
 import MainMobile from '../components/mobile/ComponentMain';
 import FooterMobile from '../components/mobile/ComponentFooter';
-import AppContext from '../contexts/AppContext';
+import '../assets/style/Portfolio.css';
 
 function Portfolio() {
-  const { modeThame } = useContext(AppContext);
   const { innerWidth: width } = window;
   const maxWidth = 920;
 
   const desktopAPP = (
-    <div className={ `Portfolio-home-${modeThame}` }>
+    <div className="Portfolio-home">
       <div className="Paleta-de-cores">
         <div>Fundo</div>
         <div>Fundo Claro</div>
@@ -33,7 +30,7 @@ function Portfolio() {
   );
 
   const mobileAPP = (
-    <div className={ `Portfolio-home-${modeThame}` }>
+    <div className="Portfolio-home">
       <HeaderMobile />
       <MainMobile />
       <FooterMobile />

@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  background-color: #121A16;
+  background-color: var(--surface);
 }
 
 .Icon-header {
@@ -25,6 +25,7 @@ header {
   margin-right: 10px;
   height: 35px;
   animation: App-logo-spin 50s infinite linear;
+  filter: drop-shadow(0px 0px 1px #121814);
 }
 
 .Nav-superior {
@@ -41,13 +42,12 @@ header {
   font-size: clamp(1rem, 2vw, 1rem);
   margin: 0 1px;
   transition: all .1s linear;
-  color: #7FAF8C;
   border-bottom: 1px
 }
 
 .Links-Header:hover {
   transform: scale(1.02);
-  color: #A8C7A8;
+  color: var(--primary-light);
   border-bottom-style: solid;
 }
 
@@ -55,12 +55,11 @@ header {
   transform: scale(1);
 }
 
-.Button-CV-Desktop-1, .Button-CV-Desktop-0 {
+.Button-CV-Desktop, .Button-CV-Desktop {
   font-family: 'Manrope';
   font-size: clamp(.8rem, 1vw, .9rem);
-  border: 1px solid #26342C;
-  background-color: #26342C;
-  color: #7FAF8C;
+  border: 1px solid var(--border);
+  background-color: var(--border);
   border-radius: 10px;
   padding: 0 5px;
   cursor: pointer;
@@ -68,44 +67,15 @@ header {
   text-decoration: none;
 }
 
-.Button-CV-Desktop-1:hover, .Button-CV-Desktop-0:hover {
+.Button-CV-Desktop:hover, .Button-CV-Desktop:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 5px 1px #A8C7A8;
-  color: #A8C7A8;
+  box-shadow: 0px 0px 5px 1px var(--primary-light);
 }
 
-.Button-CV-Desktop-1:active, .Button-CV-Desktop-0:active {
+.Button-CV-Desktop:active, .Button-CV-Desktop:active {
   transform: scale(.9);
-  box-shadow: 0px 0px 1px 1px #A8C7A8;
-  color: #7FAF8C;
-}
-
-.Button-1 {
-  background-image: url('../../assets/imgs/icons/icons8-lua.png');
-  background-position: center;
-  background-size: 35px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  cursor: pointer;
-  transition: all .2s;
-}
-
-.Button-0:hover, .Button-1:hover {
-  transform: scale(1.1);
-}
-
-.Button-0 {
-  background-image: url('../../assets/imgs/icons/icons8-sol.png');
-  background-position: center;
-  background-size: 35px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  cursor: pointer;
-  transition: all .2s;
+  box-shadow: 0px 0px 1px 1px var(--primary-light);
+  color: var(--primary);
 }
 
 @keyframes App-logo-spin {

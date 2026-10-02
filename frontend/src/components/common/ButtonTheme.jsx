@@ -1,13 +1,15 @@
-import { useContext, useState } from 'react';
-import AppContext from '../../contexts/AppContext';
+import { useEffect, useState } from 'react';
 import '../../assets/style/ButtonTheme.css';
 
 function ButtonThame() {
-  const { modeThame, setThame } = useContext(AppContext);
   const [isDark, setDark] = useState(true);
 
+  useEffect(() => {
+    const theme = isDark ? 'dark' : 'light';
+    document.documentElement.dataset.theme = theme;
+  }, [isDark]);
+
   const toggleTheme = () => {
-    setThame(modeThame === 1 ? 0 : 1);
     setDark(!isDark);
   };
 

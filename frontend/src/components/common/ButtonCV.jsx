@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-function ButtonCV({ platform, modeThame }) {
+function ButtonCV({ platform }) {
   return (
     <a
       href="/CurriculoFabrício.pdf"
       download
-      className={ `Button-CV-${platform}-${modeThame}` }
+      className={ `Button-CV-${platform}` }
     >
       Baixar CV
     </a>
@@ -14,7 +14,6 @@ function ButtonCV({ platform, modeThame }) {
 
 ButtonCV.propTypes = {
   platform: PropTypes.string.isRequired,
-  modeThame: PropTypes.number.isRequired,
 };
 
 export default ButtonCV;

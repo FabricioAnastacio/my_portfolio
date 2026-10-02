@@ -1,27 +1,13 @@
-.Portfolio-home-1, .Portfolio-home-0 {
+.Portfolio-home {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   transition: all .5s linear;
-}
-
-
-.Portfolio-home-1 {
-  background-color: #F1F3EF;
+  background-color: var(--background);
   h1, h2 {
-    color: #E4E8E3;
+    color: var(--text);
   }
   h3, h4, p, a {
-    color: #96A29A;
-  }
-}
-
-.Portfolio-home-0 {
-  background-color: #0B0F0D;
-  h1, h2, h3 {
-    color: #E4E8E3;
-  }
-  h4, p, a {
-    color: #96A29A;
+    color: var(--text-muted);
   }
 }

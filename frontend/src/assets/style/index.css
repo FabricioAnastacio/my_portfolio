@@ -4,6 +4,38 @@ h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --background: #0B0F0D;
+  --surface: #121814;
+  --surface-2: #19221C;
+
+  --text: #E7ECE8;
+  --text-muted: #98A49D;
+
+  --primary: #789B80;
+  --primary-light: #A8C0AD;
+
+  --border: #29352E;
+}
+
+:root[data-theme='light'] {
+  --background: #F1F3EF;
+  --surface: #dbe0dc;
+  --surface-2: #DCE3DE;
+
+  --text: #18201B;
+  --text-muted: #647269;
+
+  --primary: #557A5E;
+  --primary-light: #789B80;
+
+  --border: #CBD4CE;
+}
+
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;

@@ -40,7 +40,7 @@
 }
 
 .Hero-Link:hover {
-  color: #A8C7A8;
+  color: var(--primary-light);
 }
 
 .Hero-languages {
