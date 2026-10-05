@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import ListStacks from './ListStacks';
 
 export default function PageDescription({ description, platform }) {
-  const { resume, frontend, backend, cs, resumeThow } = description;
+  const { resume, frontend, backend, cs, tools, resumeThow } = description;
 
   return (
     <div id="Page-thow" className={ `Page-thow-${platform} portfolio-section` }>
@@ -27,6 +27,7 @@ export default function PageDescription({ description, platform }) {
             frontend={ frontend }
             backend={ backend }
             cs={ cs }
+            tools={ tools }
           />
         </div>
       </section>

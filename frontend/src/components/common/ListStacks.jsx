@@ -2,11 +2,33 @@ import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 
-function ListStacks({ frontend, backend, cs }) {
+function ListStacks({ frontend, backend, cs, tools }) {
   const { data: { LinksTagsImgs } } = useContext(AppContext);
 
-  const listImgOrganization = (stackTags) => {
-    const { links, create } = stackTags;
+  const listCertificates = (stack) => {
+    const { certificates } = stack;
+    return (
+      <div className="Galery-Certificates">
+        {
+          certificates.length !== 0 && certificates.map((c, i) => (
+            <a
+              key={ i }
+              href={ c.linkDirect }
+              target="_blank"
+              className="boxLink-certificates"
+              rel="noreferrer"
+            >
+              <img src={ c.linkImg } alt={ c.name } />
+              <p>{ `${c.name} ↗` }</p>
+            </a>
+          ))
+        }
+      </div>
+    );
+  };
+
+  const listImgOrganization = (stack) => {
+    const { links, create } = stack;
 
     return (
       <div className="Box-imgs">
@@ -35,39 +57,43 @@ function ListStacks({ frontend, backend, cs }) {
   return (
     <ul>
       <li>
-        <h3>Front-end</h3>
         <div className="Stack-description">
-          <div>
+          <div className="Stack-box-description-tags">
+            <h3>Front-end</h3>
             <p>{ frontend }</p>
+            { listImgOrganization(LinksTagsImgs.frontend) }
           </div>
-          { listImgOrganization(LinksTagsImgs.frontend) }
+          { listCertificates(LinksTagsImgs.frontend) }
         </div>
       </li>
       <li>
-        <h3>Back-end</h3>
         <div className="Stack-description">
-          <div>
+          <div className="Stack-box-description-tags">
+            <h3>Back-end</h3>
             <p>{ backend }</p>
+            { listImgOrganization(LinksTagsImgs.backend) }
           </div>
-          { listImgOrganization(LinksTagsImgs.backend) }
+          { listCertificates(LinksTagsImgs.backend) }
         </div>
       </li>
       <li>
-        <h3>Ciência da Computação</h3>
         <div className="Stack-description">
-          <div>
+          <div className="Stack-box-description-tags">
+            <h3>Ciência da Computação</h3>
             <p>{ cs }</p>
+            { listImgOrganization(LinksTagsImgs.cs) }
           </div>
-          { listImgOrganization(LinksTagsImgs.cs) }
+          { listCertificates(LinksTagsImgs.cs) }
         </div>
       </li>
       <li>
-        <h3>Tools</h3>
         <div className="Stack-description">
-          <div>
-            <p>Teste</p>
+          <div className="Stack-box-description-tags">
+            <h3>Tools</h3>
+            <p>{ tools }</p>
+            { listImgOrganization(LinksTagsImgs.tools) }
           </div>
-          { listImgOrganization(LinksTagsImgs.tools) }
+          { listCertificates(LinksTagsImgs.tools) }
         </div>
       </li>
     </ul>
@@ -78,6 +104,7 @@ ListStacks.propTypes = {
   frontend: PropTypes.string.isRequired,
   backend: PropTypes.string.isRequired,
   cs: PropTypes.string.isRequired,
+  tools: PropTypes.string.isRequired,
 };
 
 export default ListStacks;
