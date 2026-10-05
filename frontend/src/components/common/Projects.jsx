@@ -12,7 +12,10 @@ function Projects(props) {
   const { modeThame } = useContext(AppContext);
 
   return (
-    <div className={ `List-projects-${platform}` }>
+    <div className={ `List-projects-${platform} portfolio-section` }>
+      <div className="timeline-item">
+        <p>PROJETOS</p>
+      </div>
       <p className={ `Content-description-${platform}` }>
         { description.project }
       </p>

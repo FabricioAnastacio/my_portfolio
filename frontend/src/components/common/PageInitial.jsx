@@ -7,7 +7,10 @@ function PageInitial(props) {
   const { name, languages, platform } = props;
 
   return (
-    <section className={ `Content-first-${platform}` }>
+    <section className={ `Content-first-${platform} portfolio-section` }>
+      <div className="timeline-item">
+        <p>HOME</p>
+      </div>
       <div className="Hero-Title-section">
         <h1>{ name }</h1>
         <h3>

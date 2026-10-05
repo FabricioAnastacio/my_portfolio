@@ -36,5 +36,54 @@
     "frontend": "Durante este período, aprofundou-se e aplicou de forma prática conteúdos como: React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API e React Hooks.",
     "backend": "Durante este período, em uma carga horária de 380 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Docker, MySQL, Node.js & Express, Testes Unitários e de Integração com Mocha, Chai e Sinon, TypeScript, Arquitetura em Camadas, REST, JWT, ORM com Sequelize, Deployment, POO e princípios SOLID",
     "cs": "Durante este período, em uma carga horária de 120 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Complexidade de Algoritmos, Algoritmos de Ordenação e Busca, Recursividade & Estratégias para Resolução de Problemas, Estruturas de Dados, OOP e Python"
-  }
+  },
+  "LinksTagsImgs": {
+    "frontend": {
+      "links": [
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+        "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
+        "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
+      ],
+      "create": [
+        {
+          "name": "Testing Library",
+          "link": "https://testing-library.com/img/octopus-64x64.png"
+        }
+      ] 
+    },
+    "backend": {
+      "links": [
+        "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+        "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white",
+        "https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+        "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white",
+        "https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white",
+        "https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white",
+        "https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white"
+      ],
+      "create": [] 
+    },
+    "cs": {
+      "links": [
+        "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+        "https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white"
+      ],
+      "create": [] 
+    },
+    "tools": {
+      "links": [
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+        "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
+        "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
+      ],
+      "create": [
+        {
+          "name": "Testing Library",
+          "link": "https://testing-library.com/img/octopus-64x64.png"
+        }
+      ] 
+    }
+  } 
 }

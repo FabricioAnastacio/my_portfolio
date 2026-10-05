@@ -4,10 +4,34 @@
   flex-direction: column;
   transition: all .5s linear;
   background-color: var(--background);
-  h1, h2 {
-    color: var(--text);
-  }
-  h3, h4, p, a {
-    color: var(--text-muted);
+}
+
+.portfolio-section {
+  position: relative;
+  display: grid;
+}
+
+.portfolio-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -25%;
+  right: 4%;
+  width: 1px;
+  background-color: var(--border);
+}
+
+.timeline-item {
+  position: absolute;
+  height: 100%;
+  right: 5%;
+  opacity: .3;
+  z-index: 0;
+  p {
+    position: sticky;
+    margin-right: 10px;
+    top: 20%;
+    font-size: 20px;
+    font-weight: 700;
   }
 }

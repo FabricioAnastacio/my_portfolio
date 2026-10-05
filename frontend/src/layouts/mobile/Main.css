@@ -31,16 +31,6 @@
   margin-top: 5vmin;
 }
 
-.Title-Description {
-  font-size: 38px;
-  margin: 0 0 50px 10px;
-  font-weight: 800;
-  background-color: gold;
-  width: 0px;
-  padding-left: 20px;
-  border-radius: 5px;
-}
-
 .Content-description-Mobile {
   font-size: 15px;
   padding: 40px 10px;
@@ -51,15 +41,6 @@
   letter-spacing: 0px;
   word-spacing: 5px;
   line-height: 1.6em;
-}
-
-.Image-Mobile {
-  width: 60px;
-  height: 30px;
-  box-shadow: 0px 0px 30px 4px rgb(201, 201, 201);
-  background-size: cover;
-  background-position: center;
-  background-image: url("../../assets/imgs/frontend.png");
 }
 
 .ScrollSecundary-Mobile {

@@ -12,17 +12,6 @@ function Portfolio() {
 
   const desktopAPP = (
     <div className="Portfolio-home">
-      <div className="Paleta-de-cores">
-        <div>Fundo</div>
-        <div>Fundo Claro</div>
-        <div>Supeficie</div>
-        <div>Superficie 2</div>
-        <div>Txt Principal</div>
-        <div>Txt Secun.</div>
-        <div>Accent</div>
-        <div>Accent Fort</div>
-        <div>Bordas</div>
-      </div>
       <Header />
       <Main />
       <Footer />

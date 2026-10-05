@@ -12,23 +12,29 @@ function Header() {
 
   return (
     <header id="Header">
-      <div
-        className="Icon-header"
-      >
-        <img
-          src={ logo }
-          alt="React"
-          className="Icon-profile"
-        />
-        <h2>.Dev</h2>
-      </div>
-      <nav className="Nav-superior">
-        <ButtonCV platform="Desktop" modeThame={ modeThame } />
-        <a className="Links-Header" href="#Contact-footer">Contato</a>
-        <a className="Links-Header" href="#Projects">Projetos</a>
-        <a className="Links-Header" href="#Page-thow">Resumo</a>
-        <ButtonThame />
-      </nav>
+      <section className="Nav-Header">
+        <div className="Menu-header-logo">
+          <div
+            className="Icon-header"
+          >
+            <img
+              src={ logo }
+              alt="React"
+              className="Icon-profile"
+            />
+            <h2>.Dev</h2>
+          </div>
+          <nav className="Nav-superior">
+            <a className="Links-Header" href="#Contact-footer">Contato</a>
+            <a className="Links-Header" href="#Projects">Projetos</a>
+            <a className="Links-Header" href="#Page-thow">Resumo</a>
+          </nav>
+        </div>
+        <div className="btns-thame-cv">
+          <ButtonCV platform="Desktop" modeThame={ modeThame } />
+          <ButtonThame />
+        </div>
+      </section>
     </header>
   );
 }

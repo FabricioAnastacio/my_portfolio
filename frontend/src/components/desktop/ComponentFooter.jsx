@@ -30,7 +30,13 @@ function Footer() {
     }
   }, []);
   return (
-    <footer id="Contact-footer" className={ `Contact-footer-${modeThame}` }>
+    <footer
+      id="Contact-footer"
+      className={ `Contact-footer-${modeThame} portfolio-section` }
+    >
+      <div className="timeline-item">
+        <p>VAMOS CONVERSAR?</p>
+      </div>
       <nav className="Nav-footer">
         <h1>CONTATO</h1>
         <a href="#Header">Voltar ao topo</a>
