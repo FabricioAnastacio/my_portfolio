@@ -4,28 +4,28 @@
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
   "listProjects": [
     {
+      "name": "Starwars planets",
       "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
       "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars.",
-      "technologies": [ "JavaScript", "React", "CSS3", "Jest" ],
-      "tags": "#frontend"
+      "technologies": ["JavaScript", "React", "CSS3", "Jest" ]
     },
     {
+      "name": "Trybe Futebol Clube",
       "link": "https://github.com/FabricioAnastacio/projeto-TrybeFutebolClube",
       "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️.",
-      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ],
-      "tags": "#backend"
+      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ]
     },
     {
+      "name": "Trybe hotel",
       "link": "https://github.com/FabricioAnastacio/projeto-trybe-hotel-csharp",
       "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel.",
-      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ],
-      "tags": "#backend"
+      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ]
     },
     {
+      "name": "Project Zoo functions",
       "link": "https://github.com/FabricioAnastacio/trybe-project-zoo-functions",
       "description": "Desenvolvido funções que buscam informações sobre os animais e pessoas em um zoológico. Alem de construir testes unitarios para testar cada função. 🧑‍🌾",
-      "technologies": [ "JavaScript", "Jest" ],
-      "tags": "#testes"
+      "technologies": [ "JavaScript", "Jest" ]
     }
   ],
   "description": {

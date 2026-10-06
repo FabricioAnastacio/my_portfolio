@@ -1,33 +1,36 @@
-function ListProjects({ modeThame, platform, dataList }) {
+function ListProjects({ platform, dataList }) {
   return (
     dataList.map((item, i) => (
-      <li key={ i } className={ `Project-${modeThame}-${platform}` }>
+      <li key={ i } className={ `Project-card-${platform}` }>
+        <div className="Header-card">
+          <h3>{ item.name }</h3>
+          <a
+            href={ item.link }
+            target="_blank"
+            rel="noreferrer"
+            className="Link-GitHub"
+          >
+            <p>Github →</p>
+          </a>
+        </div>
         <div className={ `Project-description-${platform}` }>
           <div
             className={ `Project-Bunner-${platform}` }
             style={ { backgroundImage: `url(${item.img})` } }
-          >
-            <a
-              href={ item.link }
-              target="_blank"
-              rel="noreferrer"
-            >
-              Saiba mais
-              <p>Github</p>
-            </a>
+          />
+          <div className="Descriptio-tags">
+            <p>{ item.description }</p>
+            <ul className={ `Project-technologies-${platform}` }>
+              {
+                item.technologies.map((tec, index) => (
+                  <li key={ index } className="New-Icon-format">
+                    <p>{ tec }</p>
+                  </li>
+                ))
+              }
+            </ul>
           </div>
-          <h3>{ item.description }</h3>
         </div>
-        <ul className={ `Project-technologies-${platform}` }>
-          {
-            item.technologies.map((tec, index) => (
-              <li key={ index }>
-                { tec }
-              </li>
-            ))
-          }
-        </ul>
-        <h3 className={ `Project-Tags-${platform}` }>{ item.tags }</h3>
       </li>
     ))
   );

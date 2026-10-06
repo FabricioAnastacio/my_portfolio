@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import { useContext } from 'react';
-import AppContext from '../../contexts/AppContext';
 import ListProjects from './ListProjects';
 
 function Projects(props) {
@@ -9,30 +7,22 @@ function Projects(props) {
     description,
     platform,
   } = props;
-  const { modeThame } = useContext(AppContext);
 
   return (
     <div className={ `List-projects-${platform} portfolio-section` }>
       <div className="timeline-item">
         <p>PROJETOS</p>
       </div>
-      <p className={ `Content-description-${platform}` }>
-        { description.project }
-      </p>
       <div className={ `Projects-title-${platform}` }>
-        <h1>Projetos em destaque</h1>
-        <hr className={ `Emphasis-title-${platform}` } />
+        <h1>Projetos</h1>
+        <p>{ description.project }</p>
       </div>
       <ul className={ `Projects-${platform}` }>
         <ListProjects
           platform={ platform }
-          modeThame={ modeThame }
           dataList={ dataList }
         />
       </ul>
-      <p className={ `Content-description-${platform}` }>
-        { description.projectThow }
-      </p>
     </div>
   );
 }

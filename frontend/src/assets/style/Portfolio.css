@@ -35,3 +35,28 @@
     font-weight: 700;
   }
 }
+
+.New-Icon-format {
+  display: flex;
+  align-items: center;
+  background-color: #2b2727;
+  padding: 4px 6px;
+  width: fit-content;
+  border-radius: 20px;
+  margin-left: 4px;
+  cursor: default;
+  filter: saturate(70%) opacity(.7);
+  img {
+    height: 12px;
+    margin: 0;
+  }
+  p {
+    margin-left: 6px;
+    font-size: 7px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.6em;
+  }
+}
