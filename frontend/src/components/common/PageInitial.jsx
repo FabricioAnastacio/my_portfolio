@@ -22,7 +22,7 @@ function PageInitial(props) {
         </p>
         <div className="Hero-Links">
           <a className="Hero-Link" href="#Projects">Projetos ↗</a>
-          <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub →</a>
         </div>
         <p className="Hero-languages">{ languages }</p>
         <Carousel platform={ platform } />

@@ -1,19 +1,10 @@
-import { useCallback, useContext } from 'react';
+import { useCallback } from 'react';
 import '../../layouts/desktop/Footer.css';
 import '../../layouts/desktop/Contact.css';
-import {
-  linkedin,
-  github,
-  instagram,
-  email,
-} from '../../assets/svg';
-import Contact from '../common/Contact';
-import AppContext from '../../contexts/AppContext';
 import FooterAutor from '../common/FooterAutor';
 import ButtonCV from '../common/ButtonCV';
 
 function Footer() {
-  const { modeThame } = useContext(AppContext);
   const Email = 'fabricio12nastacio@gmail.com';
 
   const copyToClipboard = useCallback(async (text) => {
@@ -29,39 +20,33 @@ function Footer() {
       });
     }
   }, []);
+
   return (
     <footer
       id="Contact-footer"
-      className={ `Contact-footer-${modeThame} portfolio-section` }
+      className="Contact-footer portfolio-section"
     >
       <div className="timeline-item">
-        <p>VAMOS CONVERSAR?</p>
+        <p>CONTATO</p>
       </div>
-      <nav className="Nav-footer">
-        <h1>CONTATO</h1>
-        <a href="#Header">Voltar ao topo</a>
-      </nav>
+      <h3>Vamos conversar?</h3>
       <div className="Footer-links">
-        <Contact />
-        <hr className="Line-Desktop" />
-        <section className="Contact-links">
+        <div>
           <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
-            <img src={ email } alt="E-mail" />
-            E-mail
+            <p>E-mail</p>
           </button>
+          <ButtonCV platform="Desktop" />
+        </div>
+        <section className="Contact-links">
           <a className="links" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
-            <img src={ github } alt="Github Link" />
             Github
           </a>
           <a className="links" href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
-            <img src={ linkedin } alt="Linkedin Link" />
             Linkedin
           </a>
           <a className="links" href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
-            <img src={ instagram } alt="Instagram Link" />
             Instagram
           </a>
-          <ButtonCV platform="Desktop" modeThame={ modeThame } />
         </section>
       </div>
       <FooterAutor platform="Desktop" />
