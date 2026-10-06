@@ -44,7 +44,7 @@
     flex-direction: column;
     border-top: 1px solid var(--border);
     list-style: none;
-    padding: 50px 25px;
+    padding: 100px 25px;
     transition: .2s linear;
     h3 {
       margin-top: 10px;
@@ -64,6 +64,7 @@
   display: flex;
   flex-direction: column;
   width: 55%;
+  margin-bottom: 20px;
 }
 
 .Galery-Certificates {
@@ -108,7 +109,7 @@
 .Box-imgs {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .First-box-img {

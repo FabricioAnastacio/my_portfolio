@@ -19,7 +19,7 @@ function ListStacks({ frontend, backend, cs, tools }) {
               rel="noreferrer"
             >
               <img src={ c.linkImg } alt={ c.name } />
-              <p>{ `${c.name} ↗` }</p>
+              <p>{ `${c.name} →` }</p>
             </a>
           ))
         }
@@ -89,7 +89,7 @@ function ListStacks({ frontend, backend, cs, tools }) {
       <li>
         <div className="Stack-description">
           <div className="Stack-box-description-tags">
-            <h3>Tools</h3>
+            <h3>Ferramentas</h3>
             <p>{ tools }</p>
             { listImgOrganization(LinksTagsImgs.tools) }
           </div>

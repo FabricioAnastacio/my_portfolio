@@ -19,10 +19,10 @@ export default function PageDescription({ description, platform }) {
       </section>
       <section className={ `Page-tree-${platform} portfolio-section` }>
         <div className="timeline-item">
-          <p>STACKS</p>
+          <p>STACK</p>
         </div>
         <div className="Section-Stacks">
-          <h1>Stacks</h1>
+          <h1>Stack</h1>
           <ListStacks
             frontend={ frontend }
             backend={ backend }

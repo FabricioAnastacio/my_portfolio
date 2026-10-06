@@ -1,7 +1,7 @@
 {
   "myname": "Fabrício A. Rodrigues",
   "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
-  "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#", "C++", "C"],
+  "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
   "listProjects": [
     {
       "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
@@ -94,7 +94,16 @@
         "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
         "https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white"
       ],
-      "create": [],
+      "create": [
+        {
+          "name": "Algoritmos",
+          "link": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-algorithms-data-analytics-flaticons-flat-circular-flat-icons.png"
+        },
+        {
+          "name": "estruturas de dados",
+          "link": "https://img.icons8.com/external-solidglyph-m-oki-orlando/32/external-data-structures-data-science-solid-solidglyph-m-oki-orlando.png"
+        }
+      ],
       "certificates": [
         {
           "name": "Ciência da Computação",
