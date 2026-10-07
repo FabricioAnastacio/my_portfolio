@@ -5,7 +5,7 @@ function FooterAutor({ platform }) {
     <div className={ `Autor-${platform}` }>
       <section className="footer-bottom">
         <div className="footer-left">
-          <p>&reg; 2024 FabrícioA.R.</p>
+          <p>&reg; 2026 FabrícioA.R.</p>
           <p>|</p>
           <p>obrigado por acessar.</p>
           <p>|</p>
