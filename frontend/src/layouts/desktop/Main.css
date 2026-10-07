@@ -1,12 +1,3 @@
-.Content-loading {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 59vmin;
-  font-family: "SUSE", sans-serif;
-}
-
 .Page-thow-Desktop {
   display: flex;
   align-items: center;

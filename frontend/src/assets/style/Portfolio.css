@@ -1,3 +1,10 @@
+.Content-loading {
+  display: grid;
+  place-items: center;
+  height: 100vmin;
+  text-align: center;
+}
+
 .Portfolio-home {
   display: flex;
   justify-content: space-between;

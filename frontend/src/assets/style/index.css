@@ -48,7 +48,6 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0B0F0D;
 }
 
 code {
@@ -57,4 +56,5 @@ code {
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--background);
 }
