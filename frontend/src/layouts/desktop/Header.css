@@ -30,6 +30,7 @@ header {
 .Icon-header {
   display: flex;
   align-items: center;
+  text-decoration: none;
   h2 {
     font-size: clamp(1rem, 2vw, 2rem);
     font-weight: 400;
@@ -63,6 +64,7 @@ header {
 .Links-Header:hover {
   opacity: 1;
   color: var(--primary-light);
+  text-decoration: underline;
 }
 
 .Nav-superior a:active {

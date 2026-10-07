@@ -9,7 +9,7 @@ function FooterAutor({ platform }) {
           <p>|</p>
           <p>obrigado por acessar.</p>
           <p>|</p>
-          <button className="btm-home">home</button>
+          <a className="btm-home" href="#home">home</a>
         </div>
         <section className="Contact-links">
           <a className="links" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">

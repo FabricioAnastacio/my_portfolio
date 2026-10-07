@@ -9,7 +9,7 @@ function Projects(props) {
   } = props;
 
   return (
-    <div className={ `List-projects-${platform} portfolio-section` }>
+    <div id="Projects" className={ `List-projects-${platform} portfolio-section` }>
       <div className="timeline-item">
         <p>PROJETOS</p>
       </div>

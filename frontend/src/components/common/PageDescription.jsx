@@ -17,7 +17,7 @@ export default function PageDescription({ description, platform }) {
           { resumeThow }
         </p>
       </section>
-      <section className={ `Page-tree-${platform} portfolio-section` }>
+      <section id="Stack" className={ `Page-tree-${platform} portfolio-section` }>
         <div className="timeline-item">
           <p>STACK</p>
         </div>

@@ -10,24 +10,27 @@ function Header() {
 
   const logo = arrayImgs[arrayImgs.length - 1];
 
+  const headerLogo = () => (
+    <a href="#home" className="Icon-header">
+      <img
+        src={ logo }
+        alt="React"
+        className="Icon-profile"
+      />
+      <h2>.Dev</h2>
+    </a>
+  );
+
   return (
     <header id="Header">
       <section className="Nav-Header">
         <div className="Menu-header-logo">
-          <div
-            className="Icon-header"
-          >
-            <img
-              src={ logo }
-              alt="React"
-              className="Icon-profile"
-            />
-            <h2>.Dev</h2>
-          </div>
+          { headerLogo() }
           <nav className="Nav-superior">
-            <a className="Links-Header" href="#Contact-footer">Contato</a>
-            <a className="Links-Header" href="#Projects">Projetos</a>
             <a className="Links-Header" href="#Page-thow">Resumo</a>
+            <a className="Links-Header" href="#Stack">Stack</a>
+            <a className="Links-Header" href="#Projects">Projetos</a>
+            <a className="Links-Header" href="#Contact-footer">Contato</a>
           </nav>
         </div>
         <div className="btns-thame-cv">

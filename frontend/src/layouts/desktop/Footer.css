@@ -103,9 +103,10 @@
   color: var(--primary);
 }
 
-.links:hover {
+.links:hover, .btm-home:hover {
   transform: scale(1.02);
   color: var(--primary-light);
+  text-decoration: underline;
 }
 
 .links:active {
@@ -124,19 +125,17 @@
   transition: all .2s ease;
 }
 
-.Button-Email:hover, .btm-home:hover {
+.Button-Email:hover {
   transform: scale(1.05);
   color: var(--primary);
   box-shadow: 0px 0px 5px 1px var(--primary-light);
 }
 
 .btm-home {
-  background-color: transparent;
   color: var(--primary);
   border: 0;
-  font-size: 16px;
-  margin-top: 2px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .Autor-Desktop {
