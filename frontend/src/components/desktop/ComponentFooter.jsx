@@ -1,26 +1,19 @@
-import { useCallback } from 'react';
+import { useState } from 'react';
 import '../../layouts/desktop/Footer.css';
 import '../../layouts/desktop/Contact.css';
 import FooterAutor from '../common/FooterAutor';
 import ButtonCV from '../common/ButtonCV';
 import fotoF from '../../assets/imgs/fabricio_fot.png';
+import Contact from '../common/Contact';
 
 function Footer() {
-  const Email = 'fabricio12nastacio@gmail.com';
+  // const Email = 'fabricio12nastacio@gmail.com';
+  const [emailPage, setEmailPage] = useState(false);
 
-  const copyToClipboard = useCallback(async (text) => {
-    const customAlert = (txt) => alert(txt);
-    try {
-      await navigator.clipboard.writeText(text);
-      customAlert('Email copiado para area de transferência');
-    } catch (e) {
-      customAlert('Email não copiado, verifique o erro e o email no console');
-      console.log({
-        Email: 'fabricio12nastacio@gmail.com',
-        Erro: e.message,
-      });
-    }
-  }, []);
+  const setTabEmailClose = () => {
+    document.body.style.overflow = !emailPage ? 'hidden' : '';
+    setEmailPage(!emailPage);
+  };
 
   return (
     <footer
@@ -37,9 +30,12 @@ function Footer() {
           alt="Foto de Fabricio"
         />
         <div className="box-buttons">
-          <h3>Vamos conversar?</h3>
           <div>
-            <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
+            <h3>Vamos conversar?</h3>
+            <p>Entre em contato ou conheça mais sobre meu trabalho.</p>
+          </div>
+          <div>
+            <button onClick={ setTabEmailClose } className="Button-Email">
               E-mail
             </button>
             <ButtonCV platform="Desktop" />
@@ -47,6 +43,13 @@ function Footer() {
         </div>
       </div>
       <FooterAutor platform="Desktop" />
+      {
+        emailPage && (
+          <div className="Email-tab">
+            <Contact setTabEmailClose={ setTabEmailClose } />
+          </div>
+        )
+      }
     </footer>
   );
 }

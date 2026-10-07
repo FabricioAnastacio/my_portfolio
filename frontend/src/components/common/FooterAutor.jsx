@@ -9,14 +9,14 @@ function FooterAutor({ platform }) {
           <p>|</p>
           <p>obrigado por acessar.</p>
           <p>|</p>
-          <a className="btm-home" href="#home">home</a>
+          <a className="btm-home" href="#home">inicio</a>
         </div>
         <section className="Contact-links">
           <a className="links" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
             Github
           </a>
           <a className="links" href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
-            Linkedin
+            in Linkedin
           </a>
           <a className="links" href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
             Instagram

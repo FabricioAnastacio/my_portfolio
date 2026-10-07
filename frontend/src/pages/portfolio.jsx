@@ -33,7 +33,7 @@ function Portfolio() {
     </div>
   );
 
-  if (loading) return (<h1 className="Content-loading">Loading...</h1>);
+  if (loading) return (<h1 className="Content-loading">Carregando...</h1>);
   if (erro) {
     return (
       <div className="Content-loading">

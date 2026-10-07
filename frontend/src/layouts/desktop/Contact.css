@@ -1,19 +1,30 @@
 .Contact {
-  display: grid;
-  place-items: center;
-  align-items: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 40px;
+  width: 40%;
+  background-color: var(--border);
+  border-radius: 20px;
+  box-shadow: 0 0 40px 1px var(--border);
+}
+
+.close {
+  color: var(--text);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.1);
 }
 
 .Contact-Success, .Contact-Error {
   display: grid;
   align-items: center;
   text-align: center;
-  width: 324px;
-  h1 {
-    font-size: 25px;
-    margin-bottom: 50px;
-  }
 }
 
 .Contact-Error {
@@ -29,82 +40,95 @@
   }
 }
 
+.Card-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.response-email {
+  display: grid;
+  place-items: center;
+  padding: 0 50px;
+  cursor: default;
+}
+
 form {
   display: grid;
   place-items: start;
+  width: 55%;
   h1 {
-    font-size: 25px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
-label {
-  display: grid;
+.Div-form {
+  display: flex;
+  justify-content: start;
+  position: relative;
   margin-bottom: 20px;
-  font-size: 18px;
+  width: 80%;
 }
 
-input {
-  padding: 5px 10px;
-  width: 250px;
-  border-radius: 1vh;
-  font-size: 18px;
-  background-color: rgb(228, 228, 228);
-  border: 1px solid rgba(0, 0, 0, 0.705);
+label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 1px;
+  background-color: var(--border);
+  color: var(--text-muted);
+  transition: all .3s ease;
 }
 
-input:hover {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
-}
-
-input:focus {
-  outline: none;
-  border-color: gold;
+input, textarea {
+  display: block;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text);
+  border-bottom: solid 1px var(--primary);
+  transition: all .3s ease;
+  width: 100%;
+  padding: 7px 5px;
+  font-family: 'Manrope', sans-serif;
 }
 
 textarea {
-  background-color: rgb(228, 228, 228);
-  padding: 10px 10px;
-  width: 300px;
-  font-size: 18px;
-  height: 100px;
-  border-radius: 1vh;
-  border: 1px solid rgba(0, 0, 0, 0.705);
+  height: 20px;
 }
 
-textarea:hover {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
-}
-
+input:focus,
 textarea:focus {
+  color: var(--text);
   outline: none;
-  border-color: gold;
+  border-bottom-color: var(--accent);
 }
 
 .Buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
   width: 100%;
   img {
-    width: 20px;
+    width: 15px;
     margin-right: 5px;
   }
 }
 
-.Button-send, .Btm-Success {
-  padding: 10px 30px;
-  background-color: rgb(60, 60, 255);
-  color: white;
-  font-size: 15px;
+.Button-send {
+  padding: 2px 10px;
+  background-color: transparent;
+  color: var(--text);
+  font-size: 13px;
   border: none;
   border-radius: 10px;
   transition: .1s linear;
   &:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px 1px rgba(60, 60, 255, 0.466);
     cursor: pointer;
   }
 }
@@ -112,38 +136,13 @@ textarea:focus {
 .Button-send {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .Button-send:disabled {
-  background-color: rgba(60, 60, 255, 0.596);
+  opacity: .5;
   &:hover{
     cursor: progress;
-    transform: scale(1);
-    box-shadow: none;
-  }
-}
-
-.Button-clear {
-  display: flex;
-  align-items: center;
-  padding: 10px 30px 10px 20px;
-  background-color: rgb(255, 60, 60);
-  color: white;
-  font-size: 15px;
-  border: none;
-  border-radius: 10px;
-  transition: .1s linear;
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 10px 1px rgba(255, 60, 60, 0.466);
-    cursor: pointer;
-  }
-}
-
-.Button-clear:disabled {
-  background-color: rgba(255, 60, 60, 0.479);
-  &:hover{
-    cursor: not-allowed;
     transform: scale(1);
     box-shadow: none;
   }
