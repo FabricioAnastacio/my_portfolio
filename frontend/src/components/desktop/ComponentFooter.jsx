@@ -3,6 +3,7 @@ import '../../layouts/desktop/Footer.css';
 import '../../layouts/desktop/Contact.css';
 import FooterAutor from '../common/FooterAutor';
 import ButtonCV from '../common/ButtonCV';
+import fotoF from '../../assets/imgs/fabricio_fot.png';
 
 function Footer() {
   const Email = 'fabricio12nastacio@gmail.com';
@@ -24,30 +25,26 @@ function Footer() {
   return (
     <footer
       id="Contact-footer"
-      className="Contact-footer portfolio-section"
+      className="Contact-footer portfolio-section-footer"
     >
-      <div className="timeline-item">
+      <div className="timeline-item-footer">
         <p>CONTATO</p>
       </div>
-      <h3>Vamos conversar?</h3>
-      <div className="Footer-links">
-        <div>
-          <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
-            <p>E-mail</p>
-          </button>
-          <ButtonCV platform="Desktop" />
+      <div className="footer-header">
+        <img
+          className="Picture-Desktop"
+          src={ fotoF }
+          alt="Foto de Fabricio"
+        />
+        <div className="box-buttons">
+          <h3>Vamos conversar?</h3>
+          <div>
+            <button onClick={ () => copyToClipboard(Email) } className="Button-Email">
+              E-mail
+            </button>
+            <ButtonCV platform="Desktop" />
+          </div>
         </div>
-        <section className="Contact-links">
-          <a className="links" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
-            Github
-          </a>
-          <a className="links" href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
-            Linkedin
-          </a>
-          <a className="links" href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
-            Instagram
-          </a>
-        </section>
       </div>
       <FooterAutor platform="Desktop" />
     </footer>
