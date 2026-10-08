@@ -5,6 +5,10 @@
   justify-content: center;
   height: 50px;
   li {
+    img {
+      height: 25px;
+      filter: grayscale(100%);
+    };
     position: absolute;
     opacity: 0;
     list-style: none;
@@ -64,6 +68,7 @@
   50% {
     opacity: 1;
     filter: drop-shadow(0px 9px 3px rgba(0, 0, 0, 0.363));
+    filter: grayscale(0);
   }
   10% {
     opacity: 1;

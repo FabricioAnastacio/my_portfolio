@@ -1,12 +1,3 @@
-.Content-loading {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 59vmin;
-  font-family: "SUSE", sans-serif;
-}
-
 .Page-thow-Desktop {
   display: flex;
   align-items: center;
@@ -18,93 +9,182 @@
   text-align: start;
   padding: 12% 25%;
   margin: 0;
-  font-weight: 600;
-  background-color: black;
-  color: white;
-  font-size: 22px;
+  background-color: var(--surface-2);
   letter-spacing: 0px;
   word-spacing: 5px;
   line-height: 1.6em;
 }
 
-.ScrollSecundary-Desktop {
+.Page-tree-Desktop {
+  padding: 20vmin;
+}
+
+.Section-Stacks {
+  h1 {
+    margin: 30px 0;
+  }
+}
+
+.Section-Stacks ul {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  padding: 0 50px;
+  li {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+    list-style: none;
+    padding: 100px 25px;
+    transition: .2s linear;
+  }
+}
+
+.Stack-description {
   display: flex;
   align-items: start;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-top: 250px;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.Rail {
-  bottom: 150px;
-  position: relative;
-  height: 1500px;
+.Stack-box-description-tags {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin-bottom: 20px;
+  h3 {
+    margin-top: 10px;
+    width: fit-content;
+  }
 }
 
-.ImgScroll {
-  top: 5vw;
-  position: sticky;
-  h1 {
-    font-size: 48px;
-    margin-bottom: 50px;
-    font-weight: 800;
-    background-color: gold;
-    width: 32px;
+.Galery-Certificates {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.boxLink-certificates {
+  display: flex;
+  margin-left: 5px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 122px;
+  background-color: var(--surface-2);
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  filter: saturate(70%) opacity(.7);
+  transition: all .2s ease;
+  cursor: pointer;
+  img {
+    height: 80px;
     border-radius: 5px;
   }
-}
-
-.Image-Scroll {
-  width: 600px;
-  height: 350px;
-  box-shadow: 0px 0px 20px 1px rgba(201, 201, 201, 0.473);
-  background-size: cover;
-  background-position: center;
-  background-image: url("../../assets/imgs/frontend.png");
-  animation: scrollPage .5s step-end;
-  animation-timeline: view();
-}
-
-.Page-thow-Desktop ul {
-  width: 70vh;
-  z-index: 0;
-  li {
-    list-style: none;
-    padding: 5px;
-    height: auto;
-    margin-bottom: 20vmin;
-    transition: .2s linear;
-    font-size: 48px;
-    p {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 0px;
-      word-spacing: 5px;
-      line-height: 1.6em;
-    }
-    div {
-      text-align: center;
-      height: 100%;
-    }
-    hr {
-      border: 0;
-      background-color: rgba(128, 128, 128, 0.493);
-      height: 1px;
-    }
+  p {
+    font-size: 12px;
+    text-align: start;
   }
 }
 
-@keyframes scrollPage {
-  100%{
-    background-image: url("../../assets/imgs/code_tybe_hotel.png");
+.boxLink-certificates:hover {
+  transform: scale(1.02);
+  background-color: var(--border);
+  border-color: var(--surface-2);
+  box-shadow: 0 0 30px 10px var(--surface-2);
+  filter: saturate(100%) opacity(1);
+}
+
+.modal-certificate {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  align-items: start;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.116);
+  backdrop-filter: blur(1px);
+}
+
+.box-modal {
+  margin-top: 10vmin;
+  background-color: var(--border);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 1px var(--border);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  background-color: var();
+}
+
+.c-name-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.certificate-img {
+  height: 50vmin;
+  border-radius: 10px;
+  margin: 10px;
+  filter: opacity(.7);
+}
+
+.link-Accredible {
+  height: 14px;
+  background-color: var(--text);
+  padding: 5px 10px;
+  border: var(--border);
+  border-radius: 10px;
+  transform: all .2s ease;
+}
+
+.link-Accredible:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px 1px var(--surface-2);
+}
+
+.link-Accredible:active {
+  transform: scale(1);
+}
+
+.Box-imgs {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.First-box-img {
+  display: flex;
+  img {
+    height: 19px;
+    border-radius: 10px;
   }
-  60% {
-    background-image: url("../../assets/imgs/code_tybe_hotel.png");
+}
+
+.Secund-box-img {
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 4px;
+    height: 18px;
+    border-radius: 10px;
   }
-  40% {
-    background-image: url("../../assets/imgs/mapWorkbench-Exemple.png");
-  }
-  35% {
-    background-image: url("../../assets/imgs/frontend.png");
-  }
+}
+
+.Tag-img {
+  filter: saturate(70%) opacity(.7);
+}
+
+.New-Icon-format:hover, .Tag-img:hover {
+  filter: saturate(100%) opacity(1);
 }

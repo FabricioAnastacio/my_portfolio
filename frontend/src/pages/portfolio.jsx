@@ -1,20 +1,21 @@
-import { useContext } from 'react';
-import '../assets/style/Portfolio.css';
+import { useEffect } from 'react';
 import Header from '../components/desktop/ComponentHeader';
 import Main from '../components/desktop/ComponentMain';
 import Footer from '../components/desktop/ComponentFooter';
-import HeaderMobile from '../components/mobile/ComponentHeader';
-import MainMobile from '../components/mobile/ComponentMain';
-import FooterMobile from '../components/mobile/ComponentFooter';
-import AppContext from '../contexts/AppContext';
+import '../assets/style/Portfolio.css';
+import FetchJson from '../hooks/fetchJson';
 
 function Portfolio() {
-  const { modeThame } = useContext(AppContext);
+  const [loading, erro, refresh] = FetchJson();
   const { innerWidth: width } = window;
   const maxWidth = 920;
 
+  useEffect(() => {
+    refresh();
+  }, []);
+
   const desktopAPP = (
-    <div className={ `Portfolio-home-${modeThame}` }>
+    <div className="Portfolio-home">
       <Header />
       <Main />
       <Footer />
@@ -22,12 +23,25 @@ function Portfolio() {
   );
 
   const mobileAPP = (
-    <div className={ `Portfolio-home-${modeThame}` }>
-      <HeaderMobile />
-      <MainMobile />
-      <FooterMobile />
+    <div className="Portfolio-home">
+      <h3>Versão mobile indisponível no momento</h3>
+      <p>Acesse pelo computador, por favor.</p>
     </div>
   );
+
+  if (loading) return (<h1 className="Content-loading">Carregando...</h1>);
+  if (erro) {
+    return (
+      <div className="Content-loading">
+        <p>
+          Aconteceu um erro
+          <br />
+          <br />
+          Recarregue a pagina, por favor
+        </p>
+      </div>
+    );
+  }
 
   return width > maxWidth ? desktopAPP : mobileAPP;
 }

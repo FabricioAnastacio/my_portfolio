@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
-import InitialPage from './pages/initialPage';
+// import InitialPage from './pages/initialPage';
 import Portfolio from './pages/portfolio';
 
 function App() {
   return (
     <Routes>
-      <Route exact path="/" Component={ InitialPage } />
-      <Route exact path="/home" Component={ Portfolio } />
+      <Route exact path="/" Component={ Portfolio } />
+      {/* <Route exact path="/home" Component={ Portfolio } /> */}
     </Routes>
   );
 }

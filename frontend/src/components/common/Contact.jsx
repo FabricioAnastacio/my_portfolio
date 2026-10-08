@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ContactForm from './ContactForm';
-import iconReturn from '../../assets/imgs/icons/icons8-retornar-48.png';
 
 class Contact extends React.Component {
   constructor() {
@@ -61,15 +61,10 @@ class Contact extends React.Component {
 
   sendFormSuccess = () => {
     return (
-      <section className="Contact">
+      <section>
         <section className="Contact-Success">
-          <h1>Menssagen enviada!</h1>
-          <button
-            className="Btm-Success"
-            onClick={ () => this.setState({ isSuccess: false }) }
-          >
-            Nova menssagem
-          </button>
+          <h3>Menssagen enviada com sucesso!</h3>
+          <p>Irei retornar o mais rapido possivel</p>
         </section>
       </section>
     );
@@ -77,21 +72,16 @@ class Contact extends React.Component {
 
   sendFormError = () => {
     return (
-      <section className="Contact">
+      <section>
         <section className="Contact-Error">
-          <h1>
-            Aconteceu um erro.
+          <h3>
+            Aconteceu algum erro.
             <br />
+          </h3>
+          <p>
             Preencha os campos e
-            tente novamente!
-          </h1>
-          <button
-            className="Btm-Success"
-            onClick={ () => this.setState({ isError: false }) }
-          >
-            <img src={ iconReturn } alt="Retornar" />
-            Retornar
-          </button>
+            tente novamente
+          </p>
         </section>
       </section>
     );
@@ -99,24 +89,46 @@ class Contact extends React.Component {
 
   render() {
     const { name, message, email, isSuccess, isDisable, isError } = this.state;
-
-    if (isError) return this.sendFormError();
-    if (isSuccess) return this.sendFormSuccess();
+    const { setTabEmailClose } = this.props;
 
     return (
       <section className="Contact">
-        <ContactForm
-          isDisable={ isDisable }
-          name={ name }
-          email={ email }
-          message={ message }
-          handleChenge={ this.handleChenge }
-          sendForm={ this.sendForm }
-          resetForm={ this.resetForm }
-        />
+        <button
+          onClick={ setTabEmailClose }
+          className="close"
+          aria-label="Fechar formulário de contato"
+        >
+          ×
+        </button>
+        <div className="Card-email">
+          <ContactForm
+            isDisable={ isDisable }
+            name={ name }
+            email={ email }
+            message={ message }
+            handleChenge={ this.handleChenge }
+            sendForm={ this.sendForm }
+            resetForm={ this.resetForm }
+          />
+          <div className="response-email">
+            { isSuccess && this.sendFormSuccess() }
+            { isError && this.sendFormError() }
+            {
+              (!isSuccess && !isError) && (
+                <div>
+                  <p>Envie sua mensagem e retornarei o mais breve possível.</p>
+                </div>
+              )
+            }
+          </div>
+        </div>
       </section>
     );
   }
 }
+
+Contact.propTypes = {
+  setTabEmailClose: PropTypes.func.isRequired,
+};
 
 export default Contact;

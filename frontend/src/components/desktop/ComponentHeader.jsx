@@ -1,56 +1,43 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import arrayImgs from '../../assets/imgs/importImgs';
 import '../../layouts/desktop/Header.css';
 import AppContext from '../../contexts/AppContext';
 import ButtonCV from '../common/ButtonCV';
+import ButtonThame from '../common/ButtonTheme';
 
 function Header() {
-  const number = 5;
-  const [valueSecund, setSecund] = useState(number);
-  const { setThame, modeThame } = useContext(AppContext);
+  const { modeThame } = useContext(AppContext);
 
-  const handleClick = () => {
-    if (modeThame === 1) setThame(0);
-    else setThame(1);
-  };
+  const logo = arrayImgs[arrayImgs.length - 1];
 
-  const handleLogo = () => {
-    setSecund(valueSecund - 1);
-    if (valueSecund === 1) setSecund(number);
-    console.log(valueSecund);
-  };
-
-  const logo = modeThame === 0
-    ? arrayImgs[arrayImgs.length - 1] : arrayImgs[arrayImgs.length - 2];
+  const headerLogo = () => (
+    <a href="#home" className="Icon-header">
+      <img
+        src={ logo }
+        alt="React"
+        className="Icon-profile"
+      />
+      <h2>.Dev</h2>
+    </a>
+  );
 
   return (
     <header id="Header">
-      <div
-        className="Icon-header"
-        onClick={ handleLogo }
-        role="button"
-        onKeyPress={ 0 }
-        tabIndex="0"
-      >
-        <img
-          src={ logo }
-          alt="React"
-          style={ { animationDuration: `${valueSecund}s` } }
-          className="Icon-profile"
-        />
-        <h2>Dev Jr.</h2>
-      </div>
-      <nav className="Nav-superior">
-        <ButtonCV platform="Desktop" modeThame={ modeThame } />
-        <a className="Links-Header" href="#Contact-footer">Contato</a>
-        <a className="Links-Header" href="#Projects">Projetos</a>
-        <a className="Links-Header" href="#Page-thow">Resumo</a>
-        <button
-          className={ `Button-${modeThame}` }
-          onClick={ handleClick }
-          aria-label="Thame"
-        />
-      </nav>
+      <section className="Nav-Header">
+        <div className="Menu-header-logo">
+          { headerLogo() }
+          <nav className="Nav-superior">
+            <a className="Links-Header" href="#Page-thow">Sobre</a>
+            <a className="Links-Header" href="#Stack">Stack</a>
+            <a className="Links-Header" href="#Projects">Projetos</a>
+            <a className="Links-Header" href="#Contact-footer">Contato</a>
+          </nav>
+        </div>
+        <div className="btns-thame-cv">
+          <ButtonCV platform="Desktop" modeThame={ modeThame } />
+          <ButtonThame />
+        </div>
+      </section>
     </header>
   );
 }

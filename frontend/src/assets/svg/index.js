@@ -14,6 +14,9 @@ import github from './socialMidia/github.svg';
 import instagram from './socialMidia/instagram.svg';
 import email from './socialMidia/email.svg';
 
+import c from '../imgs/icons/icons8-c-48.png';
+import cpp from '../imgs/icons/icons8-c++-48.png';
+
 export {
   js,
   py,
@@ -30,4 +33,6 @@ export {
   github,
   instagram,
   email,
+  c,
+  cpp,
 };

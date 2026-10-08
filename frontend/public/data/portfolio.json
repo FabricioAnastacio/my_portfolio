@@ -4,37 +4,133 @@
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
   "listProjects": [
     {
+      "name": "Starwars planets",
       "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
-      "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars.",
-      "technologies": [ "JavaScript", "React", "CSS3", "Jest" ],
-      "tags": "#frontend"
+      "description": "Este projeto é uma aplicação FrontEnd desenvolvido com React. Seu propósito é mostrar uma tabela completa com os planetas do universo de Star Wars.",
+      "technologies": ["JavaScript", "React", "CSS3", "Jest" ],
+      "demo": "https://fabricioanastacio.github.io/project-starwars-planets/"
     },
     {
+      "name": "Trybe Futebol Clube",
       "link": "https://github.com/FabricioAnastacio/projeto-TrybeFutebolClube",
-      "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️.",
+      "description": "Este projeto se trata de um sistema informativo sobre partidas e classificações de futebol fictício.",
       "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ],
-      "tags": "#backend"
+      "demo": ""
     },
     {
+      "name": "Trybe hotel",
       "link": "https://github.com/FabricioAnastacio/projeto-trybe-hotel-csharp",
-      "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel.",
+      "description": "Esta é uma API que trabalha com dados de um hotel fictício, foi desenvolvido para executar cadastros, atualizações, deleções e leituras das informações basicas de um hotel.",
       "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ],
-      "tags": "#backend"
+      "demo": ""
     },
     {
+      "name": "Project Zoo functions",
       "link": "https://github.com/FabricioAnastacio/trybe-project-zoo-functions",
-      "description": "Desenvolvido funções que buscam informações sobre os animais e pessoas em um zoológico. Alem de construir testes unitarios para testar cada função. 🧑‍🌾",
+      "description": "Este sistema de funções foi desenvolvido com o propósito de executar ações fundamentais de um programa de zoológico. Alem de contar com testes unitarios para testar cada função",
       "technologies": [ "JavaScript", "Jest" ],
-      "tags": "#testes"
+      "demo": ""
     }
   ],
   "description": {
-    "resume": "Desenvolvedor fullstack com sólida experiência em diversas linguagens e tecnologias, incluindo C#, Python, JavaScript e TypeScript. Minha atuação abrange tanto o front-end quanto o back-end, utilizando ferramentas e frameworks modernos como React, React Native, Redux e React Router para desenvolvimento de interfaces dinâmicas e de alta performance. No back-end, tenho experiência com Node.js, Express.js e a plataforma .NET, incluindo ASP.NET, o que me permite criar aplicações robustas e escaláveis.",
-    "resumeThow": "Gerenciamento de banco de dados com MySQL, SQLite e SQL Server, utilizando Sequelize para facilitar a interação com bases de dados relacionais. Também possuo experiência com autenticação segura usando JWT e conteinerização de aplicações com Docker, o que me proporciona flexibilidade e eficiência na entrega de projetos.",
+    "resume": "Sou desenvolvedor Full Stack e venho construindo minha formação por meio de estudos e projetos práticos em desenvolvimento de software. Tenho experiência com C#, Python, JavaScript e TypeScript, atuando tanto na construção de interfaces quanto no desenvolvimento de aplicações e APIs. No front-end, trabalho principalmente com React e seu ecossistema; no back-end, utilizo Node.js e a plataforma .NET, incluindo ASP.NET.",
+    "resumeThow": "Também possuo conhecimentos em bancos de dados relacionais, como MySQL, SQLite e SQL Server, além de ferramentas e práticas como Sequelize, JWT e Docker. Busco desenvolver soluções que aliem clareza, funcionalidade e organização, mantendo uma base sólida para evolução e manutenção dos projetos.",
     "project": "Mais de 35 projetos concluidos. Dentre as linguagens conhecidas se destaca em TypeScript e C#, linguagens fortemente tipadas e robustas muito utilizadas.",
     "projectThow": "Estou sempre em busca de aprimorar minhas habilidades e aplicar as melhores práticas de desenvolvimento para entregar soluções que agreguem valor ao cliente.",
-    "frontend": "Durante este período, aprofundou-se e aplicou de forma prática conteúdos como: React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API e React Hooks.",
-    "backend": "Durante este período, em uma carga horária de 380 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Docker, MySQL, Node.js & Express, Testes Unitários e de Integração com Mocha, Chai e Sinon, TypeScript, Arquitetura em Camadas, REST, JWT, ORM com Sequelize, Deployment, POO e princípios SOLID",
-    "cs": "Durante este período, em uma carga horária de 120 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Complexidade de Algoritmos, Algoritmos de Ordenação e Busca, Recursividade & Estratégias para Resolução de Problemas, Estruturas de Dados, OOP e Python"
-  }
+    "frontend": "Ao longo da minha formação em Front-end, aprofundei meus conhecimentos no desenvolvimento de interfaces utilizando React e seu ecossistema. Estudei componentes, estado e eventos, componentes controlados, ciclo de vida, React Router, testes com React Testing Library, Redux, Context API e React Hooks.",
+    "backend": "Na área de Back-end, desenvolvi conhecimentos na construção de APIs e aplicações utilizando Node.js, Express e TypeScript. Minha formação inclui Docker, MySQL, arquitetura em camadas, APIs REST, JWT, ORM com Sequelize, testes unitários e de integração com Mocha, Chai e Sinon, além de conceitos de POO, princípios SOLID e práticas de deployment.",
+    "cs": "Durante meus estudos em Ciência da Computação, desenvolvi uma base sólida em fundamentos de programação e resolução de problemas. Entre os conteúdos estudados estão complexidade de algoritmos, algoritmos de ordenação e busca, recursividade, estratégias para resolução de problemas, estruturas de dados, programação orientada a objetos e Python.",
+    "tools": "Durante minha formação em C#, aprofundei meus conhecimentos no ecossistema .NET e no desenvolvimento de APIs com ASP.NET. Também estudei testes unitários com xUnit, SQL Server, Entity Framework, Collections e LINQ, autenticação e autorização, Docker, arquitetura de microsserviços e práticas de deployment utilizando Azure."
+  },
+  "LinksTagsImgs": {
+    "frontend": {
+      "links": [
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+        "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
+        "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
+      ],
+      "create": [
+        {
+          "name": "Testing Library",
+          "link": "https://testing-library.com/img/octopus-64x64.png"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Desenvolvimento Front-End",
+          "linkImg": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/75610893",
+          "linkDirect": "https://www.credential.net/c2963b9c-606b-441e-a5fb-3861e521dddd#acc.2VG9FKWz"
+        },
+        {
+          "name": "Desenvolvimento Full-Stack",
+          "linkImg": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/93651158",
+          "linkDirect": "https://www.credential.net/86e49f7c-5c52-437c-aedf-48936032bf56#acc.AMwkVs82"
+        },
+        {
+          "name": "JavaScript (Avançado)",
+          "linkImg": "https://accredible_temp_credential_images.s3-external-1.amazonaws.com/1735410365190649288136874127017.png?cb=1735410366817",
+          "linkDirect": "https://www.credential.net/450e09de-da83-4d4e-8aff-8dda97fbb809?username=fabricio1"
+        }
+      ]
+    },
+    "backend": {
+      "links": [
+        "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+        "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white",
+        "https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+        "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white",
+        "https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white",
+        "https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white",
+        "https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white"
+      ],
+      "create": [],
+      "certificates": [
+        {
+          "name": "Desenvolvimento Back-End",
+          "linkImg": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/83027529",
+          "linkDirect": "https://www.credential.net/cddbbacb-33c0-4db9-9abd-a8161ba17004#acc.O3gG4Wo5"
+        }
+      ]
+    },
+    "cs": {
+      "links": [
+        "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+        "https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white"
+      ],
+      "create": [
+        {
+          "name": "Algoritmos",
+          "link": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-algorithms-data-analytics-flaticons-flat-circular-flat-icons.png"
+        },
+        {
+          "name": "estruturas de dados",
+          "link": "https://img.icons8.com/external-solidglyph-m-oki-orlando/32/external-data-structures-data-science-solid-solidglyph-m-oki-orlando.png"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Ciência da Computação",
+          "linkImg": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/86981690",
+          "linkDirect": "https://www.credential.net/861cae9a-3ab1-4ffc-af1f-1d3fdf0e2330#acc.qoJLS5zX"
+        }
+      ]
+    },
+    "tools": {
+      "links": [
+        "https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white",
+        "https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white",
+        "https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white",
+        "https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"
+      ],
+      "create": [],
+      "certificates": [
+        {
+          "name": "Eletiva em C#",
+          "linkImg": "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/93231111",
+          "linkDirect": "https://www.credential.net/1f70ba53-9781-4855-a332-a56338f373c6#acc.8HnTkoZb"
+        }
+      ]
+    }
+  } 
 }

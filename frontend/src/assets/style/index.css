@@ -1,19 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
 
-/* ::-webkit-scrollbar {
-  width: 0px;
-} */
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --background: #0B0F0D;
+  --surface: #121814;
+  --surface-2: #19221C;
+
+  --text: #E7ECE8;
+  --text-muted: #98A49D;
+
+  --primary: #789B80;
+  --primary-light: #A8C0AD;
+
+  --border: #29352E;
+}
+
+:root[data-theme='light'] {
+  --background: #F1F3EF;
+  --surface: #dbe0dc;
+  --surface-2: #DCE3DE;
+
+  --text: #18201B;
+  --text-muted: #647269;
+
+  --primary: #557A5E;
+  --primary-light: #789B80;
+
+  --border: #CBD4CE;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, h2 {
+  color: var(--text);
+}
+h3, h4, p, a {
+  color: var(--text-muted);
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'SUSE', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
 }
