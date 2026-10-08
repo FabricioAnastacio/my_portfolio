@@ -27,7 +27,7 @@ function Header() {
         <div className="Menu-header-logo">
           { headerLogo() }
           <nav className="Nav-superior">
-            <a className="Links-Header" href="#Page-thow">Resumo</a>
+            <a className="Links-Header" href="#Page-thow">Sobre</a>
             <a className="Links-Header" href="#Stack">Stack</a>
             <a className="Links-Header" href="#Projects">Projetos</a>
             <a className="Links-Header" href="#Contact-footer">Contato</a>

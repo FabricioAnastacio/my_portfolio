@@ -12,6 +12,18 @@ function ListProjects({ platform, dataList }) {
           >
             <p>Github →</p>
           </a>
+          {
+            item.demo.length !== 0 && (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="Link-GitHub"
+                href={ item.demo }
+              >
+                Demo →
+              </a>
+            )
+          }
         </div>
         <div className={ `Project-description-${platform}` }>
           <div

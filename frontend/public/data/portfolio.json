@@ -6,37 +6,41 @@
     {
       "name": "Starwars planets",
       "link": "https://github.com/FabricioAnastacio/project-starwars-planets",
-      "description": "Este projeto se trata de uma aplicação FrontEnd desenvolvido com React. Seu proposito é mostrar uma tabela com os planetas do universo de Star Wars.",
-      "technologies": ["JavaScript", "React", "CSS3", "Jest" ]
+      "description": "Este projeto é uma aplicação FrontEnd desenvolvido com React. Seu propósito é mostrar uma tabela completa com os planetas do universo de Star Wars.",
+      "technologies": ["JavaScript", "React", "CSS3", "Jest" ],
+      "demo": "https://fabricioanastacio.github.io/project-starwars-planets/"
     },
     {
       "name": "Trybe Futebol Clube",
       "link": "https://github.com/FabricioAnastacio/projeto-TrybeFutebolClube",
-      "description": "O aplicativo TFC é um site informativo sobre partidas e classificações de futebol! ⚽️.",
-      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ]
+      "description": "Este projeto se trata de um sistema informativo sobre partidas e classificações de futebol fictício.",
+      "technologies": [ "TypeScript", "MySql2", "Docker", "JWT", "Sequelize", "Jest", "Express" ],
+      "demo": ""
     },
     {
       "name": "Trybe hotel",
       "link": "https://github.com/FabricioAnastacio/projeto-trybe-hotel-csharp",
-      "description": "A API Trybe-Hotel foi desenvolvido para facilitar a realização de cadastros e reservas de hotel.",
-      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ]
+      "description": "Esta é uma API que trabalha com dados de um hotel fictício, foi desenvolvido para executar cadastros, atualizações, deleções e leituras das informações basicas de um hotel.",
+      "technologies": [ "C#", "SQL Server", "Docker", "Entity Framework", "AspNetCore", ".NET" ],
+      "demo": ""
     },
     {
       "name": "Project Zoo functions",
       "link": "https://github.com/FabricioAnastacio/trybe-project-zoo-functions",
-      "description": "Desenvolvido funções que buscam informações sobre os animais e pessoas em um zoológico. Alem de construir testes unitarios para testar cada função. 🧑‍🌾",
-      "technologies": [ "JavaScript", "Jest" ]
+      "description": "Este sistema de funções foi desenvolvido com o propósito de executar ações fundamentais de um programa de zoológico. Alem de contar com testes unitarios para testar cada função",
+      "technologies": [ "JavaScript", "Jest" ],
+      "demo": ""
     }
   ],
   "description": {
-    "resume": "Desenvolvedor fullstack com sólida experiência em diversas linguagens e tecnologias, incluindo C#, Python, JavaScript e TypeScript. Minha atuação abrange tanto o front-end quanto o back-end, utilizando ferramentas e frameworks modernos como React, React Native, Redux e React Router para desenvolvimento de interfaces dinâmicas e de alta performance. No back-end, tenho experiência com Node.js, Express.js e a plataforma .NET, incluindo ASP.NET, o que me permite criar aplicações robustas e escaláveis.",
-    "resumeThow": "Gerenciamento de banco de dados com MySQL, SQLite e SQL Server, utilizando Sequelize para facilitar a interação com bases de dados relacionais. Também possuo experiência com autenticação segura usando JWT e conteinerização de aplicações com Docker, o que me proporciona flexibilidade e eficiência na entrega de projetos.",
+    "resume": "Sou desenvolvedor Full Stack e venho construindo minha formação por meio de estudos e projetos práticos em desenvolvimento de software. Tenho experiência com C#, Python, JavaScript e TypeScript, atuando tanto na construção de interfaces quanto no desenvolvimento de aplicações e APIs. No front-end, trabalho principalmente com React e seu ecossistema; no back-end, utilizo Node.js e a plataforma .NET, incluindo ASP.NET.",
+    "resumeThow": "Também possuo conhecimentos em bancos de dados relacionais, como MySQL, SQLite e SQL Server, além de ferramentas e práticas como Sequelize, JWT e Docker. Busco desenvolver soluções que aliem clareza, funcionalidade e organização, mantendo uma base sólida para evolução e manutenção dos projetos.",
     "project": "Mais de 35 projetos concluidos. Dentre as linguagens conhecidas se destaca em TypeScript e C#, linguagens fortemente tipadas e robustas muito utilizadas.",
     "projectThow": "Estou sempre em busca de aprimorar minhas habilidades e aplicar as melhores práticas de desenvolvimento para entregar soluções que agreguem valor ao cliente.",
-    "frontend": "Durante este período, aprofundou-se e aplicou de forma prática conteúdos como: React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API e React Hooks.",
-    "backend": "Durante este período, em uma carga horária de 380 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Docker, MySQL, Node.js & Express, Testes Unitários e de Integração com Mocha, Chai e Sinon, TypeScript, Arquitetura em Camadas, REST, JWT, ORM com Sequelize, Deployment, POO e princípios SOLID",
-    "cs": "Durante este período, em uma carga horária de 120 horas/aula, aprofundou-se e aplicou de forma prática conteúdos como: Complexidade de Algoritmos, Algoritmos de Ordenação e Busca, Recursividade & Estratégias para Resolução de Problemas, Estruturas de Dados, OOP e Python",
-    "tools": "Das linguagens que conheço e domino C# esta entre elas, durante meus estudos pode crescer meus conhecimentos em ferramentas como: .NET, .NET Core, Criação de APIs com ASP.NET, Testes unitarios com xUnit, DB com SQL Server, Entity Framework, Autenticação e Autorização, Collections & LINQ, Docker, Arquitetura de Microsserviços e Deployment com Azure"
+    "frontend": "Ao longo da minha formação em Front-end, aprofundei meus conhecimentos no desenvolvimento de interfaces utilizando React e seu ecossistema. Estudei componentes, estado e eventos, componentes controlados, ciclo de vida, React Router, testes com React Testing Library, Redux, Context API e React Hooks.",
+    "backend": "Na área de Back-end, desenvolvi conhecimentos na construção de APIs e aplicações utilizando Node.js, Express e TypeScript. Minha formação inclui Docker, MySQL, arquitetura em camadas, APIs REST, JWT, ORM com Sequelize, testes unitários e de integração com Mocha, Chai e Sinon, além de conceitos de POO, princípios SOLID e práticas de deployment.",
+    "cs": "Durante meus estudos em Ciência da Computação, desenvolvi uma base sólida em fundamentos de programação e resolução de problemas. Entre os conteúdos estudados estão complexidade de algoritmos, algoritmos de ordenação e busca, recursividade, estratégias para resolução de problemas, estruturas de dados, programação orientada a objetos e Python.",
+    "tools": "Durante minha formação em C#, aprofundei meus conhecimentos no ecossistema .NET e no desenvolvimento de APIs com ASP.NET. Também estudei testes unitários com xUnit, SQL Server, Entity Framework, Collections e LINQ, autenticação e autorização, Docker, arquitetura de microsserviços e práticas de deployment utilizando Azure."
   },
   "LinksTagsImgs": {
     "frontend": {

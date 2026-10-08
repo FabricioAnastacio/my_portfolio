@@ -89,7 +89,7 @@ function ListStacks({ frontend, backend, cs, tools }) {
       <li>
         <div className="Stack-description">
           <div className="Stack-box-description-tags">
-            <h3>Ferramentas</h3>
+            <h3>C#/.NET</h3>
             <p>{ tools }</p>
             { listImgOrganization(LinksTagsImgs.tools) }
           </div>
