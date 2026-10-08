@@ -52,7 +52,6 @@ export default function PageDescription({ description, platform }) {
                   () => setCertOpem(!openCert, { name: '', linkImg: '', linkDirect: '' })
                 }
                 className="close"
-                title="Fechar"
               >
                 ×
               </button>

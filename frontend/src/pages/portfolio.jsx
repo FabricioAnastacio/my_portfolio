@@ -2,9 +2,6 @@ import { useEffect } from 'react';
 import Header from '../components/desktop/ComponentHeader';
 import Main from '../components/desktop/ComponentMain';
 import Footer from '../components/desktop/ComponentFooter';
-import HeaderMobile from '../components/mobile/ComponentHeader';
-import MainMobile from '../components/mobile/ComponentMain';
-import FooterMobile from '../components/mobile/ComponentFooter';
 import '../assets/style/Portfolio.css';
 import FetchJson from '../hooks/fetchJson';
 
@@ -27,9 +24,8 @@ function Portfolio() {
 
   const mobileAPP = (
     <div className="Portfolio-home">
-      <HeaderMobile />
-      <MainMobile />
-      <FooterMobile />
+      <h3>Versão mobile indisponível no momento</h3>
+      <p>Acesse pelo computador, por favor.</p>
     </div>
   );
 
