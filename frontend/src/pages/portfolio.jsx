@@ -12,6 +12,7 @@ function Portfolio() {
 
   useEffect(() => {
     refresh();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const desktopAPP = (
