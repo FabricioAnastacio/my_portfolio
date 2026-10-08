@@ -72,13 +72,14 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  width: 113px;
+  width: 122px;
   background-color: var(--surface-2);
   padding: 5px;
   border: 1px solid var(--border);
   border-radius: 5px;
   filter: saturate(70%) opacity(.7);
   transition: all .2s ease;
+  cursor: pointer;
   img {
     height: 80px;
     border-radius: 5px;
@@ -95,6 +96,65 @@
   border-color: var(--surface-2);
   box-shadow: 0 0 30px 10px var(--surface-2);
   filter: saturate(100%) opacity(1);
+}
+
+.modal-certificate {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  align-items: start;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.116);
+  backdrop-filter: blur(1px);
+}
+
+.box-modal {
+  margin-top: 10vmin;
+  background-color: var(--border);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 1px var(--border);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  background-color: var();
+}
+
+.c-name-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.certificate-img {
+  height: 50vmin;
+  border-radius: 10px;
+  margin: 10px;
+  filter: opacity(.7);
+}
+
+.link-Accredible {
+  height: 14px;
+  background-color: var(--text);
+  padding: 5px 10px;
+  border: var(--border);
+  border-radius: 10px;
+  transform: all .2s ease;
+}
+
+.link-Accredible:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px 1px var(--surface-2);
+}
+
+.link-Accredible:active {
+  transform: scale(1);
 }
 
 .Box-imgs {

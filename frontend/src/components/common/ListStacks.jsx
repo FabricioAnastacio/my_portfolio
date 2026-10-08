@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 
-function ListStacks({ frontend, backend, cs, tools }) {
+function ListStacks({ frontend, backend, cs, tools, setCertOpem }) {
   const { data: { LinksTagsImgs } } = useContext(AppContext);
 
   const listCertificates = (stack) => {
@@ -11,16 +11,15 @@ function ListStacks({ frontend, backend, cs, tools }) {
       <div className="Galery-Certificates">
         {
           certificates.length !== 0 && certificates.map((c, i) => (
-            <a
+            <button
               key={ i }
-              href={ c.linkDirect }
-              target="_blank"
+              onClick={ () => setCertOpem(true, c) }
               className="boxLink-certificates"
-              rel="noreferrer"
+              title="Visualizar"
             >
               <img src={ c.linkImg } alt={ c.name } />
-              <p>{ `${c.name} →` }</p>
-            </a>
+              <p>{ `${c.name}` }</p>
+            </button>
           ))
         }
       </div>
@@ -105,6 +104,7 @@ ListStacks.propTypes = {
   backend: PropTypes.string.isRequired,
   cs: PropTypes.string.isRequired,
   tools: PropTypes.string.isRequired,
+  setCertOpem: PropTypes.func.isRequired,
 };
 
 export default ListStacks;
