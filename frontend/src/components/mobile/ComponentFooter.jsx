@@ -1,41 +1,54 @@
-import React, { useContext } from 'react';
-import { github, instagram, linkedin } from '../../assets/svg';
+import { useState } from 'react';
 import '../../layouts/mobile/Footer.css';
-import buttonUp from '../../assets/imgs/mobile/icons8-para-cima-48.png';
-import AppContext from '../../contexts/AppContext';
-import Contact from '../common/Contact';
+// import '../../layouts/mobile/Contact.css';
 import FooterAutor from '../common/FooterAutor';
 import ButtonCV from '../common/ButtonCV';
+import fotoF from '../../assets/imgs/fabricio_fot.png';
+import Contact from '../common/Contact';
 
 function FooterMobile() {
-  const { modeThame } = useContext(AppContext);
+  const [emailPage, setEmailPage] = useState(false);
+
+  const setTabEmailClose = () => {
+    document.body.style.overflow = !emailPage ? 'hidden' : '';
+    setEmailPage(!emailPage);
+  };
 
   return (
-    <footer id="Contact-footer" className={ `Footer-${modeThame}-Mobile` }>
-      <hr className="Line-Footer" />
-      <nav className="Nav-Footer-Mobile">
-        <h1>CONTATO</h1>
-        <a href="#Header" className="Button-Up">
-          <img src={ buttonUp } alt="Para-Cima" />
-        </a>
-      </nav>
-      <div className="Footer-Mobile">
-        <Contact />
-        <hr className="Line-Mobile" />
-        <section className="Contact-Mobile">
-          <a className="Links-Mobile" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">
-            <img src={ github } alt="Github Link" />
-          </a>
-          <a className="Links-Mobile" href="https://www.linkedin.com/in/far-dev/" target="_blank" rel="noreferrer">
-            <img src={ linkedin } alt="Linkedin Link" />
-          </a>
-          <a className="Links-Mobile" href="https://www.instagram.com/fabricio.rodrigues_2.0_/" target="_blank" rel="noreferrer">
-            <img src={ instagram } alt="Instagram Link" />
-          </a>
-        </section>
-        <ButtonCV platform="Mobile" modeThame={ modeThame } />
+    <footer
+      id="Contact-footer"
+      className="Footer-Mobile portfolio-section-footer"
+    >
+      <div className="timeline-item-footer">
+        <p>CONTATO</p>
+      </div>
+      <div className="footer-header-Mobile">
+        <img
+          className="Picture-Mobile"
+          src={ fotoF }
+          alt="Foto de Fabricio"
+        />
+        <div className="box-buttons-Mobile">
+          <div>
+            <h3>Vamos conversar?</h3>
+            <p>Entre em contato ou conheça mais sobre meu trabalho.</p>
+          </div>
+          <div>
+            <button onClick={ setTabEmailClose } className="Button-Email">
+              E-mail
+            </button>
+            <ButtonCV platform="Mobile" />
+          </div>
+        </div>
       </div>
       <FooterAutor platform="Mobile" />
+      {
+        emailPage && (
+          <div className="Email-tab-Mobile">
+            <Contact setTabEmailClose={ setTabEmailClose } />
+          </div>
+        )
+      }
     </footer>
   );
 }
