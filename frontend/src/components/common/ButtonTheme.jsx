@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import '../../assets/style/ButtonTheme.css';
 
-function ButtonThame() {
+function ButtonThame({ platform }) {
   const [isDark, setDark] = useState(true);
 
   useEffect(() => {
@@ -50,7 +51,7 @@ function ButtonThame() {
   return (
     <button
       type="button"
-      className={ `theme-toggle ${isDark ? 'dark' : 'light'}` }
+      className={ `theme-toggle ${isDark ? 'dark' : 'light'} theme-${platform}` }
       onClick={ toggleTheme }
       aria-label={ isDark ? 'Ativar tema claro' : 'Ativar tema escuro' }
       aria-pressed={ isDark }
@@ -80,5 +81,9 @@ function ButtonThame() {
     </button>
   );
 }
+
+ButtonThame.propTypes = {
+  platform: PropTypes.string.isRequired,
+};
 
 export default ButtonThame;

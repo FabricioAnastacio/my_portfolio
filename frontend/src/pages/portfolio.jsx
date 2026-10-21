@@ -4,6 +4,9 @@ import Main from '../components/desktop/ComponentMain';
 import Footer from '../components/desktop/ComponentFooter';
 import '../assets/style/Portfolio.css';
 import FetchJson from '../hooks/fetchJson';
+import HeaderMobile from '../components/mobile/ComponentHeader';
+import MainMobile from '../components/mobile/ComponentMain';
+import FooterMobile from '../components/mobile/ComponentFooter';
 
 function Portfolio() {
   const [loading, erro, refresh] = FetchJson();
@@ -25,8 +28,9 @@ function Portfolio() {
 
   const mobileAPP = (
     <div className="Portfolio-home">
-      <h3>Versão mobile indisponível no momento</h3>
-      <p>Acesse pelo computador, por favor.</p>
+      <HeaderMobile />
+      <MainMobile />
+      <FooterMobile />
     </div>
   );
 
