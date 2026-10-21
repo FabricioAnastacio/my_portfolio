@@ -1,5 +1,4 @@
-import React, { useContext, useEffect } from 'react';
-import FetchJson from '../../hooks/fetchJson';
+import React, { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 import PageInitial from '../common/PageInitial';
 import Projects from '../common/Projects';
@@ -9,13 +8,7 @@ import '../../layouts/mobile/Carousel.css';
 import PageDescription from '../common/PageDescription';
 
 function MainMobile() {
-  const [loading, erro, refresh] = FetchJson();
   const { data, modeThame } = useContext(AppContext);
-
-  useEffect(() => {
-    refresh();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const refactorItems = (item) => {
     let response = '';
@@ -32,17 +25,6 @@ function MainMobile() {
     });
     return response;
   };
-
-  if (loading) return (<h1 className="Content-loading">Loading...</h1>);
-  if (erro) {
-    return (
-      <h1 className="Content-loading">
-        Algo de errado não esta certo!
-        <br />
-        Recarregue a pagina!
-      </h1>
-    );
-  }
 
   return (
     <main>
