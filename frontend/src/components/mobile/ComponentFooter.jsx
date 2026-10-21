@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../layouts/mobile/Footer.css';
-// import '../../layouts/mobile/Contact.css';
+import '../../layouts/mobile/Contact.css';
 import FooterAutor from '../common/FooterAutor';
 import ButtonCV from '../common/ButtonCV';
 import fotoF from '../../assets/imgs/fabricio_fot.png';
@@ -45,7 +45,7 @@ function FooterMobile() {
       {
         emailPage && (
           <div className="Email-tab-Mobile">
-            <Contact setTabEmailClose={ setTabEmailClose } />
+            <Contact setTabEmailClose={ setTabEmailClose } platform="Mobile" />
           </div>
         )
       }

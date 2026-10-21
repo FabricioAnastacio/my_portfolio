@@ -89,10 +89,10 @@ class Contact extends React.Component {
 
   render() {
     const { name, message, email, isSuccess, isDisable, isError } = this.state;
-    const { setTabEmailClose } = this.props;
+    const { setTabEmailClose, platform } = this.props;
 
     return (
-      <section className="Contact">
+      <section className={ `Contact-${platform}` }>
         <button
           onClick={ setTabEmailClose }
           className="close"
@@ -129,6 +129,7 @@ class Contact extends React.Component {
 
 Contact.propTypes = {
   setTabEmailClose: PropTypes.func.isRequired,
+  platform: PropTypes.string.isRequired,
 };
 
 export default Contact;
