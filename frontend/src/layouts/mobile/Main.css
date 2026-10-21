@@ -25,6 +25,11 @@
   align-items: start;
   flex-direction: column;
   margin-top: 5vmin;
+  .box-modal {
+    .c-name-link {
+      flex-direction: column;
+    }
+  }
 }
 
 .Content-description-Mobile {
@@ -50,9 +55,14 @@
   .Stack-box-description-tags {
     width: auto;
   }
+  .boxLink-certificates {
+    p {
+      font-size: 12px;
+    }
+  }
   .New-Icon-format {
     p {
       font-size: 7px;
     }
-  } 
+  }
 }
