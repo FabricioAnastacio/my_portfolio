@@ -10,7 +10,7 @@ function PageInitial(props) {
       <div className="timeline-item">
         <p>HOME</p>
       </div>
-      <div className="Hero-Title-section">
+      <div className={ `Hero-Title-section-${platform}` }>
         <h1>{ name }</h1>
         <h3>
           Desenvolvedor Full Stack
@@ -23,7 +23,7 @@ function PageInitial(props) {
           <a className="Hero-Link" href="#Projects">Projetos ↗</a>
           <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub →</a>
         </div>
-        <p className="Hero-languages">{ languages }</p>
+        <h6 className="Hero-languages">{ languages }</h6>
         <Carousel platform={ platform } />
       </div>
     </section>

@@ -18,21 +18,27 @@ function Portfolio() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const desktopAPP = (
-    <div className="Portfolio-home">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  const desktopAPP = () => {
+    document.documentElement.dataset.lyout = 'Desktop';
+    return (
+      <div className="Portfolio-home">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    );
+  };
 
-  const mobileAPP = (
-    <div className="Portfolio-home">
-      <HeaderMobile />
-      <MainMobile />
-      <FooterMobile />
-    </div>
-  );
+  const mobileAPP = () => {
+    document.documentElement.dataset.lyout = 'Mobile';
+    return (
+      <div className="Portfolio-home">
+        <HeaderMobile />
+        <MainMobile />
+        <FooterMobile />
+      </div>
+    );
+  };
 
   if (loading) return (<h1 className="Content-loading">Carregando...</h1>);
   if (erro) {
@@ -48,7 +54,7 @@ function Portfolio() {
     );
   }
 
-  return width > maxWidth ? desktopAPP : mobileAPP;
+  return width > maxWidth ? desktopAPP() : mobileAPP();
 }
 
 export default Portfolio;
