@@ -62,13 +62,13 @@
   display: flex;
   align-items: start;
   justify-content: start;
-  width: 40%;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 20px;
 }
 
 .boxLink-certificates {
   display: flex;
-  margin-left: 5px;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
@@ -163,20 +163,21 @@
   margin-top: 20px;
 }
 
-.First-box-img {
+/* .First-box-img {
   display: flex;
   img {
     height: 19px;
     border-radius: 10px;
   }
-}
+} */
 
 .Secund-box-img {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
   img {
-    margin-left: 4px;
-    height: 18px;
+    height: 19px;
     border-radius: 10px;
   }
 }

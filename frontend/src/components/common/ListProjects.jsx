@@ -4,26 +4,28 @@ function ListProjects({ platform, dataList }) {
       <li key={ i } className={ `Project-card-${platform}` }>
         <div className="Header-card">
           <h3>{ item.name }</h3>
-          <a
-            href={ item.link }
-            target="_blank"
-            rel="noreferrer"
-            className="Link-GitHub"
-          >
-            <p>Github →</p>
-          </a>
-          {
-            item.demo.length !== 0 && (
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="Link-GitHub"
-                href={ item.demo }
-              >
-                Demo →
-              </a>
-            )
-          }
+          <div>
+            <a
+              href={ item.link }
+              target="_blank"
+              rel="noreferrer"
+              className="Link-GitHub"
+            >
+              Github →
+            </a>
+            {
+              item.demo.length !== 0 && (
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="Link-GitHub"
+                  href={ item.demo }
+                >
+                  Demo →
+                </a>
+              )
+            }
+          </div>
         </div>
         <div className={ `Project-description-${platform}` }>
           <div

@@ -1,0 +1,161 @@
+.Header-Mobile {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  z-index: 1;
+}
+
+.Header-Primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface);
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.Icon-profile {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.Header-stage2 {
+  display: flex;
+  align-items: center;
+}
+
+.Menu-retract {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  height: 40vmin;
+  padding: 10px;
+  background-color: var(--surface);
+  border-radius: 0 0 5px 12px;
+  transition: all .5s ease;
+}
+
+.retract-true {
+  transform: translateY(-220px);
+}
+
+.retract-false {
+  transform: translateY(0);
+}
+
+.Navegation-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.Navegation {
+  background-color: var(--surface-2);
+  border-top: 1px solid var(--border);
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.theme-Mobile {
+  transform: scale(.8);
+}
+
+.theme-Mobile:active {
+  transform: scale(.7);
+}
+
+.Button-CV-Mobile {
+  font-family: 'Manrope';
+  font-size: clamp(.8rem, 1vw, .9rem);
+  border: 1px solid var(--border);
+  background-color: var(--border);
+  border-radius: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.Button-CV-Mobile:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px var(--primary-light);
+}
+
+.Button-CV-Mobile:active {
+  transform: scale(.9);
+  box-shadow: 0px 0px 1px 1px var(--primary-light);
+  color: var(--primary);
+}
+
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  color: var(--primary-light);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.menu-button:hover {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+.menu-icon {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.menu-icon .line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  transform-box: view-box;
+  transition:
+    transform 250ms ease,
+    opacity 180ms ease;
+}
+
+.menu-button.is-open .line-top {
+  transform: translateX(10px) rotate(45deg);
+}
+
+.menu-button.is-open .line-middle {
+  opacity: 0;
+}
+
+.menu-button.is-open .line-bottom {
+  transform: translateY(12px) translateX(-12px) rotate(-45deg);
+}
+
+.menu-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-icon .line,
+  .menu-button {
+    transition: none;
+  }
+}

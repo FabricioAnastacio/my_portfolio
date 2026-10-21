@@ -15,14 +15,14 @@ function Header() {
       <img
         src={ logo }
         alt="React"
-        className="Icon-profile"
+        className="Icon-profile-desk"
       />
       <h2>.Dev</h2>
     </a>
   );
 
   return (
-    <header id="Header">
+    <header id="Header" className="Header-desk">
       <section className="Nav-Header">
         <div className="Menu-header-logo">
           { headerLogo() }
@@ -35,7 +35,7 @@ function Header() {
         </div>
         <div className="btns-thame-cv">
           <ButtonCV platform="Desktop" modeThame={ modeThame } />
-          <ButtonThame />
+          <ButtonThame platform="Desktop" />
         </div>
       </section>
     </header>

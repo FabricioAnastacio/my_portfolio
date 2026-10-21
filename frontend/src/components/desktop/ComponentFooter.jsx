@@ -46,7 +46,7 @@ function Footer() {
       {
         emailPage && (
           <div className="Email-tab">
-            <Contact setTabEmailClose={ setTabEmailClose } />
+            <Contact setTabEmailClose={ setTabEmailClose } platform="Desktop" />
           </div>
         )
       }

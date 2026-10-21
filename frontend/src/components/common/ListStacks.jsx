@@ -31,13 +31,10 @@ function ListStacks({ frontend, backend, cs, tools, setCertOpem }) {
 
     return (
       <div className="Box-imgs">
-        <div className="First-box-img">
-          <img src={ links[0] } className="Tag-img" alt="React" />
-        </div>
         <div className="Secund-box-img">
           {
             links.map((link, i) => (
-              i > 0 && <img key={ i } className="Tag-img" src={ link } alt="tags-stack" />
+              <img key={ i } className="Tag-img" src={ link } alt="tags-stack" />
             ))
           }
           {

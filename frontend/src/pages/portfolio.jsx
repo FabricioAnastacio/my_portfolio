@@ -4,6 +4,9 @@ import Main from '../components/desktop/ComponentMain';
 import Footer from '../components/desktop/ComponentFooter';
 import '../assets/style/Portfolio.css';
 import FetchJson from '../hooks/fetchJson';
+import HeaderMobile from '../components/mobile/ComponentHeader';
+import MainMobile from '../components/mobile/ComponentMain';
+import FooterMobile from '../components/mobile/ComponentFooter';
 
 function Portfolio() {
   const [loading, erro, refresh] = FetchJson();
@@ -15,20 +18,27 @@ function Portfolio() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const desktopAPP = (
-    <div className="Portfolio-home">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  const desktopAPP = () => {
+    document.documentElement.dataset.lyout = 'Desktop';
+    return (
+      <div className="Portfolio-home">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    );
+  };
 
-  const mobileAPP = (
-    <div className="Portfolio-home">
-      <h3>Versão mobile indisponível no momento</h3>
-      <p>Acesse pelo computador, por favor.</p>
-    </div>
-  );
+  const mobileAPP = () => {
+    document.documentElement.dataset.lyout = 'Mobile';
+    return (
+      <div className="Portfolio-home">
+        <HeaderMobile />
+        <MainMobile />
+        <FooterMobile />
+      </div>
+    );
+  };
 
   if (loading) return (<h1 className="Content-loading">Carregando...</h1>);
   if (erro) {
@@ -44,7 +54,7 @@ function Portfolio() {
     );
   }
 
-  return width > maxWidth ? desktopAPP : mobileAPP;
+  return width > maxWidth ? desktopAPP() : mobileAPP();
 }
 
 export default Portfolio;

@@ -9,12 +9,13 @@
   --surface: #121814;
   --surface-2: #19221C;
 
+  --accent: #83B9A4;
   --text: #E7ECE8;
   --text-muted: #98A49D;
-
+  
   --primary: #789B80;
   --primary-light: #A8C0AD;
-
+  
   --border: #29352E;
 }
 
@@ -22,7 +23,8 @@
   --background: #F1F3EF;
   --surface: #dbe0dc;
   --surface-2: #DCE3DE;
-
+  
+  --accent: #4a7967;
   --text: #18201B;
   --text-muted: #647269;
 
@@ -32,6 +34,31 @@
   --border: #CBD4CE;
 }
 
+
+:root[data-lyout='Mobile'] {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 15px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -39,7 +66,7 @@ h1, h2, h3 {
 h1, h2 {
   color: var(--text);
 }
-h3, h4, p, a {
+h3, h4, h6, p, a {
   color: var(--text-muted);
 }
 
