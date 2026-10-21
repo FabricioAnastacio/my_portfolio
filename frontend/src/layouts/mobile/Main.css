@@ -22,45 +22,37 @@
 
 .Page-thow-Mobile {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   margin-top: 5vmin;
 }
 
 .Content-description-Mobile {
-  font-size: 15px;
-  padding: 40px 10px;
-  text-align: center;
-  font-weight: 600;
-  background-color: black;
-  color: white;
-  letter-spacing: 0px;
+  padding: 40px 20px;
+  text-align: start;
+  background-color: var(--surface-2);
   word-spacing: 5px;
   line-height: 1.6em;
 }
 
-.ScrollSecundary-Mobile {
-  padding-top: 20vmin;
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  width: 100%;
-  ul {
-    padding: 0 10px 0 20px;
-    margin-bottom: 30vmin;
+.Page-tree-Mobile {
+  padding: 60px 20px;
+  h1 {
+    margin-bottom: 0;
   }
-  li {
-    list-style: none;
-    margin-top: 30px;
-    h2 {
-      margin-bottom: 10px;
+  .Section-Stacks ul {
+    padding: 0 10px;
+    li {
+      padding: 20px 0;
+      margin-bottom: 100px;
     }
+  }
+  .Stack-box-description-tags {
+    width: auto;
+  }
+  .New-Icon-format {
     p {
-      font-size: 15px;
-      letter-spacing: 0px;
-      word-spacing: 5px;
-      line-height: 1.6em;
-      margin-bottom: 10px;
+      font-size: 7px;
     }
-  }
+  } 
 }
