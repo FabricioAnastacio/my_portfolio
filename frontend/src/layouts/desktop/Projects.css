@@ -1,7 +1,7 @@
 .List-projects-Desktop {
   display: flex;
   flex-direction: column;
-  padding: 20vmin 0;
+  padding-top: 20vmin;
   background-color: var(--surface-2);
 }
 

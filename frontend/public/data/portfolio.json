@@ -2,6 +2,13 @@
   "myname": "Fabrício A. Rodrigues",
   "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
+  "timeLine": [
+    { "title": "Curso de programação Trybe", "subTitle": "Full Stack", "status": "Concluída", "description": "Formação em Desenvolvimento Web Full-Stack da Trybe, com duração minima de 12 meses e carga horaria de 1.500 horas/aula.", "links": {"name": "Trybe", "link": "https://betrybe.com/"} },
+    { "title": "Faculdade Univiçosa", "subTitle": "1° Periodo", "status": "Concluída", "description": "", "links": {"name": "", "link": ""} },
+    { "title": "Faculdade Univiçosa", "subTitle": "2° Periodo", "status": "Etapa atual", "description": "", "links": {"name": "", "link": ""} },
+    { "title": "Faculdade Univiçosa", "subTitle": "3° Periodo", "status": "Próximo objetivo", "description": "", "links": {"name": "", "link": ""} },
+    { "title": "", "status": "", "description": "", "links": {"name": "", "link": ""} }
+  ],
   "listProjects": [
     {
       "name": "Starwars planets",

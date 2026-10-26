@@ -7,9 +7,10 @@ import '../../layouts/desktop/Main.css';
 import '../../layouts/desktop/Projects.css';
 import '../../layouts/desktop/PageInitial.css';
 import '../../layouts/desktop/Carousel.css';
+import Timeline from '../common/TimeLine';
 
 function Main() {
-  const { data, modeThame } = useContext(AppContext);
+  const { data } = useContext(AppContext);
 
   const refactorItems = (item) => {
     let response = '';
@@ -36,7 +37,6 @@ function Main() {
         platform="Desktop"
       />
       <PageDescription
-        modeThame={ modeThame }
         description={ data.description }
         platform="Desktop"
       />
@@ -45,6 +45,7 @@ function Main() {
         description={ data.description }
         platform="Desktop"
       />
+      <Timeline platform="Desktop" timeline={ data.timeLine } />
     </main>
   );
 }
