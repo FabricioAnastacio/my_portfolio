@@ -11,7 +11,7 @@ function ListProjects({ platform, dataList }) {
               rel="noreferrer"
               className="Link-GitHub"
             >
-              Github →
+              Github ↗
             </a>
             {
               item.demo.length !== 0 && (
@@ -21,7 +21,7 @@ function ListProjects({ platform, dataList }) {
                   className="Link-GitHub"
                   href={ item.demo }
                 >
-                  Demo →
+                  Demo ↗
                 </a>
               )
             }

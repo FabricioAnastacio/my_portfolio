@@ -20,8 +20,8 @@ function PageInitial(props) {
           clareza, funcionalidade e evolução.
         </p>
         <div className="Hero-Links">
-          <a className="Hero-Link" href="#Projects">Projetos ↗</a>
-          <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub →</a>
+          <a className="Hero-Link" href="#Projects">Projetos →</a>
+          <a className="Hero-Link" href="https://github.com/FabricioAnastacio" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
         <h6 className="Hero-languages">{ languages }</h6>
         <Carousel platform={ platform } />
