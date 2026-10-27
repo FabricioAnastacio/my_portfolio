@@ -4,14 +4,18 @@ import { useEffect, useState } from 'react';
 
 export default function Timeline({ platform, timeline }) {
   const stateCurrent = 'Etapa atual';
+  const maxStages = 4;
   const [progress, setProgress] = useState(0);
   const [stageSelect, setStage] = useState({
     id: 0,
     title: '',
+    imgIcon: '',
     subTitle: '',
     links: { name: '', link: '' },
     status: '',
     description: '',
+    dataI: 'xx/xx/xxxx',
+    dataF: 'xx/xx/xxxx',
   });
 
   useEffect(() => {
@@ -28,7 +32,40 @@ export default function Timeline({ platform, timeline }) {
   const getStageSelect = (selected) => {
     setStage(selected);
   };
-  console.log(progress);
+
+  const getFormatData = (dataI, dataF, format) => {
+    const monthShort = [
+      'Janeiro', 'Fevereiro', 'Março', 'Abriu', 'Maio', 'Junho',
+      'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro',
+    ];
+    const dataIForm = [
+      monthShort[Number(dataI.split('/')[0]) - 1],
+      dataI.split('/')[2],
+    ];
+    const dataFForm = [
+      monthShort[Number(dataF.split('/')[0]) - 1],
+      dataF.split('/')[2],
+    ];
+    switch (format) {
+    case 1: {
+      const dta = dataIForm[1] === dataFForm[1]
+        ? `${dataIForm[0]} - ${dataFForm[0]} de ${dataFForm[1]}`
+        : `${dataIForm[0]} de ${dataIForm[1]} — ${dataFForm[0]} de ${dataFForm[1]}`;
+      return dta;
+    }
+    case 2: {
+      const monthIShort = dataIForm[0].slice(0, maxStages - 1);
+      const monthFShort = dataFForm[0].slice(0, maxStages - 1);
+      const dta = dataIForm[1] === dataFForm[1]
+        ? `${monthIShort}. - ${monthFShort}. ${dataFForm[1]}`
+        : `${monthIShort}. ${dataIForm[1]} — ${monthFShort}. ${dataFForm[1]}`;
+      return dta;
+    }
+    default:
+      return `${dataI} - ${dataF}`;
+    }
+  };
+
   return (
     <section className={ `TimeLineSection-${platform} portfolio-section` }>
       <div className="timeline-item">
@@ -52,6 +89,7 @@ export default function Timeline({ platform, timeline }) {
                 className={
                   `TimeLine-Stage
                   ${stage.status === stateCurrent && 'Stege-current'}
+                  ${stage.status === 'Próximo objetivo' && 'Stege-next'}
                   `
                 }
               >
@@ -64,21 +102,31 @@ export default function Timeline({ platform, timeline }) {
                     `
                   }
                 />
-                <div
-                  className="Stage"
-                  onClick={ () => getStageSelect(stage) }
-                  aria-hidden
-                >
-                  <h5>
-                    { stage.title }
-                  </h5>
-                  <h5>
-                    { stage.subTitle }
-                  </h5>
-                  <p>
-                    { stage.status }
-                  </p>
-                </div>
+                {
+                  i !== maxStages && (
+                    <div
+                      className="Stage"
+                      onClick={ () => getStageSelect(stage) }
+                      aria-hidden
+                    >
+                      <h5>
+                        { stage.title }
+                      </h5>
+                      <h5>
+                        { stage.subTitle }
+                      </h5>
+                      <h6>
+                        { stage.status }
+                      </h6>
+                      <h6>
+                        {
+                          stage.dataI
+                          && getFormatData(stage.dataI, stage.dataF, 2)
+                        }
+                      </h6>
+                    </div>
+                  )
+                }
               </div>
             ))
           }
@@ -86,10 +134,19 @@ export default function Timeline({ platform, timeline }) {
       </div>
       <div className="sectionStege-Current">
         <div className="Title-status">
-          <h3>{ stageSelect.title }</h3>
-          <h6>{ stageSelect.status }</h6>
+          <img className="Icon-logo" src={ stageSelect.imgIcon } alt="Icon" />
+          <div>
+            <h2>{ stageSelect.title }</h2>
+            <h5
+              className="Stage-title"
+            >
+              { `${stageSelect.subTitle} · ${stageSelect.status}` }
+            </h5>
+          </div>
         </div>
-        <h5 className="Stage-title">{ stageSelect.subTitle }</h5>
+        <h5 className="Stage-title">
+          { getFormatData(stageSelect.dataI, stageSelect.dataF, 1) }
+        </h5>
         <p>{ stageSelect.description }</p>
         <a
           href={ stageSelect.links.link }
@@ -98,7 +155,7 @@ export default function Timeline({ platform, timeline }) {
           rel="noreferrer"
           title={ `Acessar ${stageSelect.links.name}` }
         >
-          { stageSelect.links.name }
+          { `${stageSelect.links.name} ↗` }
         </a>
       </div>
     </section>
