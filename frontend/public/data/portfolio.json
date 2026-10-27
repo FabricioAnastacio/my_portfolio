@@ -2,6 +2,49 @@
   "myname": "Fabrício A. Rodrigues",
   "stacks": ["stacks", "Frontend", "Backend", "FullStack"],
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
+  "timeLine": [
+    {
+      "title": "Curso de programação Trybe",
+      "subTitle": "Full Stack",
+      "imgIcon": "data/icons/trybe-logo.png",
+      "status": "Concluída",
+      "description": "Formação em Desenvolvimento Web Full-Stack da Trybe, com duração minima de 12 meses e carga horaria de 1.500 horas/aula.",
+      "links": {"name": "Trybe", "link": "https://betrybe.com/"},
+      "dataI": "11/01/2022",
+      "dataF": "12/27/2023"
+    },
+    {
+      "title": "Faculdade Univiçosa",
+      "subTitle": "1° Periodo",
+      "imgIcon": "data/icons/logo-univicosa.png",
+      "status": "Concluída",
+      "description": "Estudou e aplicou em atividades conteudos que compõem o primeiro periodo do curso Analise e Desenvolvimento de Sistemas. Banco de Dados, Desenvolvimento Web I, Design de Interação e Projeto Integrador, Fundamentos em Análise e Desenvolvimento de Sistemas, Introdução à Lógica de Programação, e Organização e Arquitetura de Computadores",
+      "links": {"name": "Univiçosa", "link": "https://www.univicosa.com.br/"},
+      "dataI": "02/02/2026",
+      "dataF": "06/09/2026"
+    },
+    {
+      "title": "Faculdade Univiçosa",
+      "subTitle": "2° Periodo",
+      "imgIcon": "data/icons/logo-univicosa.png",
+      "status": "Etapa atual",
+      "description": "Estudou e aplicou em atividades conteudos que compõem o segundo periodo do curso Analise e Desenvolvimento de Sistemas. Desenvolvimento Web II, Engenharia de Software I e Projeto Integrador, Programação de Computadores I, e Redes de Computadores",
+      "links": {"name": "Univiçosa", "link": "https://www.univicosa.com.br/"},
+      "dataI": "06/30/2026",
+      "dataF": "12/20/2026"
+    },
+    {
+      "title": "Faculdade Univiçosa",
+      "subTitle": "3° Periodo",
+      "imgIcon": "data/icons/logo-univicosa.png",
+      "status": "Próximo objetivo",
+      "description": "",
+      "links": {"name": "Univiçosa", "link": "https://www.univicosa.com.br/"},
+      "dataI": "02/02/2027",
+      "dataF": "06/09/2027"
+    },
+    {"title": "", "status": "Próximo objetivo", "description": "", "links": {"name": "", "link": ""} }
+  ],
   "listProjects": [
     {
       "name": "Starwars planets",

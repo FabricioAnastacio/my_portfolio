@@ -17,6 +17,8 @@
   --primary-light: #A8C0AD;
   
   --border: #29352E;
+  --timeline-track: #343b36;
+  --timeline-progress: #8ca58b;
 }
 
 :root[data-theme='light'] {
@@ -47,6 +49,9 @@
   }
   h4 {
     font-size: 18px;
+  }
+  h5 {
+    font-size: 13px;
   }
   h6 {
     font-size: 12px;

@@ -1,0 +1,142 @@
+.TimeLineSection-Desktop {
+  background-color: var(--surface-2);
+  padding: 25vmin 20vmin;
+
+  .sectionStege-Current {
+    position: relative;
+    margin-top: 60px;
+    width: 50%;
+    color: var(--text-muted);
+    p {
+      margin-top: 10px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      line-height: 1.4em;
+    }
+  }
+
+  .Stage-title {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .Title-status {
+    display: flex;
+    align-items: end;
+    margin: 5px 0;
+    h6 {
+      margin-left: 10px;
+    }
+    .Icon-logo {
+      height: 18px;
+      margin: auto 5px auto 0;
+      filter: drop-shadow(0 0 1px var(--border));
+    }
+  }
+
+  .LinkSectionStege {
+    position: absolute;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+  }
+  
+  .LinkSectionStege:hover {
+    text-decoration: underline;
+    color: var(--primary-light);
+  }
+}
+
+.TimeLine-Desktop {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .Line__track,
+  .Line__progress {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 5px;
+    border-radius: 2px;
+  }
+
+  .Line__track {
+    width: 100%;
+    background-color: var(--timeline-track);
+    opacity: .4;
+  }
+
+  .Line__progress {
+    background-color: var(--timeline-progress);
+    z-index: 1;
+    transition: width 1s ease;
+  }
+
+  .TimeLine-Stages {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .TimeLine-Stage {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    filter: brightness(0.8);
+  }
+  
+  .Stege-current {
+    transform: scale(1.2) translateY(8px);
+    filter: brightness(1.1);
+    .Line-circle {
+      border: 4px solid var(--primary-light);;
+    }
+    .Stage {
+      margin-top: 30px;
+      color: var(--primary);
+    }
+  }
+
+  .Stege-next {
+    filter: brightness(0.5);
+  }
+
+  .Line-circle {
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--surface-2);
+    border: 2px solid var(--timeline-progress);
+    transition: background 300ms ease;
+  }
+  
+  .Circle-completed {
+    background-color: var(--timeline-progress);
+    border: 2px solid var(--surface-2);
+  }
+  
+  .Circle-current {
+    background-color: var(--timeline-progress);
+  }
+
+  .Stage {
+    margin-top: 40px;
+    text-align: start;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+
+  .Stage:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
