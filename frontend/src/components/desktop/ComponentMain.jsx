@@ -3,11 +3,12 @@ import Projects from '../common/Projects';
 import PageDescription from '../common/PageDescription';
 import PageInitial from '../common/PageInitial';
 import AppContext from '../../contexts/AppContext';
+import Timeline from '../common/TimeLine';
 import '../../layouts/desktop/Main.css';
 import '../../layouts/desktop/Projects.css';
 import '../../layouts/desktop/PageInitial.css';
 import '../../layouts/desktop/Carousel.css';
-import Timeline from '../common/TimeLine';
+import '../../layouts/desktop/TimeLine.css';
 
 function Main() {
   const { data } = useContext(AppContext);

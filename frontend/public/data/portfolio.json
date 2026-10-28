@@ -4,7 +4,7 @@
   "languages": ["languages", "JavaScript", "TypeScript", "Python", "C#"],
   "timeLine": [
     {
-      "title": "Curso de programação Trybe",
+      "title": "Programação Trybe",
       "subTitle": "Full Stack",
       "imgIcon": "data/icons/trybe-logo.png",
       "status": "Concluída",
