@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 import AppContext from '../../contexts/AppContext';
 import PageInitial from '../common/PageInitial';
 import Projects from '../common/Projects';
+import PageDescription from '../common/PageDescription';
+import Timeline from '../common/TimeLine';
 import '../../layouts/mobile/Main.css';
 import '../../layouts/mobile/Projects.css';
 import '../../layouts/mobile/Carousel.css';
-import PageDescription from '../common/PageDescription';
+import '../../layouts/mobile/TimeLine.css';
 
 function MainMobile() {
   const { data, modeThame } = useContext(AppContext);
@@ -44,6 +46,7 @@ function MainMobile() {
         description={ data.description }
         platform="Mobile"
       />
+      <Timeline platform="Mobile" timeline={ data.timeLine } />
     </main>
   );
 }

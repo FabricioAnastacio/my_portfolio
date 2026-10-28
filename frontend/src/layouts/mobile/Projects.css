@@ -1,11 +1,12 @@
 .List-projects-Mobile {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 0 20px;
   background-color: var(--surface-2);
 }
 
 .Projects-title-Mobile {
+  margin-top: 60px;
   h1 {
     width: fit-content;
     margin-bottom: 10px;

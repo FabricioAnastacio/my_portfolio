@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import '../../layouts/desktop/TimeLine.css';
 import { useEffect, useState } from 'react';
 
 export default function Timeline({ platform, timeline }) {
@@ -19,7 +18,7 @@ export default function Timeline({ platform, timeline }) {
   });
 
   useEffect(() => {
-    const valueCalc = 102;
+    const valueCalc = 99;
     const currentIndex = timeline.findIndex((t) => t.status === stateCurrent);
     setProgress(
       currentIndex >= 0 && timeline.length > 1
@@ -67,7 +66,7 @@ export default function Timeline({ platform, timeline }) {
   };
 
   return (
-    <section className={ `TimeLineSection-${platform} portfolio-section` }>
+    <section id="TimeLine" className={ `TimeLineSection-${platform} portfolio-section` }>
       <div className="timeline-item">
         <p>TIMELINE</p>
       </div>
@@ -79,7 +78,11 @@ export default function Timeline({ platform, timeline }) {
         <div className="Line__track" />
         <div
           className="Line__progress"
-          style={ { width: `${progress}%` } }
+          style={
+            platform === 'Desktop'
+              ? { width: `${progress}%` }
+              : { height: `${progress}%` }
+          }
         />
         <div className="TimeLine-Stages">
           {

@@ -13,6 +13,7 @@ function HeaderMobile() {
       <nav className="Navegation-Header">
         <a className="Navegation" href="#Stack">Stack</a>
         <a className="Navegation" href="#Projects">Projetos</a>
+        <a className="Navegation" href="#TimeLine">Trajetoria</a>
         <a className="Navegation" href="#Contact-footer">Contato</a>
         <ButtonThame platform="Mobile" />
       </nav>

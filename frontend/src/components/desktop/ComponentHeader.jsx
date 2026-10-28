@@ -26,6 +26,7 @@ function Header() {
             <a className="Links-Header" href="#Page-thow">Sobre</a>
             <a className="Links-Header" href="#Stack">Stack</a>
             <a className="Links-Header" href="#Projects">Projetos</a>
+            <a className="Links-Header" href="#TimeLine">Trajetoria</a>
             <a className="Links-Header" href="#Contact-footer">Contato</a>
           </nav>
         </div>
